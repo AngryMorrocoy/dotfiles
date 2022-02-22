@@ -1,0 +1,29 @@
+snippet ifmain "if __name__ == '__main__'" b
+if __name__ == '__main__':
+    $0()
+
+endsnippet
+
+snippet 3" "Inserts a comment lol" b
+"""$0"""
+endsnippet
+
+snippet class "Creates a class" b
+class $1${2:($3)}:
+
+	def __init__(self${4:, $5}):
+		$6
+endsnippet
+
+snippet def "def ():"
+def $1(${2:self}):
+	$3
+endsnippet
+
+snippet fimp "from import statement" b
+from $1 import $2
+endsnippet
+
+snippet imp "import statement" b
+import $1
+endsnippet

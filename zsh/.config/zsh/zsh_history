@@ -1,0 +1,1901 @@
+: 1644208695:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1644212897:0;clear
+: 1644212898:0;tmux-sessionizer
+: 1644212923:0;v
+: 1644213044:0;ls
+: 1644213045:0;l
+: 1644213052:0;cd isListPalindrome
+: 1644213053:0;v solution.ts
+: 1644213077:0;v
+: 1644213099:0;v solution.ts
+: 1644213104:0;v
+: 1644213112:0;v solution.ts
+: 1644213132:0;v
+: 1644213161:0;v solution.ts
+: 1644213287:0;,
+: 1644213290:0;v
+: 1644213292:0;v
+: 1644213294:0;v solution.ts
+: 1644213303:0;..
+: 1644213304:0;ls
+: 1644213307:0;cd hasPathWithGivenSum
+: 1644213309:0;v solution.ts
+: 1644215624:0;tmux-sessionizer
+: 1644215630:0;ls
+: 1644215632:0;cd react-portfolio
+: 1644215633:0;ls
+: 1644215638:0;npm run dev
+: 1644215640:0;cd ../Ideas
+: 1644215642:0;v
+: 1644215718:0;create_ap --help
+: 1644215726:0;v
+: 1644215747:0;sudo create_ap --list-clients ap0
+: 1644215780:0;v
+: 1644215929:0;v
+: 1644216300:0;v solution.ts
+: 1644216301:0;v
+: 1644220090:0;ping lan.leagueoflegends.com
+: 1644226866:0;tmux-sessionizer
+: 1644226876:0;cd reverseInsideParentheses
+: 1644226878:0;v solution.ts
+: 1644227042:0;v
+: 1644227054:0;v solution.ts
+: 1644227185:0;ts-node solution.ts
+: 1644227827:0;python3
+: 1644227894:0;node
+: 1644227946:0;ts-node solution.ts
+: 1644228084:0;node
+: 1644228193:0;ts-node solution.ts
+: 1644229956:0;tmux-sessionizer
+: 1644229959:0;cd reverseInsideParentheses
+: 1644229960:0;v solution.ts
+: 1644230414:0;ts-node solution.ts
+: 1644230872:0;clear
+: 1644230877:0;ts-node solution.ts
+: 1644231103:0;cd ..
+: 1644231129:0;mkdir alternatingSums
+: 1644231145:0;cp hasPathWithGivenSum/tsconfig.json alternatingSums
+: 1644231146:0;cd alternatingSums
+: 1644231148:0;v solution.ts
+: 1644231304:0;ts-node solution.ts
+: 1644233095:0;node
+: 1644256567:0;poweroff --reboot
+: 1644256826:0;ping lan.leagueoflegends.com
+: 1644258288:0;sudo create_ap --list-clients ap0
+: 1644258297:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1644261044:0;ssh user@shell.openshells.net
+: 1644261061:0;ssh user@shell.openshells.net:22
+: 1644261092:0;ssh -l user shell.openshells.net user
+: 1644262078:0;pacmd load-module module-alsa-source device=hw:Loopback,1,0
+: 1644262268:0;ssh mr20220208@http://mr20220208.120.138.30.206.sth.nz/
+: 1644262271:0;ssh -l mr20220208@http://mr20220208.120.138.30.206.sth.nz/
+: 1644262301:0;ssh mr20220208mr20220208.120.138.30.206.sth.nz/
+: 1644262323:0;ssh http://mr20220208.120.138.30.206.sth.nz/
+: 1644262366:0;man ssh
+: 1644262400:0;ssh mr20220208.120.138.30.206.sth.nz
+: 1644262438:0;ssh mr20220208@mr20220208.120.138.30.206.sth.nz
+: 1644262622:0;cd Programming/Codes
+: 1644262701:0;mkdir sitehost
+: 1644262703:0;tmux-sessionizer
+: 1644262848:0;mkdir solution.py
+: 1644262851:0;cd solution.py
+: 1644262853:0;cd ..
+: 1644262855:0;rm solution.py
+: 1644262857:0;rm -r solution.py
+: 1644262860:0;v solution.py
+: 1644263098:0;python3 solution.py
+: 1644265537:0;clear
+: 1644267324:0;ping lan.leagueoflegends.com
+: 1644267329:0;poweroff
+: 1644270896:0;tmux-sessionizer
+: 1644270900:0;ls
+: 1644271007:0;mkdir arrayChange
+: 1644271012:0;cp alternatingSums/tsconfig.json arrayChange
+: 1644271013:0;cd arrayChange
+: 1644271015:0;v solution.t
+: 1644271046:0;v solution.ts
+: 1644271261:0;ts-node solution.ts
+: 1644271586:0;cd ..
+: 1644271594:0;mkdir palindromeRearranging
+: 1644271597:0;cp alternatingSums/tsconfig.json arrayChange
+: 1644271602:0;cp alternatingSums/tsconfig.json palindromeRearranging
+: 1644271603:0;cd palindromeRearranging
+: 1644271604:0;v solution.ts
+: 1644272037:0;ts-node solution.ts
+: 1644272943:0;cd
+: 1644272951:0;find . -name "*cv*
+: 1644272952:0;find . -name "*cv*"
+: 1644272961:0;find . -name "Manuel"
+: 1644272965:0;find . -name "Manuel*"
+: 1644272970:0;find . -name "*.pdf"
+: 1644272989:0;find --help
+: 1644272999:0;man find
+: 1644273092:0;find . -not -path "*/.*" -type f -name "*.pdf"
+: 1644273143:0;clear
+: 1644273145:0;fd --help
+: 1644273149:0;fd .
+: 1644273154:0;man fd
+: 1644273706:0;vifm
+: 1644279921:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1644285666:0;ping lan.leagueoflegends.com
+: 1644286034:0;poweroff
+: 1644292952:0;ping lan.leagueoflegends.com
+: 1644293144:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1644296190:0;ping lan.leagueoflegends.com
+: 1644296196:0;poweroff
+: 1644377507:0;pacmd load-module module-alsa-source device=hw:Loopback,1,0
+: 1644379020:0;ping lan.leagueoflegends.com
+: 1644379189:0;poweroff
+: 1644387815:0;ping lan.leagueoflegends.com
+: 1644388298:0;cd .local/share/nvim/site/pack/paqs/start/
+: 1644388304:0;cd -- nvim-lspconfig
+: 1644388305:0;v
+: 1644388394:0;sudo npm install -g dockerfile-language-server-nodejs\
+
+: 1644388437:0;tmux-sessionizer
+: 1644388439:0;v
+: 1644388604:0;cd
+: 1644388606:0;cd Programming/C
+: 1644388608:0;cd Programming/Codes
+: 1644388611:0;cd web_music-player/
+: 1644388612:0;ls
+: 1644388614:0;cd server
+: 1644388618:0;cd ..
+: 1644388619:0;cd client
+: 1644388620:0;ls
+: 1644388622:0;v Dockerfile
+: 1644388938:0;clear
+: 1644388943:0;tmux-sessionizer
+: 1644389167:0;sed -n l
+: 1644389195:0;clear
+: 1644389216:2;v Dockerfile
+: 1644389220:0;cd client
+: 1644389223:0;v Dockerfile
+: 1644389386:0;clear
+: 1644389426:0;tmux-sessions
+: 1644389477:0;cd client
+: 1644389479:0;v D
+: 1644389481:0;v Dockerfile
+: 1644389509:0;clear
+: 1644389593:0;git status
+: 1644389610:0;git --restore --staged .netrwhist
+: 1644389614:0;git restore --staged .netrwhist
+: 1644389621:0;git restore --staged .lua/theme.lua
+: 1644389624:0;git status
+: 1644389629:0;git restore --staged lua/theme.lua
+: 1644389632:0;clear
+: 1644389633:0;ls
+: 1644389635:0;git status
+: 1644389641:0;v
+: 1644389670:0;clear
+: 1644389673:0;git status
+: 1644389680:0;git restore .netrwhist
+: 1644389685:0;git restore lua/theme.lua
+: 1644389686:0;ls
+: 1644389688:0;git status
+: 1644389689:0;v
+: 1644389788:0;git status
+: 1644389792:0;v
+: 1644389901:0;,
+: 1644389902:0;clear
+: 1644389907:0;git push
+: 1644390392:0;tmux-sessions
+: 1644390421:0;ping lan.leagueoflegends.com
+: 1644390504:0;tmux-sessionizer
+: 1644390507:0;v main.go
+: 1644390510:0;ls
+: 1644390514:0;ls asset
+: 1644390518:0;rm *
+: 1644390520:0;clear
+: 1644390531:0;rm -rf asset/index.html
+: 1644390535:0;rm -rf asset/
+: 1644390536:0;ls
+: 1644390540:0;go init
+: 1644390543:0;go help
+: 1644390550:0;go list
+: 1644390558:0;ls
+: 1644390798:0;cd
+: 1644390804:0;clear
+: 1644390809:0;echo $GOPATH
+: 1644390811:0;cd .local/go
+: 1644390812:0;ls
+: 1644390847:0;go env
+: 1644390885:0;v
+: 1644390900:0;clear
+: 1644390906:0;cd .local/go
+: 1644390911:0;ls
+: 1644390935:0;mkdir src/github.com/AngryMorrocoy/
+: 1644390939:0;mkdir -p src/github.com/AngryMorrocoy/
+: 1644390943:0;cd src/github.com/AngryMorrocoy
+: 1644390950:0;mkdir go-crash-course
+: 1644390985:0;v .
+: 1644391112:0;cd go-crash-course
+: 1644391114:0;v .
+: 1644391196:0;v
+: 1644391325:0;tmux-sessionizer "$(pwd)"
+: 1644391328:0;v
+: 1644391347:0;go run 01_hello/main.go
+: 1644391361:0;cd 01_hello
+: 1644391364:0;go install
+: 1644391369:0;cd ..
+: 1644391369:0;..
+: 1644391375:0;cd ../bin
+: 1644391375:0;ls
+: 1644391378:0;./01_hello
+: 1644391380:0;clear
+: 1644391402:0;go build
+: 1644391404:0;ls
+: 1644391406:0;./01_hello
+: 1644391408:0;rm 01_hello
+: 1644391448:0;v
+: 1644391655:0;cd 02_vars
+: 1644391659:0;go run main.go
+: 1644392321:0;cd 03_packages
+: 1644392323:0;go run main.go
+: 1644392769:0;v
+: 1644392795:0;clear
+: 1644392801:0;cd 04
+: 1644392802:0;cd 04_functions
+: 1644392804:0;go run main.go
+: 1644393478:0;cd ../05_arrays_slices
+: 1644393480:0;go run main.go
+: 1644393823:0;cd ../06_conditionals
+: 1644393929:0;go run main.go
+: 1644394011:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1644441711:0;drive init
+: 1644441743:0;drive push --help
+: 1644441816:0;drive 7_pasos_para_convertir_tus_suenos_en_realidad.pdf Autodesarrollo/
+: 1644441822:0;drive push -h
+: 1644441850:0;man drive
+: 1644441884:0;drive push 7_pasos_para_convertir_tus_suenos_en_realidad.pdf
+: 1644441896:0;drive push 7_pasos_para_convertir_tus_suenos_en_realidad.pdf Autodesarrollo/
+: 1644441910:0;drive push Autodesarrollo/ 7_pasos_para_convertir_tus_suenos_en_realidad.pdf
+: 1644441936:0;drive ls
+: 1644441947:0;drive mkdir Autodesarrollo
+: 1644441967:0;drive push /Autodesarrollo/ 7_pasos_para_convertir_tus_suenos_en_realidad.pdf
+: 1644441977:0;drive init
+: 1644442016:0;drive push 7_pasos_para_convertir_tus_suenos_en_realidad.pdf /Autodesarrollo/
+: 1644442029:0;drive --help
+: 1644442060:0;drive push -h
+: 1644442123:0;drive push -m 7_pasos_para_convertir_tus_suenos_en_realidad.pdf /Autodesarrollo/
+: 1644442129:0;drive push 7_pasos_para_convertir_tus_suenos_en_realidad.pdf
+: 1644442154:0;drive push 7_pasos_para_convertir_tus_suenos_en_realidad.pdf Los-7-Habitos-de-las-Personas-Altamente-Efectivas.pdf
+: 1644442274:0;go run main.go
+: 1644443025:0;cd University/Autodesarrollo
+: 1644443026:0;ls
+: 1644443028:0;cd Tema1
+: 1644443031:0;clear
+: 1644443034:0;l
+: 1644443052:0;cp ~/Programming/Books/c7eb0318-91fd-4276-9bfc-26202a758bbe.pdf .
+: 1644443056:0;vifm .
+: 1644443124:0;drive push normas-upal-manual.pdf /Autodesarrollo
+: 1644443236:0;drive push normas-upal-manual.pdf
+: 1644467578:0;cd Pictures/Cv-photo-editing
+: 1644467579:0;ls
+: 1644467581:0;vifm .
+: 1644476165:0;ping lan.leagueoflegends.com
+: 1644476177:0;poweroff
+: 1644483652:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1644527665:0;java -jar dl/LauncherFenix-Minecraft.jar
+: 1644564122:0;ping lan.leagueoflegends.com
+: 1644564132:0;poweroff
+: 1644569785:0;cd Programming/Codes
+: 1644569788:0;rm -rf sitehost
+: 1644569789:0;clear
+: 1644569790:0;l
+: 1644569804:0;rm -rf learn-go
+: 1644569805:0;clear
+: 1644569807:0;ls
+: 1644569810:0;clear
+: 1644569817:0;mkdir lilab
+: 1644569818:0;cd lilab
+: 1644569822:0;v
+: 1644570667:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1644571624:0;pacmd load-module module-alsa-source device=hw:Loopback,1,0
+: 1644572205:0;python3
+: 1644576178:0;python3 test.py
+: 1644576249:0;dig
+: 1644576253:0;netstat
+: 1644576362:0;free /proc/meminfo
+: 1644576372:0;df /proc/meminfo
+: 1644576378:0;cat /proc/meminfo
+: 1644578254:0;ping lan.leagueoflegends.com
+: 1644578259:0;poweroff
+: 1644581122:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1644605744:0;cd Programming/Codes
+: 1644605749:0;mkdir django-running
+: 1644605750:0;tmux-sessionizer
+: 1644613540:0;rm -rf django-running
+: 1644696066:0;ping lan.leagueoflegends.com
+: 1644696092:0;poweroff
+: 1644702646:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1644703687:0;cd Programming/Codes
+: 1644703694:0;mkdir django-crash-course
+: 1644703703:0;tmux-sessionizer
+: 1644703707:0;clear
+: 1644703822:0;pipenv init
+: 1644703835:0;pipenv -h
+: 1644703870:0;pipenv install django
+: 1644703946:0;mariadb
+: 1644703958:0;pipenv shell
+: 1644703960:0;v
+: 1644703982:0;django-admin startproject pollster
+: 1644703987:0;ls
+: 1644704026:0;v
+: 1644704044:0;cd pollster
+: 1644704044:0;ls
+: 1644704047:0;pipenv shell
+: 1644704176:0;python manage.py runserver
+: 1644704179:0;ls
+: 1644704181:0;cd pollster
+: 1644704187:0;python manage.py runserver
+: 1644704250:0;python manage.py migrate
+: 1644704300:0;python manage.py startapp polls
+: 1644704803:0;python manage.py makemigrations polls
+: 1644704846:0;python manage.py migrate
+: 1644704869:0;python
+: 1644704879:0;python manage.py shell
+: 1644705081:0;python manage.py makemigrations polls
+: 1644705087:0;python manage.py shell
+: 1644705302:0;python manage.py createsuperuser
+: 1644705328:0;clear
+: 1644705335:0;python manage.py runserver
+: 1644709260:0;python manage.py startapp pages
+: 1644709263:0;python manage.py runserver
+: 1644710585:0;tmux-sessionizer
+: 1644711009:0;ip addr
+: 1644711216:0;node
+: 1644724109:0;cd Programming/Codes
+: 1644724115:0;mkdir django-and-react
+: 1644724116:0;cd django-
+: 1644724118:0;cd django-and-react
+: 1644724341:0;pipenv install django djangorestframework
+: 1644724353:0;pipenv install django djangorestframework django-rest-knox
+: 1644724519:0;tmux-sessionizer
+: 1644724523:0;pipenv shell
+: 1644724532:0;v
+: 1644724542:6;pipenv shell
+: 1644724564:0;clear
+: 1644724567:0;django-admin startproject lead-manager
+: 1644724571:0;django-admin startproject lead_manager
+: 1644724580:0;clear
+: 1644724584:0;pipenv shell
+: 1644724587:0;cd lead_manager
+: 1644724590:0;clear
+: 1644724590:0;ls
+: 1644724606:0;python manage.py startapp leads
+: 1644724607:0;ls
+: 1644724718:0;v
+: 1644724802:0;clear
+: 1644724818:0;python manage.py makemigrations leads
+: 1644724831:0;python manage.py migrate
+: 1644725004:0;pycritty -o 9
+: 1644725005:0;pycritty -o .9
+: 1644725008:0;pycritty -o .95
+: 1644725315:0;python manage.py runserver
+: 1644725435:0;cd
+: 1644725439:0;cd Yoangel_tesis/laboratorio-ammal
+: 1644725440:0;v
+: 1644725443:0;,
+: 1644725446:0;tmux-sessions
+: 1644725463:0;cd Yoangel_tesis/laboratorio-ammal
+: 1644725464:0;v
+: 1644725471:0;tmux-sessions
+: 1644726002:0;python manage.py runserver
+: 1644726006:0;pipenv shell
+: 1644726011:0;cd lead_manager/
+: 1644726013:0;ls
+: 1644726016:0;python manage.py runserver
+: 1644726026:1;python manage.py startapp frontend
+: 1644726052:0;mkdir -p ./frontend/src/components/
+: 1644726074:0;mkdir -p ./frontend/{static,templates}/frontend
+: 1644726121:0;cd ..
+: 1644726122:0;ls
+: 1644726124:0;clear
+: 1644726126:0;npm init
+: 1644726132:0;npm init -y
+: 1644726137:0;clear
+: 1644726143:0;cat package.json
+: 1644726145:0;clear
+: 1644726157:0;npm i -D webpack webpack-cli
+: 1644726314:0;npm i -D @babel/core babel-loader @babel/preset-env @babel/preset-react babel-plugin-transform-class-properties
+: 1644726451:0;npm i react react-dom prop-types
+: 1644727238:0;npm run build
+: 1644727245:0;webpack --help
+: 1644727247:0;npm --help
+: 1644727266:0;npm help npm
+: 1644727283:0;npm run dev
+: 1644727342:0;webpack --help
+: 1644727343:0;clear
+: 1644727398:0;npm run dev
+: 1644727638:0;cd client
+: 1644727639:0;v
+: 1644727659:0;tmux-sessionizer
+: 1644727662:0;ls
+: 1644727662:0;v
+: 1644727672:0;tmux-sessions
+: 1644727715:0;npm run dev
+: 1644727884:0;npm run build
+: 1644728723:0;ping lan.leagueoflegends.com
+: 1644728730:0;poweroff
+: 1644734084:0;cd Programming/Codes
+: 1644734154:0;mariad
+: 1644734155:0;mariadb
+: 1644734157:0;sudo mariadb
+: 1644734171:0;sudo systemctl start mariadb.service
+: 1644734175:0;mariadb
+: 1644734180:0;mariadb --user admin
+: 1644734183:0;mariadb --user admin -p
+: 1644734212:0;mysql -u root -p
+: 1644734245:0;su
+: 1644734796:0;mysql --user=root mysql
+: 1644734796:0;mysql --user=root mysql
+: 1644734722:0;mariadb --user root
+: 1644734791:0;sudo systemctl stop mariadb.service
+: 1644734794:0;mariadb --user root
+: 1644734857:0;mariadb --user root -p
+: 1644734901:0;sudo mariadb
+: 1644734912:0;mariadb
+: 1644734917:0;mariadb --user mr
+: 1644734923:0;sudo mariadb
+: 1644734942:0;sudo mariadb -u root -p
+: 1644734946:0;clear
+: 1644734960:0;cd Programming/Codes
+: 1644734961:0;clear
+: 1644736192:0;mkdir djangorest-tutorial
+: 1644736195:0;tmux-sessionizer
+: 1644736206:0;pipenv install django djangorestframework
+: 1644736284:0;pipenv shell
+: 1644736296:0;django-admin startproject tutorial
+: 1644736299:0;v
+: 1644736302:0;cd tutorial
+: 1644736302:0;ls
+: 1644736314:0;v
+: 1644736521:0;nmap -sP
+: 1644736527:0;nmap -sP 127.0.0.1
+: 1644736603:0;python manage.py makemigrations
+: 1644736608:0;pipenv shell
+: 1644736611:0;python manage.py makemigrations
+: 1644736615:0;cd tutorial
+: 1644736617:0;python manage.py makemigrations
+: 1644736643:0;pipenv install mysqlclient
+: 1644736886:0;python manage.py makemigrations
+: 1644736897:0;mariadb --user root
+: 1644736899:0;mariadb --user root -p
+: 1644737112:0;python manage.py makemigrations
+: 1644737163:0;python manage.py migrate
+: 1644737179:0;mariadb --user root -p
+: 1644737278:0;python manage.py startapp quickstart
+: 1644737736:0;python manage.py makemigrations
+: 1644737743:0;python manage.py migrate
+: 1644737756:0;python manage.py createsuperuser
+: 1644737775:0;python manage.py runserver
+: 1644739124:0;python manage.py makemigrations
+: 1644739137:0;pipenv install djangorestframework_simplejw
+: 1644739141:0;pipenv install djangorestframework_simplejwt
+: 1644739180:0;python manage.py makemigrations
+: 1644739203:0;python manage.py migrate
+: 1644740722:0;python manage.py runserver
+: 1644741607:0;ping lan.leagueoflegends.com
+: 1644741615:0;poweroff
+: 1644746734:0;sudo systemctl stop mariadb.service
+: 1644746734:0;mysqld_safe --skip-grant-tables
+: 1644746705:0;cd Programming/Codes
+: 1644746706:0;clear
+: 1644746730:0;mkdir dolar-visualizer
+: 1644746731:0;cd dolar-visualizer
+: 1644746733:0;clear
+: 1644746735:0;tmux-sessionizer
+: 1644746747:0;v
+: 1644746973:0;mkdir backend
+: 1644746975:0;cd backend
+: 1644747009:0;sudo pacman -S postgresql
+: 1644747084:0;sudo pacman -Sy
+: 1644747201:0;sudo pacman -S postgresql
+: 1644747354:0;postgresql-check-db-dir
+: 1644747403:0;initdb -D /var/lib/postgres/data
+: 1644747407:0;sudo initdb -D /var/lib/postgres/data
+: 1644747412:0;su
+: 1644747854:0;initdb -D /var/lib/postgres/data
+: 1644747854:0;initdb --locale=en_US.UTF-8 -E UTF8 -D /var/lib/postgres/data
+: 1644747461:0;postgres
+: 1644747467:0;postgres -D
+: 1644747470:0;postgres --help
+: 1644747494:0;sudo -u postgres  �i  initdb -D '/var/lib/postgres/data'
+: 1644747501:0;sudo -u postgres -i initdb -D '/var/lib/postgres/data'
+: 1644747518:0;sudo systemctl enable postgresql
+: 1644747522:0;sudo systemctl start postgresql
+: 1644747532:0;sudo -u postgres psql
+: 1644747806:0;psql
+: 1644747809:0;psql -u root
+: 1644747816:0;psql -u postgres
+: 1644747820:0;psql --user postgres
+: 1644747867:0;pipenv install django djangorestframework djangorestframework_simplejwt
+: 1644747919:0;cd ..
+: 1644747922:0;git init
+: 1644747925:0;v
+: 1644747965:0;pipenv shell
+: 1644747970:0;backend
+: 1644747971:0;clear
+: 1644747973:0;git status
+: 1644747995:0;rm -rf backend
+: 1644748000:0;pipenv install django djangorestframework djangorestframework_simplejwt
+: 1644748034:0;clear
+: 1644748036:0;pipenv shell
+: 1644748038:0;ls
+: 1644748056:0;django-admin startproject backend
+: 1644748061:0;pipenv shell
+: 1644748064:0;cd backend
+: 1644748064:0;ls
+: 1644748081:0;python manage.py startapp api
+: 1644748084:0;v
+: 1644748263:0;psql --user postgres
+: 1644748739:0;psql
+: 1644748742:0;psql --user mr
+: 1644748750:0;psql --user postgres
+: 1644748798:0;psql --user django_user
+: 1644748802:0;psql
+: 1644748805:0;psql django_user
+: 1644748807:0;sudo psql django_user
+: 1644748818:0;psql --user postgres
+: 1644748827:0;psql --help
+: 1644748839:0;psql -U mr
+: 1644748843:0;psql -U mr -W 3_Arepas
+: 1644748848:0;psql -U mr -W
+: 1644748860:0;psql -U mr
+: 1644748866:0;psql --username mr
+: 1644748869:0;psql --username postgres
+: 1644748423:0;clear
+: 1644748907:0;python manage.py migrate
+: 1644748917:0;pipenv install psycopg2
+: 1644748983:0;python manage.py migrate
+: 1644748993:0;psql --username pos
+: 1644748995:0;psql --username postgres
+: 1644749229:0;python manage.py makemigrations
+: 1644749236:0;python manage.py migrate
+: 1644749285:0;git config user.email "mrivasmahecha2003@gmail.com"
+: 1644749298:0;git config user.name "AngryMorrocoy"
+: 1644749311:0;git config user.email "mrivasmahecha@gmail.com"
+: 1644749550:0;v
+: 1644749567:0;tmux-sessions
+: 1644749793:0;python manage.py runserver
+: 1644750002:0;pipenv install requests
+: 1644751043:0;,
+: 1644751044:0;tmux-sessions
+: 1644751051:0;v
+: 1644751165:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1644786697:0;sudo create_ap -n wlp1s0 Mili 3_Arepas
+: 1644786719:0;create_ap --help
+: 1644786730:0;sudo create_ap -n wlp1s0 Mili 3_Arepas
+: 1644786747:0;ip addr
+: 1644786837:0;musikcube
+: 1644788543:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1644802510:0;tmux-sessionizer
+: 1644802517:0;v
+: 1644802814:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1644802842:0;musikcube
+: 1644812147:0;pipenv install python-dotenv
+: 1644812304:0;v
+: 1644812343:0;python
+: 1644812491:0;python manage.py runserver
+: 1644812495:0;cd backend
+: 1644812496:0;python manage.py runserver
+: 1644812504:0;python
+: 1644812518:0;python manage.py runserver
+: 1644813404:0;ping lan.leagueoflegends.com
+: 1644812340:1924;pipenv shell
+: 1644814266:0;tmux-sessions
+: 1644814268:0;,
+: 1644814269:0;tmux-sessions
+: 1644814275:0;poweroff
+: 1644816069:0;tmux-sessionizer
+: 1644816079:0;pipenv shell
+: 1644816095:0;python backend/manage.py runserver
+: 1644816103:0;v
+: 1644818266:0;python backend/manage.py runserver
+: 1644819205:0;curl -d http://localhost:8000/api/dolar-history/
+: 1644819212:0;curl --help
+: 1644819219:0;curl -d {} http://localhost:8000/api/dolar-history/
+: 1644819235:0;curl -d {} http://localhost:8000/api/dolar-history\?uwu\=10
+: 1644819263:0;curl -d {} http://localhost:8000/api/dolar-history\?uwu\=10/
+: 1644819284:0;curl -d {} http://localhost:8000/api/dolar-history/\?uwu\=10/
+: 1644819399:0;curl -d {} http://localhost:8000/api/dolar-history/\?uwu\=10
+: 1644820189:0;clear
+: 1644820197:0;tmux-sessions
+: 1644820226:0;ping lan.leagueoflegends.com
+: 1644822206:0;poweroff
+: 1644827008:0;tmux-sessionizer
+: 1644827016:0;v
+: 1644827019:0;pipenv shell
+: 1644827049:0;v
+: 1644829671:0;python backend/manage.py runserver
+: 1644829857:0;v
+: 1644829929:0;python3
+: 1644830001:0;pycritty ls
+: 1644830011:0;pycritty -t gruvbox-material-medium-dark
+: 1644830015:0;pycritty -t gruvbox-material-dark
+: 1644830020:0;pycritty -t gruvbox-material-hard-dark
+: 1644830023:0;pycritty -o 1
+: 1644830025:0;clear
+: 1644830033:0;pycritty ls
+: 1644830050:0;pycritty -t gruvbox-dark
+: 1644830052:0;clear
+: 1644830055:0;pycritty -o .95
+: 1644830061:0;pycritty -t gruvbox-material-hard-dark
+: 1644830081:0;v qtile_theme.json
+: 1644830088:0;ls .config/qtile/themes
+: 1644830239:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1644830290:0;pipenv shell
+: 1644830293:0;htop
+: 1644834139:0;python backend/manage.py runserver
+: 1644835487:0;python backend/manage.py shell
+: 1644835492:0;pipenv shell
+: 1644835496:0;python backend/manage.py shell
+: 1644837767:0;curl -d {} http://localhost:8000/api/dolar-history/\?count\=100
+: 1644838269:0;curl -d {} http://localhost:8000/api/dolar-history/\?count\=500
+: 1644839256:0;pipenv install django-filter
+: 1644830305:10261;v
+: 1644840568:0;clear
+: 1644840646:0;v
+: 1644840650:0;python backend/manage.py runserver
+: 1644860611:0;poweroff --reboot
+: 1644860892:0;tmux-sessionizer
+: 1644860899:0;v
+: 1644860904:0;pipenv shell
+: 1644860926:0;v
+: 1644861015:0;python backend/manage.py runserver
+: 1644865053:0;pacmd load-module module-alsa-source device=hw:Loopback,1,0
+: 1644867705:0;sudo
+: 1644867707:0;sudo cr
+: 1644867712:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1644891943:0;tmux-sessionizer
+: 1644891950:0;python backend/manage.py runserver
+: 1644891951:0;v
+: 1644892131:0;autopep8
+: 1644892781:0;curl -d {} http://localhost:8000/api/dolar-history/\?count\=500
+: 1644892785:0;curl -d {} http://localhost:8000/api/dolar-history/
+: 1644894589:0;pipenv shell
+: 1644894603:0;cd backend
+: 1644894614:0;python manage.py createsuperuser
+: 1644894810:0;curl -d {} http://localhost:8000/api/dolar-history/ -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ0ODk1MDY1LCJpYXQiOjE2NDQ4OTQ3NjUsImp0aSI6ImZjNjcxNDhhNmQ0MzRlYjU4NTVlNmZiZGQ2ODhkNGZiIiwidXNlcl9pZCI6MX0.bh_lRYBdcPXApl5ZdF_QXGVAOfHFoxAwGgcdSYRtbac"
+: 1644895042:0;python
+: 1644895055:0;curl -d {} http://localhost:8000/api/dolar-history/ -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ0ODk1MDY1LCJpYXQiOjE2NDQ4OTQ3NjUsImp0aSI6ImZjNjcxNDhhNmQ0MzRlYjU4NTVlNmZiZGQ2ODhkNGZiIiwidXNlcl9pZCI6MX0.bh_lRYBdcPXApl5ZdF_QXGVAOfHFoxAwGgcdSYRtbac"
+: 1644895058:0;python backend/manage.py runserver
+: 1644895062:0;curl -d {} http://localhost:8000/api/dolar-history/ -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ0ODk1MDY1LCJpYXQiOjE2NDQ4OTQ3NjUsImp0aSI6ImZjNjcxNDhhNmQ0MzRlYjU4NTVlNmZiZGQ2ODhkNGZiIiwidXNlcl9pZCI6MX0.bh_lRYBdcPXApl5ZdF_QXGVAOfHFoxAwGgcdSYRtbac"
+: 1644895191:0;1
+: 1644895252:0;python backend/manage.py runserver
+: 1644895537:0;psql --username postgres
+: 1644895744:0;pipenv shell
+: 1644895754:0;python backend/manage.py collectstatic
+: 1644895816:0;v
+: 1644895967:0;python backend/manage.py collectstatic
+: 1644895976:0;clear
+: 1644895976:0;python backend/manage.py collectstatic
+: 1644896117:0;cd backend
+: 1644896119:0;python backend/manage.py collectstatic
+: 1644896123:0;python manage.py collectstatic
+: 1644896499:0;clear
+: 1644896540:0;python manage.py collectstatic
+: 1644896546:0;rm -rf static
+: 1644896601:0;curl -d {} http://localhost:8000/api/token
+: 1644896615:0;curl -d {} http://localhost:8000/api/token/
+: 1644896650:0;curl -d {} http://localhost:8000/api/token/ -H
+: 1644896651:0;curl -d {} http://localhost:8000/api/token/
+: 1644896653:0;clear
+: 1644896655:0;curl -d {} http://localhost:8000/api/token/
+: 1644896777:0;curl -d {} http://locallhost:8000/api/token/
+: 1644896787:0;curl -d {} http://locallhost:8000/api/token/
+: 1644896795:0;curl -d {} http://localhost:8000/api/token/
+: 1644896817:0;curl -d {} http://localhost:8000/api/token/ -H "Content-Type: application/json"
+: 1644896833:0;curl -d {"username": "mr", "password": "3_Arepas"} http://localhost:8000/api/token/ -H "Content-Type: application/json"
+: 1644896841:0;curl -d '{"username": "mr", "password": "3_Arepas"}' http://localhost:8000/api/token/ -H "Content-Type: application/json"
+: 1644896878:0;curl -d {} "http://localhost:8000/api/dolar-history" -H "Autentication: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc2NDMyODQyLCJpYXQiOjE2NDQ4OTY4NDIsImp0aSI6IjE4MjRlNTE4MThjNzQyMWZhZmUzMDVjYzFhYzllMDliIiwidXNlcl9pZCI6Mn0.6yIJ8nboDOB9waTuFSSTkvAtNe52BrcjbLpRGcBoE9w"
+: 1644896913:0;curl -d '{"username": "admin", "password": "3_Arepas"}' http://localhost:8000/api/token/ -H "Content-Type: application/json"
+: 1644896945:0;curl -d {} "http://localhost:8000/api/dolar-history" -H "Autentication: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc2NDMyOTE0LCJpYXQiOjE2NDQ4OTY5MTQsImp0aSI6IjJlZTVlN2NmYzAyMzQzNTI4YWE0M2IzNDk3NjI0OWMxIiwidXNlcl9pZCI6MX0.GeujgvqsCYscZr6ZhDAx0la1RN1T2UbdtgpaDwEiPlA"
+: 1644896958:0;curl -d {} "http://localhost:8000/api/dolar-history/" -H "Autentication: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc2NDMyOTE0LCJpYXQiOjE2NDQ4OTY5MTQsImp0aSI6IjJlZTVlN2NmYzAyMzQzNTI4YWE0M2IzNDk3NjI0OWMxIiwidXNlcl9pZCI6MX0.GeujgvqsCYscZr6ZhDAx0la1RN1T2UbdtgpaDwEiPlA"
+: 1644896965:0;curl -d {} "http://localhost:8000/api/dolar-history/" -H "Authentication: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc2NDMyOTE0LCJpYXQiOjE2NDQ4OTY5MTQsImp0aSI6IjJlZTVlN2NmYzAyMzQzNTI4YWE0M2IzNDk3NjI0OWMxIiwidXNlcl9pZCI6MX0.GeujgvqsCYscZr6ZhDAx0la1RN1T2UbdtgpaDwEiPlA"
+: 1644896973:0;curl -d {} "http://localhost:8000/api/dolar-history/" -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc2NDMyOTE0LCJpYXQiOjE2NDQ4OTY5MTQsImp0aSI6IjJlZTVlN2NmYzAyMzQzNTI4YWE0M2IzNDk3NjI0OWMxIiwidXNlcl9pZCI6MX0.GeujgvqsCYscZr6ZhDAx0la1RN1T2UbdtgpaDwEiPlA"
+: 1644897011:0;curl -d {} "http://localhost:8000/api/dolar-history/" -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc2NDMyODQyLCJpYXQiOjE2NDQ4OTY4NDIsImp0aSI6IjE4MjRlNTE4MThjNzQyMWZhZmUzMDVjYzFhYzllMDliIiwidXNlcl9pZCI6Mn0.6yIJ8nboDOB9waTuFSSTkvAtNe52BrcjbLpRGcBoE9w"
+: 1644899652:0;v
+: 1644901824:0;git status
+: 1644901826:0;v
+: 1644902163:0;ping lan.leagueoflegends.com
+: 1644903886:0;tmux-sessions
+: 1644903891:0;,
+: 1644903893:0;tmux-sessionizer
+: 1644903898:0;clear
+: 1644903898:0;v
+: 1644903905:0;gh repo create
+: 1644904041:0;git push
+: 1644904052:0;git push --set-upstream origin master
+: 1644904066:0;v README.md
+: 1644905221:0;python backend/manage.py runserver
+: 1644905224:0;pipenv shell
+: 1644905227:0;python backend/manage.py runserver
+: 1644905253:0;pipenv shell
+: 1644905255:0;v
+: 1644906537:0;ping lan.leagueoflegends.com
+: 1644906577:0;v
+: 1644906647:0;poweroff
+: 1644911868:0;tmux-sessionizer
+: 1644911873:0;v
+: 1644913266:0;pipenv shell
+: 1644915017:0;cd Programming/Codes
+: 1644915019:0;clear
+: 1644915032:0;sudo pacman -S xsel
+: 1644915050:0;tmux-sessionizer
+: 1644915053:0;v
+: 1644915121:0;echo "uwu" | pbcopy
+: 1644915159:0;cd Programming/Codes
+: 1644915163:0;mkdir github-actions-test
+: 1644915166:0;tmux-sessionizer
+: 1644915206:0;git init
+: 1644915208:0;clear
+: 1644915859:0;v
+: 1644915874:0;cd ..
+: 1644915876:0;rm -rf github-actions-test
+: 1644915878:0;git clone https://github.com/AngryMorrocoy/github-actions-testing
+: 1644915884:0;cd github-actions-testing
+: 1644915885:0;clear
+: 1644915886:0;ls
+: 1644915887:0;v
+: 1644916080:0;v
+: 1644916208:0;git status
+: 1644916210:0;git add .
+: 1644916215:0;git commit -m "First commit"
+: 1644916224:0;git config user.email "mrivasmahecha@gmail.com"
+: 1644916228:0;git config user.name "AngryMorrocoy"
+: 1644916232:0;git commit -m "First commit"
+: 1644916237:0;git push origin main
+: 1644916371:0;mkdir -p .github/workflows/
+: 1644916398:0;v .github/workflows/push.yml
+: 1644916836:0;docker ps
+: 1644916930:0;systemctl start docker
+: 1644916952:0;docker ps
+: 1644916975:0;gpasswd -a $USER docker
+: 1644916984:0;echo $USER
+: 1644916990:0;sudo gpasswd -a mr docker
+: 1644916998:0;docker ps
+: 1644917038:0;sudo newgrp docker
+: 1644917045:0;docker ps
+: 1644917050:0;newgrp docker
+: 1644917052:0;ls
+: 1644917055:0;docker ps
+: 1644917057:0;clear
+: 1644917201:0;rm -rf .github
+: 1644917202:0;clear
+: 1644917262:0;man docker
+: 1644917268:1;docker
+: 1644917270:0;docker ps
+: 1644917276:0;newgrp docker
+: 1644917279:0;docker ps
+: 1644917280:0;clear
+: 1644917292:0;docker build --help
+: 1644917327:0;docker build -t gh-actions-test
+: 1644917333:0;docker build -t gh-actions-test .
+: 1644917348:0;docker ps
+: 1644917351:0;docker --help
+: 1644917368:0;docker image
+: 1644917371:0;docker image ls
+: 1644917389:0;docker image prune
+: 1644917394:0;docker image rm
+: 1644917398:0;docker image rm --help
+: 1644917413:0;docker image rm ec13706e8c9a
+: 1644917414:0;clear
+: 1644917417:0;docker image ls
+: 1644917438:0;docker image rm
+: 1644917443:0;clear
+: 1644917445:0;docker image ls
+: 1644917458:0;docker image rm b68acc509975
+: 1644917464:0;newgrp docker
+: 1644917465:0;docker image rm b68acc509975
+: 1644917468:0;docker image ls
+: 1644917486:0;docker image rm cbf8aa9c6102 a50345a91e10
+: 1644917491:0;docker image ls
+: 1644917499:0;docker image rm 3eaf6d5fdf93
+: 1644917521:0;docker image ls | grep eb6
+: 1644917525:0;docker image ls -a | grep eb6
+: 1644917529:0;docker image rm --help
+: 1644917533:0;docker image rm -f 3eaf6d5fdf93
+: 1644917535:0;docker image ls
+: 1644917542:0;docker image rm -f a50345a91e10
+: 1644917544:0;clear
+: 1644917546:0;docker image rm -f a50345a91e10
+: 1644917548:0;docker image ls
+: 1644917557:0;docker image rm -f 42c2774b4ddd
+: 1644917559:0;docker image ls
+: 1644917578:0;docker run --help
+: 1644917624:0;v Dockerfile
+: 1644917670:0;clear
+: 1644917672:0;docker image ls
+: 1644917799:0;docker run -p 8000:80 gh-actions-test
+: 1644917836:0;clear
+: 1644917867:0;heroku container:login
+: 1644917889:0;heroku login
+: 1644917902:0;heroku container:login
+: 1644917922:0;heroku create
+: 1644918046:0;heroku container:push gh-actions-test
+: 1644918054:0;heroku container:push web
+: 1644918062:0;heroku --hel
+: 1644918063:0;heroku --help
+: 1644918078:0;heroku git
+: 1644918088:0;clear
+: 1644918108:0;heroku webhooks
+: 1644918131:0;heroku config
+: 1644918185:0;heroku create
+: 1644918217:0;heroku container:login
+: 1644918229:0;heroku container:push web
+: 1644918247:0;docker build -t gh-actions-test .
+: 1644918330:0;v Dockerfile
+: 1644918574:0;v heroku.yml
+: 1644918590:0;git add .
+: 1644918599:0;git commit -m "Some things with docker"
+: 1644918600:0;clear
+: 1644918603:0;docker build -t gh-actions-test .
+: 1644918619:0;docker run -p 8000:80 gh-actions-test
+: 1644918631:0;v Dockerfile
+: 1644918646:0;git add .
+: 1644918655:0;git commit --ammend
+: 1644918657:0;git commit -a
+: 1644918679:0;git commit --amend
+: 1644918683:0;git push origin main
+: 1644918688:0;clear
+: 1644918691:0;docker build -t gh-actions-test .
+: 1644918928:0;docker image ls
+: 1644918941:0;docker run gh-actions-test
+: 1644918973:0;v Dockerfile
+: 1644918979:0;docker build -t gh-actions-test .
+: 1644919033:0;v Dockerfile
+: 1644919861:0;heroku open
+: 1644919878:0;clear
+: 1644920051:0;docker build -t gh-actions-test .
+: 1644920079:0;docker run gh-actions-test
+: 1644920108:0;docker build -t gh-actions-test .
+: 1644920120:0;docker run gh-actions-test
+: 1644920242:0;docker build -t gh-actions-test .
+: 1644920302:0;docker run gh-actions-test
+: 1644920313:0;docker build -t gh-actions-test .
+: 1644920315:0;docker run gh-actions-test
+: 1644920351:0;docker build -t gh-actions-test .
+: 1644920357:0;docker run gh-actions-test
+: 1644920400:0;docker build --build-arg PORT=8000 -t gh-actions-test .
+: 1644920405:0;docker run gh-actions-test
+: 1644920526:0;docker build --build-arg PORT=8000 -t gh-actions-test .
+: 1644920540:0;docker build --build-arg PORT=9090 -t gh-actions-test .
+: 1644920552:0;docker run gh-actions-test
+: 1644920587:0;docker build --build-arg PORT=9090 -t gh-actions-test .
+: 1644920594:0;docker run gh-actions-test
+: 1644920672:0;docker build --build-arg PORT=9090 -t gh-actions-test .
+: 1644920727:0;sed -i -e 's/$PORT/8080/g' nginx.conf
+: 1644920747:0;docker build --build-arg PORT=9090 -t gh-actions-test .
+: 1644920753:0;docker run gh-actions-test
+: 1644920802:0;docker build --build-arg PORT=9090 -t gh-actions-test .
+: 1644920847:0;docker run gh-actions-test
+: 1644920868:0;docker build --build-arg PORT=9090 -t gh-actions-test .
+: 1644920904:0;docker run gh-actions-test
+: 1644920943:0;newgrp docker
+: 1644918087:0;heroku --help
+: 1644920948:0;clear
+: 1644920958:0;docker --help
+: 1644920989:0;docker --help exec
+: 1644920992:0;docker ps
+: 1644921006:0;clear
+: 1644921022:0;docker build --build-arg PORT=9090 -t gh-actions-test .
+: 1644921198:0;heroku open
+: 1644921046:116;docker run -p 8000:9090 gh-actions-test
+: 1644921291:0;heroku container:push
+: 1644921296:0;heroku container:push --recursive
+: 1644921339:0;heroku create --help
+: 1644921369:0;heroku create docker-tests
+: 1644921378:0;heroku create hero-docker-test
+: 1644921408:0;heroku container:push web
+: 1644921417:0;heroku update
+: 1644921421:0;heroku update --help
+: 1644921428:0;heroku update:COMMAND
+: 1644921438:0;heroku help update
+: 1644921453:0;heroku open
+: 1644921476:0;heroku apps
+: 1644921510:0;heroku git:remote -a hero-docker-test
+: 1644921524:0;heroku open
+: 1644921538:0;heroku container:push web
+: 1644921550:0;docker ps
+: 1644921556:0;newgrp docker
+: 1644921559:0;heroku container:push web
+: 1644921726:0;heroku container:release web
+: 1644921737:0;heroku open
+: 1644921773:0;heroku ls
+: 1644921795:0;heroku --help
+: 1644921806:0;heroku run bash
+: 1644921824:0;heroku help container
+: 1644921841:0;heroku logs --tail
+: 1644921873:0;heroku logs | more
+: 1644921899:0;heroku logs
+: 1644922039:0;git commit -a -m "Otro commit de corrección"
+: 1644922043:0;git push
+: 1644922056:0;heroku container:push web
+: 1644922061:0;newgrp docker
+: 1644922062:0;heroku container:push web
+: 1644922093:0;git commit -a -m "Otro commit de corrección2"
+: 1644922096:0;git push
+: 1644922100:0;heroku container:push web
+: 1644922174:0;heroku container:release web
+: 1644922192:0;heroku logs
+: 1644922447:0;git push
+: 1644922458:0;heroku container:push web
+: 1644922493:0;heroku container:release web
+: 1644923411:0;heroku help container
+: 1644923427:0;heroku --help
+: 1644923436:0;heroku run sh
+: 1644923472:0;v Dockerfile
+: 1644924543:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1644927887:0;musikcube
+: 1644928260:0;tmux-sessions
+: 1644928297:0;mkdir metadata-auto-reader
+: 1644928298:0;tmux-sessionizer
+: 1644928324:0;pip install audio-metadata && echo audio-metadata > requirements.txt
+: 1644928342:0;which songdownloader
+: 1644928360:0;v /home/mr/.local/bin/songdownloader
+: 1644928412:0;v metadata-updater.py
+: 1644928470:0;python3 metadata_updater.py
+: 1644928518:0;v /home/mr/.local/bin/songdownloader
+: 1644928964:0;python3 metadata_updater.py
+: 1644928970:0;python3 metadata_updater.py .
+: 1644929003:0;python3 metadata_updater.py u
+: 1644929084:0;python3 metadata_updater.py .
+: 1644929203:0;pip uninstall audio-metadata
+: 1644929484:0;pip install eyeD3 && echo eyeD3 > requirements.txt
+: 1644929688:0;python3
+: 1644929887:0;python3 metadata_updater.py
+: 1644929898:0;python3 metadata_updater.py /home/mr/local_music/
+: 1644930038:0;python3
+: 1644930138:0;python3 metadata_updater.py /home/mr/local_music/
+: 1644930335:0;python3 metadata_updater.py -fx ogg /home/mr/local_music/
+: 1644930341:0;python3 metadata_updater.py /home/mr/local_music/
+: 1644931095:0;python3 metadata_updater.py /run/media/Shared/Shared/Music
+: 1644931319:0;tmux-sessions
+: 1644931327:0;musikcube
+: 1644931363:0;tmux-sessionizer
+: 1644931367:0;python3 metadata_updater.py /run/media/Shared/Shared/Music
+: 1644931379:0;musikcube
+: 1644931406:0;python3 metadata_updater.py /run/media/Shared/Shared/Music
+: 1644931412:0;musikcube
+: 1644931477:0;python3 metadata_updater.py /run/media/Shared/Shared/Music
+: 1644931481:0;musikcube
+: 1644931593:0;tmux-sessionizer
+: 1644931601:0;v
+: 1644931686:0;clear
+: 1644932710:0;musikcube
+: 1644923572:0;clear
+: 1644966128:0;heroku authorizations:create
+: 1644966865:0;git checkout HEAD
+: 1644966870:0;clearg
+: 1644966872:0;git status
+: 1644966873:0;v
+: 1644966880:0;git pull
+: 1644968271:0;heroku help auth
+: 1644968274:0;heroku help auth:login
+: 1644968280:0;heroku help auth:login -i
+: 1644968287:0;heroku auth:login -i
+: 1644968343:0;heroku whoami
+: 1644968351:0;heroku login
+: 1644968365:0;heroku auth:login -i
+: 1644968403:0;heroku whoami
+: 1644968512:0;echo mrivasmahecha2003@gmail.com | heroku auth:login -i
+: 1644968542:0;(echo mrivasmahecha2003@gmail.com echo 3_Arepas) | heroku auth:login -i
+: 1644968546:0;(echo mrivasmahecha2003@gmail.com echo 3_Arepas) | heroku login
+: 1644968565:0;(echo mrivasmahecha2003@gmail.com echo 3_Arepas) | heroku login -i
+: 1644968628:0;cat ~/.netrc
+: 1644968786:0;(echo mrivasmahecha2003@gmail.com echo 3_Arepas) | heroku login -i
+: 1644968818:0;(echo -e "mrivasmahecha2003@gmail.com\n3_Arepas") | heroku login -i
+: 1644968826:0;echo -e "a\nb"
+: 1644969007:0;(echo -e "mrivasmahecha20003@gmail.com" \
+: 1644969024:0;(echo -e "mrivasmahecha2003@gmail.com"
+: 1644969039:0;(echo "mrivasmahecha2003@gmail.com"\
+echo "3_Arepas") | heroku login -i
+: 1644969122:0;heroku help auth:login -i
+: 1644969127:0;heroku help login
+: 1644969138:0;(echo "mrivasmahecha2003@gmail.com"\
+echo "3_Arepas") | heroku login
+: 1644969150:0;(echo "mrivasmahecha2003@gmail.com" \
+echo "3_Arepas") | heroku login -i
+: 1644969160:0;(echo "mrivasmahecha2003@gmail.com" \
+echo "3_Arepas")
+: 1644969236:0;(echo "mrivasmahecha2003@gmail.com" \
+echo "3_Arepas") | heroku login -l
+: 1644969244:0;heroku login --help
+: 1644969251:0;heroku auth --help
+: 1644969689:0;heroku --help container
+: 1644969855:0;heroku --help container:push
+: 1644969899:0;heroku apps
+: 1644969916:0;heroku login -i
+: 1644970082:0;heroku --help container:release
+: 1644970404:0;heroku container:login
+: 1644970434:0;newgrp docker
+: 1644970436:0;heroku container:login
+: 1644970548:0;git pull
+: 1644970550:0;v
+: 1644970604:0;git commit -m "GHA Integration" -a
+: 1644970607:0;git push
+: 1644970671:0;heroku open
+: 1644970738:0;v
+: 1644970776:0;git push
+: 1644971354:0;v nginx.conf
+: 1644971562:0;docker ps
+: 1644971570:0;docker images
+: 1644971589:0;docker run -e PORT=8080 gh-actions-test
+: 1644971626:0;docker run -p 8080:80 -e PORT=80 gh-actions-test
+: 1644977770:0;musikcube
+: 1644979877:0;ip addr
+: 1644979898:0;docker ps
+: 1644979903:0;docker images prune
+: 1644979907:0;docker images --help
+: 1644979914:0;docker image prune
+: 1644979922:0;docker image ls
+: 1644980112:0;docker image ls | col
+: 1644980115:0;col --help
+: 1644980130:0;col 2
+: 1644980132:0;man col
+: 1644980153:0;docker image ls | col 2
+: 1644980180:0;ip addr
+: 1644980340:0;clear
+: 1644980347:0;git status
+: 1644980377:0;docker build --build-arg PORT=8000 -t gh-actions-test .
+: 1644980459:0;docker run -p 8080:8080 -e PORT=8080 gh-actions-test
+: 1644980506:0;docker build --build-arg PORT=8000 -t gh-actions-test .
+: 1644980513:0;docker run -p 8080:8080 -e PORT=8080 gh-actions-test
+: 1644980724:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1644984155:0;tmux-sessionizer
+: 1644984168:0;heroku addons
+: 1644984180:0;heroku config
+: 1644984795:0;npm init -y
+: 1644984804:0;v
+: 1644984856:0;node -v
+: 1644984864:0;newgrp docker
+: 1644984868:0;docker images
+: 1644985091:0;v
+: 1644985158:0;newgrp docker
+: 1644985169:0;docker build -t gh-actions-test .
+: 1644985201:0;docker run gh-actions-test
+: 1644985355:0;heroku log
+: 1644985359:0;heroku logs
+: 1644985416:0;git commit -m "Fixing stuff" -a
+: 1644985421:0;git push
+: 1644985495:0;heroku logs
+: 1644985577:0;node
+: 1644985598:0;git commit -m "Fixing stuff" -a
+: 1644985600:0;git push
+: 1644985625:0;heroku logs
+: 1644985916:0;v
+: 1644985952:0;git commit -m "Fixing stuff" -a
+: 1644985955:0;git push
+: 1644986034:0;heroku logs
+: 1644986148:0;heroku addons:create heroku-postgresql:hobby-dev\
+
+: 1644986180:0;heroku logs
+: 1644986369:0;heroku pg:credentials DATABASE
+: 1644986400:0;heroku config
+: 1644986708:0;node
+: 1644986831:0;node -e "process.env.DATABASE_URL = postgres://<username>:<password>@<host>/<dbname>" index.js
+: 1644986842:0;node -e "process.env.DATABASE_URL = 'postgres://<username>:<password>@<host>/<dbname>'" index.js
+: 1644986860:0;node index.js
+: 1644986884:0;DATABASE_URL="postgres://<username>:<password>@<host>/<dbname>"
+: 1644986885:0;node index.js
+: 1644986891:0;export DATABASE_URL="postgres://<username>:<password>@<host>/<dbname>"
+: 1644986892:0;node index.js
+: 1644987162:0;heroku help addons
+: 1644987166:0;heroku help addons:create
+: 1644987207:0;heroku addons:destroy heroku-postgresql:hobby-dev
+: 1644987276:0;heroku addons:create heroku-postgresql:hobby-dev --name TestDb\
+
+: 1644987289:0;heroku addons:create heroku-postgresql:hobby-dev --name rest-db\
+
+: 1644987298:0;heroku addons:create heroku-postgresql:hobby-dev --name test-db\
+
+: 1644987314:0;heroku addons
+: 1644987331:0;heroku addons:create heroku-postgresql:hobby-dev --name dolar-history-db\
+
+: 1644987346:0;heroku logs
+: 1644991575:0;ping lan.leagueoflegends.com
+: 1644992828:0;v
+: 1644992837:0;cd backend
+: 1644992841:0;python manage.py
+: 1644992844:0;python manage.py runserver
+: 1644992908:0;poweroff
+: 1644997115:0;tmux-sessionizer
+: 1644997120:0;v
+: 1644997320:0;clear
+: 1644997321:0;git status
+: 1644997324:0;git diff
+: 1644997332:0;git difftool
+: 1644997339:0;git difftool --help
+: 1644997348:0;git difftool --tool-help
+: 1644997355:0;git difftool --help
+: 1644997370:0;git difftool -x nvimdiff
+: 1644997387:0;git difftool --tool nvimdiff
+: 1644997395:0;v
+: 1644997400:0;git commit -m "Fixing stuff" -a
+: 1644997403:0;git push
+: 1644997411:0;clear
+: 1644997428:0;npm init vite .
+: 1644997443:0;npm init vite --help
+: 1644997451:0;npm init vite -f .
+: 1644997515:0;clear
+: 1644997517:0;l
+: 1644997520:0;clear
+: 1644997563:0;npm init vite -h
+: 1644997575:0;npm init vite --help
+: 1644997636:0;npx vite --help
+: 1644997659:0;npm init vite --help
+: 1644997856:0;clear
+: 1644997872:0;v
+: 1644997915:0;,
+: 1644997916:0;tmux-sessionizer
+: 1644997920:0;v
+: 1644997979:0;npm init vite frontend
+: 1644997993:0;cd frontend
+: 1644997999:0;v
+: 1644998027:0;git status
+: 1644998035:0;npm i
+: 1644998075:0;cd ../backend
+: 1644998077:0;clear
+: 1644998081:0;pipenv shell
+: 1644998089:0;cd backend
+: 1644998090:0;v
+: 1644998099:0;pipenv shell
+: 1644998101:0;cd frontend
+: 1644998104:0;git status
+: 1644998105:0;v
+: 1644998112:0;cd frontend
+: 1644998113:0;v
+: 1644998133:0;clear
+: 1644998143:3;v
+: 1644998153:0;python manage.py startapp frontend
+: 1644998161:0;v
+: 1644998208:0;clear
+: 1644998210:0;npm build
+: 1644998213:0;npm run build
+: 1644998306:0;v
+: 1644998845:0;cd ../backend
+: 1644998878:0;python manage.py runserver
+: 1644998881:0;pipenv shell
+: 1644998884:0;python manage.py runserver
+: 1644998890:0;cd backend
+: 1644998891:0;python manage.py runserver
+: 1644998934:0;npx vite --help
+: 1644998942:0;npx vite build --help
+: 1644999279:0;npm build
+: 1644999283:0;npm run build
+: 1645000309:0;npx vite --help
+: 1645000314:0;npx vite build --help
+: 1645000369:0;cd frontend
+: 1645000374:0;npm run django-dev
+: 1645000583:0;v
+: 1645000586:0;cd ..
+: 1645000589:0;cd dolar-visualizer
+: 1645000591:0;v .gitignore
+: 1645000658:0;git add .gitignore
+: 1645000665:0;git commit -m "Updated gitignore"
+: 1645000688:0;git st
+: 1645000689:0;git status
+: 1645000902:0;npm run dev
+: 1645000931:0;npm run django-dev
+: 1645001624:0;npm i axios antd react-financial-charts
+: 1645001722:0;v
+: 1645001726:0;npm i axios antd react-financial-charts
+: 1645001786:0;v
+: 1645002882:0;npm run dev
+: 1645002897:0;v
+: 1645002923:0;cd ..
+: 1645002923:0;v
+: 1645003473:3;npm uninstall antd
+: 1645003742:0;npm install dayjs @mantine/hooks @mantine/dates @mantine/core\
+
+: 1645004031:0;npm i help
+: 1645004035:0;npm i --help
+: 1645004041:0;npm --help
+: 1645004049:0;%1
+: 1645004057:0;npm -l
+: 1645004063:0;clear
+: 1645004068:0;npm --help
+: 1645004084:0;npm prune
+: 1645004100:0;npm uninstall dayjs @mantine/hooks @mantine/dates @mantine/core\
+
+: 1645004106:0;npm prune
+: 1645004115:0;npm fund
+: 1645004123:0;npm install dayjs @mantine/hooks @mantine/dates @mantine/core\
+
+: 1645004335:0;npm uninstall dayjs @mantine/hooks @mantine/dates @mantine/core\
+
+: 1645004340:0;npm prune
+: 1645004498:0;npm install @mui/material @emotion/react @emotion/styled
+: 1645005081:0;npm run dev
+: 1645005428:0;v
+: 1645007505:0;npm run dev
+: 1645009334:0;codium
+: 1645009335:0;codium .
+: 1645009414:0;v
+: 1645009488:0;npm run dev
+: 1645009506:0;subl .
+: 1645009674:0;v
+: 1645011260:0;,
+: 1645011262:0;v
+: 1645012418:0;,
+: 1645012423:0;tmux-sessions
+: 1645015192:0;npm uninstall react-financial-charts
+: 1645016010:0;npm install victory
+: 1645016445:0;npm i victory
+: 1645016533:0;npm run django-dev
+: 1645000280:5381;python manage.py runserver
+: 1645016535:0;python manage.py runserver
+: 1645016594:0;npm run dev
+: 1645023124:0;ls
+: 1645023132:0;python3 historic_visualizer.py
+: 1645023375:0;pipenv install django-cors-headers
+: 1645023404:0;cd backend
+: 1645023404:0;v
+: 1645023572:0;python manage.py runserver
+: 1645023581:0;python3 historic_visualizer.py
+: 1645024524:0;python manage.py runserver
+: 1645026150:0;npm run dev
+: 1645019701:212;npm run django-dev
+: 1645026161:0;npm run django-dev
+: 1645027520:0;v
+: 1645029104:0;python3 historic_visualizer.py
+: 1645029457:0;cd ..
+: 1645029459:0;v .gitignore
+: 1645029492:0;git push
+: 1645029504:0;tmux-sessions
+: 1644997703:2;npx vite build --help
+: 1645029507:0;tmux-sessions
+: 1645029509:0;,
+: 1645029511:0;tmux-sessions
+: 1645034674:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1645075360:0;tmux-sessions
+: 1645075361:0;tmux-sessionizer
+: 1645075370:0;cd frontend
+: 1645075371:0;v
+: 1645076904:0;sudo
+: 1645076906:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1645081272:0;ping lan.leagueoflegends.com
+: 1645081282:0;poweroff
+: 1645084874:0;tmux-sessionizer "$(pwd)"
+: 1645084890:0;clear
+: 1645084893:0;v
+: 1645085028:0;tmux-sessions
+: 1645087990:0;v
+: 1645088144:0;tmux-sessions
+: 1645089801:0;cd frontend
+: 1645089812:0;npx vite --help
+: 1645089830:0;npx preview --help
+: 1645089837:0;v
+: 1645089848:0;npm run dev
+: 1645089857:0;npx vite --host
+: 1645089928:0;cd ../backend
+: 1645089938:0;pipenv run python manage.py runserver
+: 1645090047:0;tmux-sessions
+: 1645093309:0;v
+: 1645093468:0;prettier
+: 1645093479:0;sudo npm i -g prettier-plugin-latex
+: 1645093501:0;v
+: 1645093784:0;git push
+: 1645093807:0;prettier --help
+: 1645093812:0;v
+: 1645093877:0;prettier --stdin-filepath informe.tex
+: 1645093908:0;prettier informe.tex --write
+: 1645093910:0;clear
+: 1645093922:0;sudo npm i -g prettier-plugin-latex
+: 1645093938:0;prettier informe.tex --write
+: 1645093940:0;clear
+: 1645093953:0;tmux-sessions
+: 1645095356:0;ping lan.leagueoflegends.com
+: 1645095371:0;poweroff
+: 1645097839:0;tmux-sessionizer "$(pwd)"
+: 1645097844:0;tmux-sessions
+: 1645097860:0;v
+: 1645100430:0;tmux-sessionizer
+: 1645100435:0;cd frontend
+: 1645100439:0;cd ../backend
+: 1645100441:0;..
+: 1645100445:0;cd frontend
+: 1645100447:0;npm run dev
+: 1645100451:0;cd ../backend
+: 1645100457:0;pipenv run python manage.py runserver
+: 1645100506:0;v
+: 1645103647:0;node
+: 1645103714:0;v
+: 1645103726:0;git status
+: 1645106810:0;clear
+: 1645106816:0;git status
+: 1645106819:0;v
+: 1645107922:0;git status
+: 1645108040:0;v
+: 1645108431:0;cd ..
+: 1645108431:0;v
+: 1645108433:0;cd ..
+: 1645108434:0;v
+: 1645108828:0;,
+: 1645108829:0;v
+: 1645109172:0;v lua/theme.lua
+: 1645109284:0;v
+: 1645109288:0;tmux-sessions
+: 1645109358:0;v
+: 1645109404:0;v tmux.conf
+: 1645109459:0;tmux-sessiontmux-sessions
+: 1645109460:0;tmux-sessions
+: 1645109464:0;tmux-sessionizer
+: 1645109468:0;v
+: 1645109500:0;tmux-sessionizer
+: 1645109503:0;v tmux.conf
+: 1645109535:0;tmux -2
+: 1645109536:0;v
+: 1645109564:0;alias tmux="TERM=screen-256color-bce tmux"
+: 1645109566:0;tmux -2
+: 1645109567:0;v
+: 1645109581:0;TERM=screen-256color-bce tmux
+: 1645109632:0;v
+: 1645109649:0;TERM=screen-256color-bce tmux
+: 1645109650:0;v
+: 1645109686:0;tmux -2
+: 1645109687:0;v
+: 1645109735:0;TERM=screen-256color v
+: 1645109738:0;TERM=screen-256color nvim
+: 1645109749:0;v tmux.conf
+: 1645109771:0;tmux -2
+: 1645109778:0;TERM=screen-256color nvim
+: 1645109783:0;v
+: 1645109827:0;TERM=screen-256color nvim\
+
+: 1645109887:0;sudo pacman -S termite
+: 1645109923:0;v
+: 1645109926:0;tmux -2
+: 1645109928:0;v
+: 1645109957:0;pycritty -o 1
+: 1645109986:0;clear
+: 1645109989:0;paru termite
+: 1645110416:0;sudo pacman -S alacritty
+: 1645110472:0;paru termite
+: 1645110480:0;v
+: 1645110483:0;tmux -2
+: 1645110484:0;v
+: 1645110542:141;sudo pacman -Sy
+: 1645110690:0;paru termite
+: 1645110853:0;tmux -2
+: 1645110854:0;v
+: 1645110857:0;clear
+: 1645110863:0;xterm
+: 1645110863:0;v
+: 1645110866:0;tmux -2
+: 1645110867:0;v
+: 1645110984:0;termite
+: 1645110988:0;alacritty --help
+: 1645111033:1;tmux-sessions
+: 1645111034:0;tmux-sessionizer
+: 1645111041:0;v
+: 1645111282:0;xterm
+: 1645111286:0;echo $TERM
+: 1645111294:0;TERM=screen-256color xterm\
+
+: 1645111299:0;tmux -2
+: 1645111300:0;v
+: 1645111319:0;tmux-sessionizer
+: 1645111397:0;v /usr/share/doc/alacritty/example/alacritty.yml
+: 1645111479:0;v
+: 1645111483:0;v tmux.conf
+: 1645111527:0;,
+: 1645111531:0;v
+: 1645111533:0;tmux-sessionizer
+: 1645111535:0;v
+: 1645111600:0;tmux-sessionizer
+: 1645111605:0;v
+: 1645111630:0;,
+: 1645111632:0;v
+: 1645111637:0;tmux -2
+: 1645111638:0;v
+: 1645111648:0;tmux-sessions
+: 1645111670:0;tmux-sessionizer
+: 1645111672:0;v
+: 1645111679:0;git status
+: 1645111688:0;pycritty -o .9
+: 1645111690:0;v
+: 1645111764:0;tmux-sessionizer
+: 1645111766:0;v
+: 1645111783:0;cd .config
+: 1645111785:0;w
+: 1645111786:0;v
+: 1645111840:0;tmux-sessions
+: 1645111841:0;tmux-sessionizer
+: 1645111851:0;v
+: 1645112638:0;cd frontend
+: 1645112638:0;v
+: 1645114341:0;,
+: 1645114343:0;v
+: 1645114516:0;git statu{
+: 1645114517:0;tmux-sessions
+: 1645114518:0;v
+: 1645115059:0;npm run dev
+: 1645115067:0;cd ../backend
+: 1645115069:0;pipenv run python manage.py runserver
+: 1645115360:0;v
+: 1645115573:0;pipenv run python manage.py runserver
+: 1645117553:0;v
+: 1645118691:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1645142460:0;v
+: 1645145583:0;git status
+: 1645145587:0;v
+: 1645149342:0;ping lan.leagueoflegends.com
+: 1645149360:0;poweroff
+: 1645156706:0;ping lan.leagueoflegends.com
+: 1645156796:0;tmux-sessionizer
+: 1645156798:0;v
+: 1645156803:0;cd frontend
+: 1645156806:0;cd ../backend
+: 1645156808:0;pipenv run python manage.py runserver
+: 1645156810:0;npm run dev
+: 1645156839:0;cd frontend
+: 1645156850:0;npm uninstall --help
+: 1645156860:0;npm rm victory
+: 1645156880:0;v
+: 1645156999:0;npm prune
+: 1645157024:0;npm uninstall victory
+: 1645157032:0;clear
+: 1645157044:0;ls node_modules | grep victory
+: 1645157047:0;ls node_modules
+: 1645157188:0;npm install --save react-chartjs-2 chart.js
+: 1645157330:0;pycritty ls
+: 1645157341:0;pycritty -t rosepine
+: 1645157347:0;v qtile_theme.json
+: 1645157352:0;ls .config/qtile/themes
+: 1645157771:0;npm rm react-chartjs-2 chart.js
+: 1645157781:0;npm i recharts
+: 1645157957:0;rm -rf node_modules
+: 1645157960:0;npm i
+: 1645158113:0;npm i @emotion/react
+: 1645158265:0;npm rm recharts
+: 1645158272:0;npm --help
+: 1645158301:0;npm i recharts
+: 1645158309:0;npm run dev
+: 1645159550:0;v
+: 1645161782:0;ping lan.leagueoflegends.com
+: 1645161800:0;poweroff
+: 1645172767:0;tmux-sessionizer
+: 1645172769:0;v
+: 1645173668:0;,
+: 1645173669:0;tmux-sessionizer
+: 1645173707:0;v
+: 1645173710:0;cd frontend
+: 1645173713:0;cd ../backend
+: 1645173716:0;pipenv run python manage.py runserver
+: 1645173719:0;cd ../frontend
+: 1645173721:0;npm run dev
+: 1645173722:0;v
+: 1645176622:0;curl -d {} "http://localhost:8000/api/dolar-history/" -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc2NDMyOTE0LCJpYXQiOjE2NDQ4OTY5MTQsImp0aSI6IjJlZTVlN2NmYzAyMzQzNTI4YWE0M2IzNDk3NjI0OWMxIiwidXNlcl9pZCI6MX0.GeujgvqsCYscZr6ZhDAx0la1RN1T2UbdtgpaDwEiPlA"
+: 1645176639:0;curl -d '{"username": "admin", "password": "3_Arepas"}' http://localhost:8000/api/token/ -H "Content-Type: application/json"
+: 1645176668:0;curl -d {} "http://localhost:8000/api/dolar-history/" -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc2NzEyNjM5LCJpYXQiOjE2NDUxNzY2MzksImp0aSI6IjkxZDgyNzY0NTY4OTQzMTFhZjM0YzNkNTYyMGQ3YTg2IiwidXNlcl9pZCI6MX0.jZYlWv0SlYvMWfW9T-Eb4flFmYE1mpWOzn6VjH7lBms"
+: 1645176693:0;curl -d {} "http://localhost:8000/api/dolar-history/?count=20" -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc2NzEyNjM5LCJpYXQiOjE2NDUxNzY2MzksImp0aSI6IjkxZDgyNzY0NTY4OTQzMTFhZjM0YzNkNTYyMGQ3YTg2IiwidXNlcl9pZCI6MX0.jZYlWv0SlYvMWfW9T-Eb4flFmYE1mpWOzn6VjH7lBms"
+: 1645178193:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1645180659:0;clear
+: 1645180660:0;ping lan.leagueoflegends.com
+: 1645180664:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1645216880:0;exit
+: 1645218509:0;tmux-sessionizer
+: 1645218525:0;git status
+: 1645218530:0;v
+: 1645218546:0;cd backend
+: 1645218552:0;cd frontend
+: 1645218553:0;v
+: 1645218559:0;npm run dev
+: 1645218561:0;pipenv run python manage.py runserver
+: 1645218628:0;v
+: 1645218631:0;cd ../backend
+: 1645218635:0;cd ../frontend
+: 1645218637:0;npm run dev
+: 1645218639:0;pipenv run python manage.py runserver
+: 1645223274:0;curl -d {} "http://localhost:8000/api/dolar-history/?count=20" -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc2NzEyNjM5LCJpYXQiOjE2NDUxNzY2MzksImp0aSI6IjkxZDgyNzY0NTY4OTQzMTFhZjM0YzNkNTYyMGQ3YTg2IiwidXNlcl9pZCI6MX0.jZYlWv0SlYvMWfW9T-Eb4flFmYE1mpWOzn6VjH7lBms"
+: 1645223278:0;tmux-sessionizer
+: 1645223283:0;cd backend
+: 1645223284:0;pipenv run python manage.py runserver
+: 1645223288:0;curl -d {} "http://localhost:8000/api/dolar-history/?count=20" -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc2NzEyNjM5LCJpYXQiOjE2NDUxNzY2MzksImp0aSI6IjkxZDgyNzY0NTY4OTQzMTFhZjM0YzNkNTYyMGQ3YTg2IiwidXNlcl9pZCI6MX0.jZYlWv0SlYvMWfW9T-Eb4flFmYE1mpWOzn6VjH7lBms"
+: 1645230720:0;tmux-sessionizer
+: 1645230727:0;cd frontend
+: 1645230729:0;npm run dev
+: 1645230732:0;cd backend
+: 1645230733:0;pipenv run python manage.py runserver
+: 1645230793:0;cd ../frontend
+: 1645230794:0;v
+: 1645238808:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1645239698:0;exit
+: 1645245160:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1645261079:0;w
+: 1645261080:0;v
+: 1645261129:0;curl -d {} "http://localhost:8000/api/dolar-history/?count=900" -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc2NzEyNjM5LCJpYXQiOjE2NDUxNzY2MzksImp0aSI6IjkxZDgyNzY0NTY4OTQzMTFhZjM0YzNkNTYyMGQ3YTg2IiwidXNlcl9pZCI6MX0.jZYlWv0SlYvMWfW9T-Eb4flFmYE1mpWOzn6VjH7lBms"
+: 1645261182:0;curl -d {} "http://localhost:8000/api/dolar-history/?count=900" -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc2NzEyNjM5LCJpYXQiOjE2NDUxNzY2MzksImp0aSI6IjkxZDgyNzY0NTY4OTQzMTFhZjM0YzNkNTYyMGQ3YTg2IiwidXNlcl9pZCI6MX0.jZYlWv0SlYvMWfW9T-Eb4flFmYE1mpWOzn6VjH7lBms" | more
+: 1645261196:0;curl -d {} "http://localhost:8000/api/dolar-history/?count=450" -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc2NzEyNjM5LCJpYXQiOjE2NDUxNzY2MzksImp0aSI6IjkxZDgyNzY0NTY4OTQzMTFhZjM0YzNkNTYyMGQ3YTg2IiwidXNlcl9pZCI6MX0.jZYlWv0SlYvMWfW9T-Eb4flFmYE1mpWOzn6VjH7lBms" | more
+: 1645261202:0;curl -d {} "http://localhost:8000/api/dolar-history/?count=450" -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc2NzEyNjM5LCJpYXQiOjE2NDUxNzY2MzksImp0aSI6IjkxZDgyNzY0NTY4OTQzMTFhZjM0YzNkNTYyMGQ3YTg2IiwidXNlcl9pZCI6MX0.jZYlWv0SlYvMWfW9T-Eb4flFmYE1mpWOzn6VjH7lBms"
+: 1645261240:0;poweroff
+: 1645272328:0;paru spotfy-tui
+: 1645272335:0;pycritty -o .9
+: 1645272399:0;tmux-sessionizer
+: 1645272419:0;paru spotify-tui
+: 1645272437:0;v
+: 1645272486:0;pip install pycritty\
+
+: 1645272492:0;sudo pip install pycritty\
+
+: 1645272505:0;pip install pycritty\
+
+: 1645272543:0;pip install --leṃ�
+: 1645272545:0;pip install --help
+: 1645272559:0;pip install -u pycritty\
+
+: 1645272562:0;pip install -U pycritty\
+
+: 1645272687:0;v 
+: 1645272854:0;clear
+: 1645272856:0;git status
+: 1645272862:0;pycritty ls
+: 1645272867:0;ls
+: 1645272869:0;pycritty ls
+: 1645272882:0;pycritty -t
+: 1645272886:0;pycritty -t rosepine
+: 1645272892:0;pycritty ls
+: 1645272901:0;cd ..
+: 1645272904:0;cd pycritty
+: 1645272906:0;ls
+: 1645272907:0;vifm .
+: 1645273016:0;pycritty ls
+: 1645273028:0;pycritty -t dracula
+: 1645273034:0;v alacritty.yml
+: 1645273049:0;v
+: 1645273063:0;pycritty -o .9
+: 1645273103:0;cd ..
+: 1645273106:0;1
+: 1645273112:0;cd ../pycritty
+: 1645273114:0;clear
+: 1645273115:0;ls
+: 1645273118:0;git add . -f 
+: 1645273121:0;git statu
+: 1645273122:0;git status
+: 1645273123:0;v
+: 1645273154:0;clear
+: 1645272433:722;tmux-sessionizer
+: 1645273173:0;ping lan.leagueoflegends.com
+: 1645273345:0;poweroff
+: 1645276011:0;pycritty ls
+: 1645276015:0;pycritty -t aurora
+: 1645276021:0;pycritty ls
+: 1645276023:0;pycritty ls -h
+: 1645276025:0;pycritty ls -t
+: 1645276033:0;pycritty -t kitty
+: 1645276037:0;pycritty -t hyper
+: 1645276039:0;pycritty -t omni
+: 1645276043:0;pycritty -t onedark
+: 1645276049:0;pycritty -t  material-darker
+: 1645276058:0;pycritty -t material-ocean
+: 1645276063:0;pycritty -t jellybeans
+: 1645276068:0;pycritty -t iterm-default
+: 1645276073:0;pycritty -t ayu-dark
+: 1645276083:0;pycritty -t afterglow
+: 1645276092:0;pycritty -t cobalt-2
+: 1645276097:0;pycritty -t breeze
+: 1645276109:0;pycritty -t campbell
+: 1645276136:0;curl cht.sh/
+: 1645276138:0;curl cht.sh/help
+: 1645276146:0;curl cht.sh/:intro
+: 1645276206:0;pycritty -o .95
+: 1645276256:0;curl cht.sh/:intro | more
+: 1645276303:0;curl --help
+: 1645276558:0;curl cht.sh/awk
+: 1645276998:0;curl cht.sh/:list
+: 1645277121:0;git config user.name "Manuel Rivas"
+: 1645277125:0;git config --global user.name "Manuel Rivas"
+: 1645277138:0;git config --global user.email "mrivasmahecha2003@gmail.cmo"
+: 1645277141:0;git config --global user.email "mrivasmahecha2003@gmail.com"
+: 1645277142:0;tmux-sessionizer
+: 1645277146:0;git status
+: 1645277148:0;v
+: 1645277170:0;git config core.editor
+: 1645277176:0;git config user.name
+: 1645277200:0;git config --global core.editor "nvim"
+: 1645277210:0;git config --global -e
+: 1645277300:0;v
+: 1645278906:0;playerctl -l
+: 1645279038:0;cd frontend
+: 1645279041:0;cd ../backend
+: 1645279046:0;pipenv run python manage.py runserver
+: 1645279049:0;npm run dev
+: 1645279056:0;cd ../frontend
+: 1645279057:0;npm run dev
+: 1645279432:0;clear
+: 1645280230:0;v
+: 1645281101:0;npm install @mui/lab\
+
+: 1645281507:0;npm i dayjs
+: 1645281598:0;v
+: 1645281712:0;npm install -s @date-io/dayjs\
+
+: 1645283661:0;ls
+: 1645283673:0;rm -rf node_modules package*
+: 1645285737:0;npm run dev
+: 1645286514:0;npm install @mui/icons-material\
+
+: 1645287034:0;codium .
+: 1645287796:0;find . -name "back"
+: 1645291039:0;clear
+: 1645291099:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1645311067:0;cd Programming
+: 1645311068:0;ls
+: 1645311081:0;sudo airgeddon
+: 1645317730:0;poweroff
+: 1645342905:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1645361687:0;tmux-sessionizer
+: 1645361698:0;cd backend
+: 1645361699:0;cd fr
+: 1645361700:0;cd frontend
+: 1645361702:0;npm run dev
+: 1645361704:0;pipenv run python manage.py runserver
+: 1645361715:0;cd frontend
+: 1645361716:0;v
+: 1645362690:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1645366562:0;java -jar dl/LauncherFenix-Minecraft.jar
+: 1645368914:0;paru -R brave-bin
+: 1645368918:0;paru -Rs brave-bin
+: 1645369019:0;brave
+: 1645369056:0;tmux-sessionizer
+: 1645369060:0;v
+: 1645369077:0;tmux-sessionizer
+: 1645369086:0;v
+: 1645369102:0;firefox --help
+: 1645369116:0;firefox --new-tab google.com
+: 1645369126:0;v
+: 1645369142:0;git puhs
+: 1645369146:0;git push
+: 1645369610:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1645371610:0;tmux-sessionizer
+: 1645371612:0;v
+: 1645371744:0;tmux-sessions
+: 1645371747:0;v
+: 1645371759:0;git push
+: 1645372525:0;tmux-sessionizer
+: 1645372526:0;v
+: 1645372658:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1645376574:0;tmux-sessionizer
+: 1645376575:0;v
+: 1645376775:0;,
+: 1645376776:0;v
+: 1645378834:0;git commit -m "e"
+: 1645378836:0;clear
+: 1645380189:0;pycritty ls -t
+: 1645380194:0;pycritty ls -t ayu-dark
+: 1645380199:0;pycritty -t ayu-dark
+: 1645380203:0;pycritty -t material-ocean
+: 1645380205:0;clear
+: 1645380244:0;pycritty ls -t
+: 1645380251:0;pycritty -t onedark
+: 1645380255:0;pycritty -t bluescreen
+: 1645380259:0;pycritty -t kitty
+: 1645380263:0;pycritty -t darktooth
+: 1645380267:0;pycritty -t iceberg-dark
+: 1645380278:0;pycritty -t gruvbox-material-medium-dark
+: 1645380284:0;pycritty -t hyper
+: 1645380291:0;pycritty -t argonaut
+: 1645380309:0;cd Wallpapers
+: 1645380311:0;git status
+: 1645380325:0;git commit -am "more wp"
+: 1645380330:0;git commit -a -m "more wp"
+: 1645380335:0;git commit -m "more wp" -a
+: 1645380341:0;git add .
+: 1645380346:0;git commit -m "more wp"
+: 1645380348:0;git push
+: 1645380406:0;sudo com.github.babluboy.nutty
+: 1645380421:0;sudo lxappearance
+: 1645380449:0;sudo nut
+: 1645380451:0;sudo com.github.babluboy.nutty
+: 1645380498:0;com.github.babluboy.nutty
+: 1645381048:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1645446728:0;mailspring
+: 1645447491:0;tmux-sessionizer
+: 1645447494:0;cd backend
+: 1645447497:0;pipenv shell
+: 1645447508:0;pipenv run v
+: 1645447511:0;pipenv run nvim
+: 1645447891:0;ping lan.leagueoflegends.com
+: 1645447893:0;poweroff
+: 1645452111:0;tmux-sessionizer
+: 1645452124:0;cd backend
+: 1645452125:0;pipenv run nvim
+: 1645452160:0;python manage.py shell
+: 1645452635:0;pipenv run python manage.py runserver
+: 1645452637:0;cd ../frontend
+: 1645452640:0;npm run dev
+: 1645452642:0;cd ../frontend
+: 1645452643:0;v
+: 1645453003:0;curl -d {} "http://localhost:8000/api/dolar-history/?count=450" -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc2NzEyNjM5LCJpYXQiOjE2NDUxNzY2MzksImp0aSI6IjkxZDgyNzY0NTY4OTQzMTFhZjM0YzNkNTYyMGQ3YTg2IiwidXNlcl9pZCI6MX0.jZYlWv0SlYvMWfW9T-Eb4flFmYE1mpWOzn6VjH7lBms"
+: 1645453688:0;v
+: 1645453697:0;tmux-sessions
+: 1645453700:0;v
+: 1645453899:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1645459231:0;ping lan.leagueoflegends.com
+: 1645475419:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1645476469:0;droidcam
+: 1645476545:0;pacmd load-module module-alsa-source device=hw:Loopback,1,0
+: 1645479812:0;cd Programming/Codes
+: 1645479813:0;clear
+: 1645479823:0;mkdir lilab-test
+: 1645479831:0;cd lilab
+: 1645479833:0;cd ..
+: 1645479835:0;cd lilab-test
+: 1645479847:0;v README.md
+: 1645479977:0;pipenv install flask flask-restful pyjwt
+: 1645480016:0;tmux-sessionizer
+: 1645480019:0;clear
+: 1645480024:0;pipenv run nvim
+: 1645480035:0;tmux-sessionizer
+: 1645480038:0;pipenv run nvim
+: 1645480064:0;cd
+: 1645480068:0;cd Yoangel_tesis/laboratorio-ammal/
+: 1645480069:0;v
+: 1645480082:0;tmux-sessionizer
+: 1645480083:0;tmux-sessions
+: 1645480133:0;pipenv shell
+: 1645480137:0;python app.py
+: 1645480280:0;v README.md
+: 1645480649:0;python app.py
+: 1645481040:0;pipenv install Flask-SQLAlchemyflask flask-restful pyjwt
+: 1645481045:0;pipenv install Flask-SQLAlchemy
+: 1645481189:0;python app.py
+: 1645482292:0;v
+: 1645482296:0;cd 
+: 1645482298:0;1
+: 1645482299:0;cd ..
+: 1645482301:0;v .env
+: 1645482504:0;python app.py
+: 1645482573:0;pipenv shell
+: 1645482576:0;python
+: 1645482758:0;python app.py
+: 1645482913:0;pipenv install psycopg2
+: 1645482991:0;psql --username postgres
+: 1645483276:0;python
+: 1645483547:0;v
+: 1645483602:0;pipenv run nvim
+: 1645490368:0;sudo create_ap wlp1s0 wlp1s0 Mili 3_Arepas
+: 1645517323:0;tmux-sessionizer
+: 1645517351:0;pipenv shell
+: 1645517374:0;v
+: 1645517916:0;pipenv install Flask-Migrate
+: 1645518065:0;pipenv install Flask-Script
+: 1645518201:0;python manage.py db init
+: 1645518268:0;flask db --help
+: 1645518273:0;flask db init
+: 1645518285:0;python app.py
+: 1645518299:0;flask db init
+: 1645518309:0;flask db migrate -m "First migration"
+: 1645518330:0;python app.py
+: 1645518352:0;flask db upgrade
+: 1645518355:0;python app.py
+: 1645518983:0;pipenv shell
+: 1645518987:0;flask db init
+: 1645518994:0;flask db --help
+: 1645519008:0;flask db migrate -m "Second migration"
+: 1645519023:0;flask db upgrade
+: 1645519060:0;python
+: 1645519259:0;pipenv shell
+: 1645519262:0;python app.py
+: 1645522556:0;ping lan.leagueoflegends.com
+: 1645522926:0;psql
+: 1645522931:0;psql --username postgres
+: 1645523904:0;ping lan.leagueoflegends.com
+: 1645523906:0;poweroff
+: 1645528578:0;ping lan.leagueoflegends.com
+: 1645528581:0;poweroff
+: 1645530937:0;tmux-sessionizer
+: 1645530988:0;sudo pacman stow
+: 1645531000:0;sudo pacman -S stow
+: 1645531134:0;tmux-sessionizer
+: 1645531137:0;v 
+: 1645531159:0;pipenv run nvim
+: 1645531162:0;pipenv shell
+: 1645531170:0;clear
+: 1645531174:0;sudo pacman -S stow
+: 1645531184:14;flask shell
+: 1645531399:0;pipenv shell
+: 1645531404:0;flask --hply
+: 1645531408:0;flask --help
+: 1645531416:0;flask run
+: 1645531420:0;python app.py
+: 1645531541:0;mkdir .dotfiles
+: 1645531542:0;cd .do
+: 1645531545:0;cd .dotfiles
+: 1645531546:0;clear
+: 1645531579:0;man stow
+: 1645531623:0;tmux-sessionizer "$(pwd)"
+: 1645531630:0;cd ../.config
+: 1645531672:0;stow
+: 1645531712:0;mv tmux ../.dotfiles
+: 1645531713:0;ls
+: 1645531717:0;ls tmux
+: 1645531725:0;vifm .
+: 1645531764:0;stow tmux
+: 1645531768:0;ls
+: 1645531772:0;stow tmux
+: 1645531786:0;ls -la ~/.config | grep tmux
+: 1645531862:0;ls
+: 1645531866:0;git files --help
+: 1645531871:0;git ls-files
+: 1645531872:0;git ls-files -d
+: 1645531874:0;git ls-files --help
+: 1645531884:0;git ls-files --directory
+: 1645531897:0;cd
+: 1645531898:0;la
+: 1645531912:0;cat .zprofile
+: 1645531920:0;mkdir zsh
+: 1645531931:0;mkdir zsh/.config
+: 1645531941:0;mv zsh ../.dotfiles/zsh/.config
+: 1645531978:0;stow zsh
+: 1645531998:0;clear
+: 1645532003:0;git ls-files --directory
+: 1645532005:0;clear
+: 1645532006:0;git ls-files --directory
+: 1645532143:0;mkdir -p scripts/.local/bin
+: 1645532183:0;cd scripts/.local/bin
+: 1645532184:0;ls
+: 1645532189:0;mv custom-scripts/* .
+: 1645532190:0;clear
+: 1645532192:0;ls
+: 1645532194:0;rm -rf custom-scripts
+: 1645532198:0;ls
+: 1645532202:0;stow scripts
+: 1645531972:0;rm .zprofile
+: 1645532213:0;cd .local/bin
+: 1645532213:0;ls
+: 1645532219:0;rm songdownloader tmux-session*
+: 1645532221:0;stow scripts
+: 1645532225:0;tmux-sessionizer
+: 1645532236:0;clear
+: 1645532237:0;ls
+: 1645532267:0;mkdir -p nvim/.config/
+: 1645532175:0;mv custom-scripts ../.dotfiles/scripts/.local/bin
+: 1645532277:0;mv nvim ../.dotfiles/nvim/.config
+: 1645532229:0;clear
+: 1645532286:0;ls
+: 1645532290:0;ls nvim
+: 1645532295:0;stow nvim
+: 1645532304:0;clear
+: 1645532305:0;ls nvim
+: 1645532307:0;ls -la nvim
+: 1645532335:0;mkdir -p qtile/.config/
+: 1645532344:0;mv qtile ../.dotfiles/qtile/.config
+: 1645532352:0;ls -R qtile/.config/
+: 1645532363:0;stow qtile
+: 1645532367:0;clear
+: 1645532368:0;ls
+: 1645532420:0;clear
+: 1645532421:0;ls
+: 1645532428:0;mkdir -p rof/.config/
+: 1645532430:0;mkdir -p rofi/.config/
+: 1645532432:0;rm -rf rof
+: 1645532437:0;mv rofi ../.dotfiles/rofi/.config
+: 1645532441:0;stow rofi
+: 1645532499:0;v
+: 1645532613:0;stow -D scripts
+: 1645532616:0;stow scripts
+: 1645532629:0;clear
+: 1645532640:0;mkdir -p vifm/.config/
+: 1645532647:0;mv vifm ../.dotfiles/vifm
+: 1645532650:0;stow vifm
+: 1645532670:0;ls
+: 1645532672:0;la
+: 1645532673:0;cd
+: 1645532675:0;clear
+: 1645532679:0;ls x11
+: 1645532692:0;mkdir -p x11
+: 1645532704:0;mv x11/xinitrc ../.dotfiles/x11
+: 1645532718:0;rm .xinitrc
+: 1645532722:0;stow x11
+: 1645532725:0;la
+: 1645532748:0;cd .config/alacritty
+: 1645532749:0;la
+: 1645532751:0;git status
+: 1645532753:0;git ls-files --directory
+: 1645532760:0;ls
+: 1645532806:0;git init
+: 1645532810:0;git add .

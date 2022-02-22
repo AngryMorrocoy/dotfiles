@@ -1,0 +1,17 @@
+#!/bin/bash
+
+tmux_sessions=$(tmux list-sessions)
+
+if [[ $? -ne 0 ]]; then
+    echo "There are no sessions" | rofi -dmenu -no-custom -p "No sessions"
+    exit 1
+fi
+
+selected=$(printf "$tmux_sessions" | rofi -dmenu -i -no-custom -p "Tmux session: ")
+selected_name=$(echo $selected | awk '{split($0, a, ":");print(a[1])}')
+
+if [[ -z $selected ]]; then
+    exit 0
+fi
+
+alacritty -e tmux attach-session -t "$selected_name"

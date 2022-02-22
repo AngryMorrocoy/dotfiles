@@ -1,0 +1,6 @@
+{
+    "ETPS/2 Elantech Touchpad": {
+        "libinput Tapping Enabled": "1",
+        "libinput Disable While Typing Enabled": "0"
+    }
+}

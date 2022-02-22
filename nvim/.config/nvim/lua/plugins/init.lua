@@ -1,0 +1,65 @@
+require "paq" {
+    "savq/paq-nvim",
+    "mattn/emmet-vim",
+    "lukas-reineke/indent-blankline.nvim",
+    "SirVer/ultisnips",
+    "tpope/vim-commentary",
+    "tpope/vim-fugitive",
+    "airblade/vim-gitgutter",
+    "machakann/vim-highlightedyank",
+    "andymass/vim-matchup",
+    "szw/vim-maximizer",
+    "mhinz/vim-startify",
+    "tpope/vim-surround",
+    "sainnhe/gruvbox-material",
+    "neovim/nvim-lspconfig",
+    "glepnir/lspsaga.nvim",
+    --
+    "hrsh7th/nvim-cmp",
+    "quangnguyen30192/cmp-nvim-ultisnips",
+    "hrsh7th/cmp-nvim-lsp",
+    --
+    "mhartington/formatter.nvim",
+    "windwp/nvim-autopairs",
+    "kyazdani42/nvim-tree.lua",
+    "kyazdani42/nvim-web-devicons",
+    "mbbill/undotree",
+    {
+        "nvim-treesitter/nvim-treesitter",
+        run = function()
+            vim.cmd(":TSUpdate")
+        end
+    },
+    "nvim-treesitter/playground",
+    "nanotech/jellybeans.vim",
+    "folke/tokyonight.nvim",
+    "folke/lsp-colors.nvim",
+    "ray-x/lsp_signature.nvim",
+    "NTBBloodbath/rest.nvim",
+    "p00f/nvim-ts-rainbow",
+    "nvim-lua/popup.nvim",
+    "ThePrimeagen/harpoon",
+    "hoob3rt/lualine.nvim",
+    "preservim/vimux",
+    "folke/trouble.nvim",
+    "nvim-telescope/telescope.nvim",
+    {
+        "nvim-telescope/telescope-fzf-native.nvim",
+        run = "!make"
+    },
+    "rose-pine/neovim",
+    "lervag/vimtex",
+    "ray-x/aurora",
+    "nvim-lua/plenary.nvim",
+    "ThePrimeagen/refactoring.nvim",
+    "savq/melange",
+    "yonlu/omni.vim",
+    "shaeinst/roshnivim-cs",
+    "Shatur/neovim-ayu",
+    "sunjon/Shade.nvim",
+    "Matsuuu/pinkmare",
+    {
+        url = "https://gitlab.com/yorickpeterse/nvim-window.git"
+    },
+    "marko-cerovac/material.nvim"
+}

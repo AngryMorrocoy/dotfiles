@@ -1,0 +1,176 @@
+#!/usr/bin/python
+import argparse
+import sys
+import re
+import youtube_dl
+from os import path
+from os import get_terminal_size
+from os import chdir
+
+# Args verification stuff
+
+
+class IsPath(argparse.Action):
+    def __init__(self, option_strings, dest, nargs=None, **kwargs):
+        if nargs is not None:
+            raise ValueError("nargs not allowed")
+        super().__init__(option_strings, dest, **kwargs)
+
+
+class IsDir(argparse.Action):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+    def __call__(self, parser, namespace, value, option_strings=None):
+        dir_path = path.join(value)
+        if not path.isdir(dir_path):
+            print(f"{self.dest}: {value} isn't a valid directory")
+            sys.exit(1)
+        setattr(namespace, self.dest, dir_path)
+
+
+class IsFile(argparse.Action):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+    def __call__(self, parser, namespace, value, option_strings=None):
+        file_path = path.join(value)
+        if not path.isfile(file_path):
+            print(f"{self.dest}: {value} isn't a file")
+            sys.exit(1)
+        setattr(namespace, self.dest, file_path)
+
+
+# YoutubeDL stuff
+
+
+class Logger(object):
+    def debug(self, msg: str):
+        pass
+
+    def warning(self, msg: str):
+        print(f"\033[93mwarning: {msg}\033[0m")
+
+    def error(self, msg: str):
+        print(f"\033[91merror: {msg}\033[0m")
+
+
+def create_prog_bar(progression):
+    max_length = get_terminal_size()[0] - 25
+    progression = float(progression[:-1])
+    bar = "-" * max_length
+    return (
+        "\033[97m["
+        + bar.replace("-", "\033[94m#", round((max_length / 100) * progression))
+        + "\033[97m\033[97m]"
+    )
+
+
+def progress_hook(d):
+    if d["status"] == "finished":
+        print("\n\033[96mDone downloading, now converting...\033[0m\033[0m")
+    if d["status"] == "downloading":
+        percent = d["_percent_str"]
+        speed = d["_speed_str"]
+        bar = create_prog_bar(percent)
+        print(f"{bar}{percent} {speed}", end="\r")
+
+
+def read_songs(filename):
+    with open(filename, mode="r", encoding="utf-8") as songs_file:
+        readed_songs = filter(
+            lambda x: not x.startswith("#") and x,
+            [x.rstrip() for x in songs_file.readlines()],
+        )
+    return list(readed_songs)
+
+
+def download_song(song, log_hook, max_retries, tries=0):
+    hooks = [progress_hook]
+    if log_hook:
+        hooks.append(lambda d: log_hook(d, song))
+    ydl_opts = {
+        "format": "bestaudio/best",
+        "postprocessors": [
+            {
+                "key": "FFmpegExtractAudio",
+                "preferredcodec": "mp3",
+                "preferredquality": "128",
+            }
+        ],
+        "logger": Logger(),
+        "progress_hooks": hooks,
+    }
+    if not re.search("watch\?v=.{11}", song):
+        ydl_opts["default_search"] = "ytsearch"
+    try:
+        with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+            print(f"Attemping to download: \033[96m{song}\033[0m")
+            ydl.download([song])
+    except Exception as e:
+        print(e)
+        if tries < max_retries:
+            return download_song(song, log_hook, max_retries, tries=tries + 1)
+
+
+# Main function
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Download the list of songs that are in a text file from youtube"
+    )
+
+    parser.add_argument(
+        "songs_file",
+        action=IsFile,
+        help="The path of the file where the songs are listed",
+    )
+    parser.add_argument(
+        "--where",
+        "-w",
+        default=".",
+        metavar="Directory",
+        action=IsDir,
+        help="The path where the songs will be downloaded",
+    )
+    parser.add_argument("--no-log", action="store_true", help="Doesn't write a log")
+    parser.add_argument(
+        "--retries", default=1, type=int, help="Number of retries per song"
+    )
+
+    _arguments = parser.parse_args()
+    songs_file = _arguments.songs_file
+    final_dir = _arguments.where
+    no_log = _arguments.no_log
+    retries = _arguments.retries
+
+    if retries < 0:
+        raise ValueError("Retries argument should be greater than zero")
+
+    readed_songs = read_songs(songs_file)
+    chdir(final_dir)
+
+    log_hook = None
+
+    if not no_log:
+        with open("songdownload-log.txt", mode="w", encoding="utf-8") as f:
+            pass
+
+        def write_log(d, song):
+            if d["status"] == "finished":
+                log_text = f"{d['filename']} ({song})\n"
+                with open(
+                    "songdownload-log.txt", mode="a", encoding="utf-8"
+                ) as log_file:
+                    log_file.write(log_text + "\n")
+
+        log_hook = write_log
+
+    for i, song in enumerate(readed_songs):
+        print(f"\033[92m{i + 1}/{len(readed_songs)}")
+        download_song(song, log_hook, retries)
+
+
+if __name__ == "__main__":
+    main()
