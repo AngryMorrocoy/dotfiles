@@ -1,6 +1,6 @@
 #!/bin/bash
 
-selected=$(find ~/Programming/Codes ~/Programming/web-design ~/Programming/Important ~/.config/ -mindepth 1 -maxdepth 1 -type d | rofi -dmenu -i -no-custom -p "Start tmux in: ")
+selected=$(find ~/Programming/Codes ~/Programming/web-design ~/Programming/Important ~/.dotfiles/ -mindepth 1 -maxdepth 1 -type d | rofi -dmenu -i -no-custom -p "Start tmux in: ")
 
 if [[ -z $selected ]]; then
     exit 0
