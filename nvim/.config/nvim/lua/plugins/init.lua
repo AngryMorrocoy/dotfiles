@@ -61,5 +61,6 @@ require "paq" {
     {
         url = "https://gitlab.com/yorickpeterse/nvim-window.git"
     },
-    "marko-cerovac/material.nvim"
+    "marko-cerovac/material.nvim",
+    "adrian5/oceanic-next-vim"
 }

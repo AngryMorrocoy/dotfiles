@@ -32,8 +32,9 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-twmnd &
 setxkbmap latam-dvorak
+wired &
+
 if [[ $(tty) = /dev/tty1 ]]; then exec qtile start; fi
 if [[ $(tty) = /dev/tty2 ]]; then
     exec mate-session
