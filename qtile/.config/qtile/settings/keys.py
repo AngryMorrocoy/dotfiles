@@ -25,6 +25,9 @@ keys = [
         [[mod, alt], "h", lazy.hide_show_bar("top")],
         # --Shows a terminal--#
         [[mod], "Return", lazy.spawn(f"{terminal}")],
+        #
+        [[mod], "period", lazy.next_screen()],
+        [[mod], "comma", lazy.prev_screen()],
         # --Switch tabs--#
         [[alt], "Tab", lazy.spawn("rofi -matching regex -modi window -show window")],
         # Special keys
@@ -194,6 +197,8 @@ keys += [
                     [[], "o", lazy.spawn("obsidian")],
                     # --Launchs mailspring--
                     [[], "m", lazy.spawn("mailspring")],
+                    # --Launchs spotify--
+                    [[], "s", lazy.spawn("spotify")],
                 ]
             ],
         ],

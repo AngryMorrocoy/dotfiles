@@ -1,21 +1,16 @@
-from libqtile import bar, hook
+from libqtile import bar
 from settings.keys import mod, keys
 from settings.groups import groups
 from settings.layouts import layouts, floating_layout
 from settings.widgets import (
-    mainbar_widgets,
-    infobar_widgets,
     widget_defaults,
     extension_defaults,
 )
 from settings.mouse import mouse
+from settings.screens import screens
 import settings.hooks
+import subprocess
 
-from libqtile.config import Screen
-
-screens = [
-    Screen(top=bar.Bar(mainbar_widgets, 15), bottom=bar.Bar(infobar_widgets, 16)),
-]
 
 main = None
 dgroups_key_binder = None
