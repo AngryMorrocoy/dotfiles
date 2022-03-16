@@ -87,14 +87,6 @@ local keyMaps = {
     ["n|<C-d>"] = {action = "<cmd>lnext<cr>"},
     -- Whys it isn't a default?
     ["n|Y"] = {action = "y$"},
-    -- Vimux things
-    ["n|<leader>vp"] = {action = "<cmd>VimuxPromptCommand<cr>"},
-    ["n|<leader>vn"] = {action = "<cmd>VimuxPromptCommand('npm run ')<cr>"},
-    ["n|<leader>vl"] = {action = "<cmd>VimuxRunLastCommand<cr>"},
-    ["n|<leader>vw"] = {action = "<cmd>VimuxCloseRunner<cr>"},
-    ["n|<leader>vs"] = {action = "<cmd>VimuxInterruptRunner<cr>"},
-    ["n|<leader>v<C-l>"] = {action = "<cmd>VimuxClearTerminalScreen<cr>"},
-    ["n|<leader>vz"] = {action = "<cmd>VimuxZoomRunner<cr>"},
     -- Trouble
     ["n|<leader>xx"] = {action = "<cmd>Trouble<cr>"},
     ["n|<leader>xw"] = {action = "<cmd>Trouble lsp_workspace_diagnostics<cr>"},
