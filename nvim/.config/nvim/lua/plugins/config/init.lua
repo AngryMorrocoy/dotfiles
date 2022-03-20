@@ -20,7 +20,6 @@ M.plugs_config = {
     require("plugins.config.vimux"),
     require("plugins.config.lualine"),
     require("plugins.config.telescope"),
-    require("plugins.config.shade")
 }
 
 function M.setup_all()

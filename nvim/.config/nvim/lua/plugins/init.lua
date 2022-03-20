@@ -55,11 +55,7 @@ require "paq" {
     "yonlu/omni.vim",
     "shaeinst/roshnivim-cs",
     "Shatur/neovim-ayu",
-    "sunjon/Shade.nvim",
     "Matsuuu/pinkmare",
-    {
-        url = "https://gitlab.com/yorickpeterse/nvim-window.git"
-    },
     "marko-cerovac/material.nvim",
     "adrian5/oceanic-next-vim"
 }

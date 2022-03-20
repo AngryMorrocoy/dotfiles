@@ -95,12 +95,6 @@ local keyMaps = {
     ["v|<leader>rr"] = {action = "<Esc><cmd>lua require('telescope').extensions.refactoring.refactors()<cr>"},
     ["v|<leader>dpv"] = {action = "<cmd>lua require('refactoring').debug.print_var({})<cr>"},
     ["n|<leader>dpc"] = {action = "<cmd>lua require('refactoring').debug.print_var({})<cr>"},
-    -- Open terminal
-    ["n|<leader>t"] = {action = "<cmd>Lspsaga open_floaterm<cr>", opts = {noremap = true}},
-    -- Shade
-    ["n|<leader>s"] = {action = "<cmd>lua require('shade').toggle()<cr>", opts = {noremap = true}},
-    -- Select window
-    ["n|<leader><C-w>"] = {action = "<cmd>lua require('nvim-window').pick()<cr>", opts = {noremap = true}}
 }
 
 return {
