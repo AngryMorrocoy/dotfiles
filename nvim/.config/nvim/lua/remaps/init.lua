@@ -95,6 +95,8 @@ local keyMaps = {
     ["v|<leader>rr"] = {action = "<Esc><cmd>lua require('telescope').extensions.refactoring.refactors()<cr>"},
     ["v|<leader>dpv"] = {action = "<cmd>lua require('refactoring').debug.print_var({})<cr>"},
     ["n|<leader>dpc"] = {action = "<cmd>lua require('refactoring').debug.print_var({})<cr>"},
+    -- Easier out from insert mode
+    ["i|oo"] = {action = "<esc>", opts = {silent = true}}
 }
 
 return {
