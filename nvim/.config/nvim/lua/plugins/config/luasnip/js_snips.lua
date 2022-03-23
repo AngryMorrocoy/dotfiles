@@ -3,6 +3,7 @@ local M = {}
 function M.setup()
     local ls = require("luasnip")
     local fmt = require("luasnip.extras.fmt").fmt
+    local rep = require("luasnip.extras").rep
     local s = ls.s
     local i = ls.i
     local c = ls.c
@@ -74,8 +75,26 @@ function M.setup()
                     i(0)
                 }
             )
+        ),
+        -- Javascript: For loops
+        s(
+            "for",
+            fmt(
+                [[
+                for (let {} = {}; {} {}; {}) {{
+                  {}
+                }}
+                ]],
+                {
+                    i(1, {"i"}),
+                    i(2, {"0"}),
+                    rep(1),
+                    i(3),
+                    i(4),
+                    i(0)
+                }
+            )
         )
-        -- Javascript: Const arraw functions
     }
 end
 
