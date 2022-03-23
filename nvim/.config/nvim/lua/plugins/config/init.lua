@@ -14,7 +14,7 @@ M.plugs_config = {
     require("plugins.config.startify"),
     require("plugins.config.polyglot"),
     require("plugins.config.treesitter"),
-    require("plugins.config.ultisnippets"),
+    -- require("plugins.config.ultisnippets"),
     require("plugins.config.nvim_rest"),
     require("plugins.config.harpoon"),
     require("plugins.config.vimux"),

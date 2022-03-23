@@ -5,7 +5,9 @@ function M.load_snippets()
 
     ls.snippets = {
         lua = require("plugins.config.luasnip.lua_snips").setup(),
-        javascript = require("plugins.config.luasnip.js_snips").setup()
+        javascript = require("plugins.config.luasnip.js_snips").setup(),
+        typescript = require("plugins.config.luasnip.js_snips").setup(),
+        python = require("plugins.config.luasnip.py_snips").setup(),
     }
 end
 

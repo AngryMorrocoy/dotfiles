@@ -16,7 +16,7 @@ require "paq" {
     "glepnir/lspsaga.nvim",
     --
     "hrsh7th/nvim-cmp",
-    "quangnguyen30192/cmp-nvim-ultisnips",
+    -- "quangnguyen30192/cmp-nvim-ultisnips",
     "hrsh7th/cmp-nvim-lsp",
     --
     "mhartington/formatter.nvim",
