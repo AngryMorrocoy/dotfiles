@@ -106,6 +106,21 @@ local keyMaps = {
     },
     ["i|<C-l>"] = {
         action = "<cmd>lua require('plugins.config.luasnip.util').change_choice_node()<cr>"
+    },
+    ["i|<C-u>"] = {
+        action = "<cmd>lua require('luasnip.extras.select_choice')()<cr>"
+    },
+    ["s|<Tab>"] = {
+        action = "<cmd>lua require('plugins.config.luasnip.util').expand_or_jump_keymap()<cr>"
+    },
+    ["s|<S-Tab>"] = {
+        action = "<cmd>lua require('plugins.config.luasnip.util').jump_backwards()<cr>"
+    },
+    ["s|<C-l>"] = {
+        action = "<cmd>lua require('plugins.config.luasnip.util').change_choice_node()<cr>"
+    },
+    ["s|<C-u>"] = {
+        action = "<cmd>lua require('luasnip.extras.select_choice')()<cr>"
     }
 }
 

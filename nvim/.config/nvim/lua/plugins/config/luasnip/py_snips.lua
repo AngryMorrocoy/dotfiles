@@ -63,6 +63,50 @@ function M.setup()
                     {1}
                 )
             }
+        ),
+        -- Python: Classes
+        s(
+            "class",
+            fmt(
+                [[
+                class {}{}:
+
+                    {}
+                ]],
+                {
+                    i(1),
+                    c(
+                        2,
+                        {
+                            t(""),
+                            sn(
+                                nil,
+                                {
+                                    t("("),
+                                    i(1),
+                                    t(")")
+                                }
+                            )
+                        }
+                    ),
+                    c(
+                        3,
+                        {
+                            t(""),
+                            sn(
+                                nil,
+                                {
+                                    t("def __init__(self"),
+                                    i(1),
+                                    t("):"),
+                                    t({"", "\t\t"}),
+                                    i(0, "pass")
+                                }
+                            )
+                        }
+                    )
+                }
+            )
         )
     }
 end

@@ -21,4 +21,20 @@ function M.change_choice_node()
     end
 end
 
+function M.concat_tables(table_of_tables)
+    if #table_of_tables == 1 then
+        return table_of_tables[1]
+    end
+
+    local retornable = table_of_tables[1]
+    for i = 2, #table_of_tables do
+        local table2 = table_of_tables[i]
+        for j = 1, #table2 do
+            retornable[#retornable + 1] = table2[j]
+        end
+    end
+
+    return retornable
+end
+
 return M

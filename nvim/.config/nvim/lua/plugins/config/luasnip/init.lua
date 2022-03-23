@@ -2,12 +2,31 @@ local M = {}
 
 function M.load_snippets()
     local ls = require("luasnip")
+    local concat_tables = require("plugins.config.luasnip.util").concat_tables
 
     ls.snippets = {
         lua = require("plugins.config.luasnip.lua_snips").setup(),
         javascript = require("plugins.config.luasnip.js_snips").setup(),
-        typescript = require("plugins.config.luasnip.js_snips").setup(),
-        python = require("plugins.config.luasnip.py_snips").setup(),
+        javascriptreact = concat_tables(
+            {
+                require("plugins.config.luasnip.js_snips").setup(),
+                require("plugins.config.luasnip.jsreact_snips").setup()
+            }
+        ),
+        typescriptreact = concat_tables(
+            {
+                require("plugins.config.luasnip.js_snips").setup(),
+                require("plugins.config.luasnip.tsreact_snips").setup(),
+                require("plugins.config.luasnip.ts_snips").setup()
+            }
+        ),
+        typescript = concat_tables(
+            {
+                require("plugins.config.luasnip.ts_snips").setup(),
+                require("plugins.config.luasnip.js_snips").setup()
+            }
+        ),
+        python = require("plugins.config.luasnip.py_snips").setup()
     }
 end
 
@@ -15,13 +34,15 @@ function M.setup()
     local ls = require("luasnip")
     local types = require("luasnip.util.types")
 
-    ls.config.set_config(
+    ls.config.setup(
         {
-            history = true,
+            historsetup = true,
             updateevents = "TextChanged,TextChangedI",
             ext_opts = {
                 [types.choiceNode] = {
-                    virt_text = {{"<-", "Error"}}
+                    active = {
+                        virt_text = {{"● Toggle", "Debug"}}
+                    }
                 }
             }
         }
