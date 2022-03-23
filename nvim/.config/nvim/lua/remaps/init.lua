@@ -75,8 +75,8 @@ local keyMaps = {
     ["n|<leader><leader>m"] = {action = "<cmd>lua require('harpoon.mark').add_file()<cr>"},
     ["n|<leader><leader>a"] = {action = "<cmd>lua require('harpoon.ui').nav_file(1)<cr>"},
     ["n|<leader><leader>o"] = {action = "<cmd>lua require('harpoon.ui').nav_file(2)<cr>"},
-    -- ["n|<leader><leader>e"] = {action = "<cmd>lua require('harpoon.ui').nav_file(3)<cr>"},
-    -- ["n|<leader><leader>u"] = {action = "<cmd>lua require('harpoon.ui').nav_file(4)<cr>"},
+    ["n|<leader><leader>e"] = {action = "<cmd>lua require('harpoon.ui').nav_file(3)<cr>"},
+    ["n|<leader><leader>u"] = {action = "<cmd>lua require('harpoon.ui').nav_file(4)<cr>"},
     ["n|<leader><leader>ta"] = {action = "<cmd>lua require('harpoon.term').gotoTerminal(1)<cr>"},
     ["n|<leader><leader>to"] = {action = "<cmd>lua require('harpoon.term').gotoTerminal(2)<cr>"},
     ["n|<leader><leader>q"] = {action = "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>"},
@@ -96,7 +96,17 @@ local keyMaps = {
     ["v|<leader>dpv"] = {action = "<cmd>lua require('refactoring').debug.print_var({})<cr>"},
     ["n|<leader>dpc"] = {action = "<cmd>lua require('refactoring').debug.print_var({})<cr>"},
     -- Easier out from insert mode
-    ["i|oo"] = {action = "<esc>", opts = {silent = true}}
+    ["i|<A-s>"] = {action = "<esc>", opts = {silent = true}},
+    -- LuaSnips
+    ["i|<Tab>"] = {
+        action = "<cmd>lua require('plugins.config.luasnip.util').expand_or_jump_keymap()<cr>"
+    },
+    ["i|<S-Tab>"] = {
+        action = "<cmd>lua require('plugins.config.luasnip.util').jump_backwards()<cr>"
+    },
+    ["i|<C-l>"] = {
+        action = "<cmd>lua require('plugins.config.luasnip.util').change_choice_node()<cr>"
+    }
 }
 
 return {

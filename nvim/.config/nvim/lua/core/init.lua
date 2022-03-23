@@ -47,13 +47,13 @@ function M.setup()
     require("plugins") -- Load the plugins
     require("plugins.config").setup_all()
 
-    require("remaps").setup() -- Load the mappings
     require("core.autocommands").setup() -- Load the autocommands
     require("core.commands").setup() -- Load the commands
 
     local util = require("core.util")
 
     util.nvim_load_opts(opts) -- Load all the settings uwu
+    require("remaps").setup() -- Load the mappings
 end
 
 return M

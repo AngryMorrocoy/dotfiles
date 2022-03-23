@@ -5,7 +5,7 @@ function M.setup()
     local tree_cb = require("nvim-tree.config").nvim_tree_callback
 
     require "nvim-tree".setup {
-        disable_netrw = true,
+        disable_netrw = false,
         hijack_netrw = true,
         open_on_setup = true,
         ignore_ft_on_setup = {"startify"},

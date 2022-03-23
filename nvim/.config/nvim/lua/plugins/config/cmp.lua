@@ -8,12 +8,6 @@ function M.setup()
 
     cmp.setup(
         {
-            snippet = {
-                -- REQUIRED - you must specify a snippet engine
-                expand = function(args)
-                    vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
-                end
-            },
             mapping = {
                 ["<C-b>"] = cmp.mapping(cmp.mapping.scroll_docs(-4), {"i", "c"}),
                 ["<C-f>"] = cmp.mapping(cmp.mapping.scroll_docs(4), {"i", "c"}),
@@ -25,8 +19,7 @@ function M.setup()
             },
             sources = cmp.config.sources(
                 {
-                    {name = "nvim_lsp"},
-                    {name = "ultisnips"} -- For ultisnips users.
+                    {name = "nvim_lsp"}
                 },
                 {
                     {name = "buffer"}

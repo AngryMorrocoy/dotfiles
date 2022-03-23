@@ -2,7 +2,7 @@ require "paq" {
     "savq/paq-nvim",
     "mattn/emmet-vim",
     "lukas-reineke/indent-blankline.nvim",
-    "SirVer/ultisnips",
+    -- "SirVer/ultisnips",
     "tpope/vim-commentary",
     "tpope/vim-fugitive",
     "airblade/vim-gitgutter",
@@ -57,5 +57,7 @@ require "paq" {
     "Shatur/neovim-ayu",
     "Matsuuu/pinkmare",
     "marko-cerovac/material.nvim",
-    "adrian5/oceanic-next-vim"
+    "adrian5/oceanic-next-vim",
+    "L3MON4D3/LuaSnip",
+    "famiu/nvim-reload"
 }
