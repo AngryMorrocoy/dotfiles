@@ -16,8 +16,8 @@ require "paq" {
     "glepnir/lspsaga.nvim",
     --
     "hrsh7th/nvim-cmp",
-    -- "quangnguyen30192/cmp-nvim-ultisnips",
     "hrsh7th/cmp-nvim-lsp",
+    "saadparwaiz1/cmp_luasnip",
     --
     "mhartington/formatter.nvim",
     "windwp/nvim-autopairs",
