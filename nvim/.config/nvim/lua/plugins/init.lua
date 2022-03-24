@@ -7,7 +7,6 @@ require "paq" {
     "airblade/vim-gitgutter",
     "machakann/vim-highlightedyank",
     "andymass/vim-matchup",
-    "szw/vim-maximizer",
     "tpope/vim-surround",
     "sainnhe/gruvbox-material",
     "neovim/nvim-lspconfig",
@@ -61,5 +60,5 @@ require "paq" {
     "adrian5/oceanic-next-vim",
     "L3MON4D3/LuaSnip",
     "famiu/nvim-reload",
-    "phaazon/hop.nvim"
+    "folke/zen-mode.nvim"
 }

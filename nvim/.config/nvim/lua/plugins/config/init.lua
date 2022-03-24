@@ -17,7 +17,6 @@ M.plugs_config = {
     require("plugins.config.lualine"),
     require("plugins.config.telescope"),
     require("plugins.config.luasnip"),
-    require("plugins.config.hop")
 }
 
 function M.setup_all()
@@ -28,6 +27,7 @@ function M.setup_all()
     require("trouble").setup({})
     require("refactoring").setup({})
     require("Comment").setup({})
+    require("zen-mode").setup({})
 end
 
 return M

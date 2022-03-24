@@ -41,7 +41,7 @@ function M.setup()
             ext_opts = {
                 [types.choiceNode] = {
                     active = {
-                        virt_text = {{"● Toggle", "Debug"}}
+                        virt_text = {{"<- Toggle", "Debug"}}
                     }
                 }
             }

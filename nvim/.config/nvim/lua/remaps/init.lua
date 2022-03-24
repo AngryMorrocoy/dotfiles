@@ -15,8 +15,7 @@ local keyMaps = {
     ["n|<C-u>"] = {action = "<cmd>NvimTreeToggle <cr>"},
     ["n|<leader><C-u>"] = {action = "<cmd>NvimTreeFindFile <cr>"},
     -- Maximizer
-    ["n|<leader>o"] = {action = "<cmd>MaximizerToggle<cr>", opts = {silent = true}},
-    ["v|<leader>o"] = {action = "<cmd>MaximizerToggle<cr>", opts = {silent = true}},
+    ["n|<leader>o"] = {action = "<cmd>ZenMode<cr>", opts = {silent = true}},
     -- Tab management
     ["n|tt"] = {action = "<cmd>tabnew<cr>"},
     ["n|td"] = {action = "<cmd>tabclose<cr>"},
@@ -124,11 +123,6 @@ local keyMaps = {
     },
     -- Quck nvim restart
     ["n|<leader><leader>s"] = {action = "<cmd>Reload<cr>"},
-    -- Hop
-    ["n|f"] = {action = "<cmd>HopChar1CurrentLineAC<cr>"},
-    ["n|F"] = {action = "<cmd>HopChar1CurrentLineBC<cr>"},
-    ["n|<leader>j"] = {action = "<cmd>HopLineStartAC<cr>"},
-    ["n|<leader>k"] = {action = "<cmd>HopLineStartBC<cr>"}
 }
 
 return {
