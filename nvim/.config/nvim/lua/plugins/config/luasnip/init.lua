@@ -2,7 +2,7 @@ local M = {}
 
 function M.load_snippets()
     local ls = require("luasnip")
-    local concat_tables = require("plugins.config.luasnip.util").concat_tables
+    local concat_tables = require("core.util").concat_tables
 
     ls.snippets = {
         lua = require("plugins.config.luasnip.lua_snips").setup(),
