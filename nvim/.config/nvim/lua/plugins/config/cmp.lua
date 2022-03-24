@@ -6,6 +6,20 @@ function M.setup()
 
     cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done({map_char = {tex = ""}}))
 
+    require("cmp").setup.cmdline(
+        "/",
+        {
+            sources = cmp.config.sources(
+                {
+                    {name = "nvim_lsp_document_symbol"}
+                },
+                {
+                    {name = "buffer"}
+                }
+            )
+        }
+    )
+
     cmp.setup(
         {
             mapping = {
@@ -31,6 +45,9 @@ function M.setup()
                 },
                 {
                     {name = "buffer"}
+                },
+                {
+                    {name = "calc"}
                 }
             )
         }

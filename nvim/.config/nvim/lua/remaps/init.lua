@@ -96,7 +96,7 @@ local keyMaps = {
     ["v|<leader>dpv"] = {action = "<cmd>lua require('refactoring').debug.print_var({})<cr>"},
     ["n|<leader>dpc"] = {action = "<cmd>lua require('refactoring').debug.print_var({})<cr>"},
     -- Easier out from insert mode
-    ["i|<A-s>"] = {action = "<esc>", opts = {silent = true}},
+    ["i|<C-s>"] = {action = "<esc>", opts = {silent = true}},
     -- LuaSnips
     ["i|<Tab>"] = {
         action = "<cmd>lua require('plugins.config.luasnip.util').expand_or_jump_keymap()<cr>"

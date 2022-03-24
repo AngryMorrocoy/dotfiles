@@ -18,6 +18,9 @@ require "paq" {
     "hrsh7th/nvim-cmp",
     "hrsh7th/cmp-nvim-lsp",
     "saadparwaiz1/cmp_luasnip",
+    "hrsh7th/cmp-cmdline",
+    "hrsh7th/cmp-nvim-lsp-document-symbol",
+    "hrsh7th/cmp-calc",
     --
     "mhartington/formatter.nvim",
     "windwp/nvim-autopairs",

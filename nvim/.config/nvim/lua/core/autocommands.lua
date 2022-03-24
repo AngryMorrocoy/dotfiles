@@ -43,15 +43,12 @@ function M.setup()
             {
                 "TermOpen",
                 "*",
-                callUtilCommand(
-                    "nvim_load_opts",
-                    '{"bh": "hide"}'
-                )
+                callUtilCommand("nvim_load_opts", '{"bh": "hide"}')
             },
             -- Startinsert when enters a terminal buffer
             {"TermOpen", "*", "startinsert"},
             -- Stopinsert when leaving a terminal buffer
-            {"BufLeave", "term://*", "stopinsert"},
+            {"BufLeave", "term://*", "stopinsert"}
         }
     )
 
