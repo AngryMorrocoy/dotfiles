@@ -1,4 +1,5 @@
 local M = {}
+
 local opts = {
     -- Var with all the settings
     encoding = "utf-8", -- Encoding :v
@@ -40,7 +41,9 @@ local opts = {
     runtimepath = function()
         vim.opt.rtp:append {"/usr/bin/fzf"}
     end, -- Loads fzf
-    wildignore = "**/node_modules/**,**/__pycache__/**,**/.next/**"
+    wildignore = "**/node_modules/**,**/__pycache__/**,**/.next/**",
+    list = true,
+    listchars = {eol = ""}
 }
 
 function M.setup()
