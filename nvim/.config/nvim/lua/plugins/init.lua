@@ -8,7 +8,6 @@ require "paq" {
     "machakann/vim-highlightedyank",
     "andymass/vim-matchup",
     "szw/vim-maximizer",
-    "mhinz/vim-startify",
     "tpope/vim-surround",
     "sainnhe/gruvbox-material",
     "neovim/nvim-lspconfig",
@@ -61,5 +60,6 @@ require "paq" {
     "marko-cerovac/material.nvim",
     "adrian5/oceanic-next-vim",
     "L3MON4D3/LuaSnip",
-    "famiu/nvim-reload"
+    "famiu/nvim-reload",
+    "phaazon/hop.nvim"
 }

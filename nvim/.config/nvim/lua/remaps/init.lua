@@ -121,7 +121,14 @@ local keyMaps = {
     },
     ["s|<C-u>"] = {
         action = "<cmd>lua require('luasnip.extras.select_choice')()<cr>"
-    }
+    },
+    -- Quck nvim restart
+    ["n|<leader><leader>s"] = {action = "<cmd>Reload<cr>"},
+    -- Hop
+    ["n|f"] = {action = "<cmd>HopChar1CurrentLineAC<cr>"},
+    ["n|F"] = {action = "<cmd>HopChar1CurrentLineBC<cr>"},
+    ["n|<leader>j"] = {action = "<cmd>HopLineStartAC<cr>"},
+    ["n|<leader>k"] = {action = "<cmd>HopLineStartBC<cr>"}
 }
 
 return {

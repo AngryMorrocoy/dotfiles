@@ -11,15 +11,13 @@ M.plugs_config = {
     require("plugins.config.lspsignatures"),
     require("plugins.config.matchup"),
     require("plugins.config.nvim_tree"),
-    require("plugins.config.startify"),
-    require("plugins.config.polyglot"),
     require("plugins.config.treesitter"),
     require("plugins.config.nvim_rest"),
     require("plugins.config.harpoon"),
-    require("plugins.config.vimux"),
     require("plugins.config.lualine"),
     require("plugins.config.telescope"),
-    require("plugins.config.luasnip")
+    require("plugins.config.luasnip"),
+    require("plugins.config.hop")
 }
 
 function M.setup_all()
