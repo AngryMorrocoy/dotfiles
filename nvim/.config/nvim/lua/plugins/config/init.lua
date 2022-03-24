@@ -14,7 +14,6 @@ M.plugs_config = {
     require("plugins.config.startify"),
     require("plugins.config.polyglot"),
     require("plugins.config.treesitter"),
-    -- require("plugins.config.ultisnippets"),
     require("plugins.config.nvim_rest"),
     require("plugins.config.harpoon"),
     require("plugins.config.vimux"),
@@ -30,6 +29,7 @@ function M.setup_all()
 
     require("trouble").setup({})
     require("refactoring").setup({})
+    require("Comment").setup({})
 end
 
 return M
