@@ -40,6 +40,7 @@ require "paq" {
     "nvim-lua/popup.nvim",
     "ThePrimeagen/harpoon",
     "hoob3rt/lualine.nvim",
+    "arkav/lualine-lsp-progress",
     "folke/trouble.nvim",
     "nvim-telescope/telescope.nvim",
     {
