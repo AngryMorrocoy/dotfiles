@@ -107,7 +107,7 @@ local keyMaps = {
         action = "<cmd>lua require('plugins.config.luasnip.util').change_choice_node()<cr>"
     },
     ["i|<C-u>"] = {
-        action = "<cmd>lua require('plugins.config.luasnip.telescope').select_snip_choice()<cr>"
+        action = "<cmd>lua require('luasnip.extras.select_choice')()<cr>"
     },
     ["s|<Tab>"] = {
         action = "<cmd>lua require('plugins.config.luasnip.util').expand_or_jump_keymap()<cr>"
@@ -119,7 +119,7 @@ local keyMaps = {
         action = "<cmd>lua require('plugins.config.luasnip.util').change_choice_node()<cr>"
     },
     ["s|<C-u>"] = {
-        action = "<cmd>lua require('plugins.config.luasnip.telescope').select_snip_choice()<cr>"
+        action = "<cmd>lua require('luasnip.extras.select_choice')()<cr>"
     },
     -- Quck nvim restart
     ["n|<leader><leader>s"] = {action = "<cmd>Reload<cr>"}

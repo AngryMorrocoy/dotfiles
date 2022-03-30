@@ -16,7 +16,7 @@ M.plugs_config = {
     require("plugins.config.harpoon"),
     require("plugins.config.lualine"),
     require("plugins.config.telescope"),
-    require("plugins.config.luasnip"),
+    require("plugins.config.luasnip")
 }
 
 function M.setup_all()
@@ -28,6 +28,7 @@ function M.setup_all()
     require("refactoring").setup({})
     require("Comment").setup({})
     require("zen-mode").setup({})
+    require("dressing").setup({})
 end
 
 return M
