@@ -94,6 +94,21 @@ function M.setup()
                     i(0)
                 }
             )
+        ),
+        s(
+            {trig = "[lc][eo][tn]s?t?", regTrig = true},
+            fmt(
+                [[{} {} = {};]],
+                {
+                    f(
+                        function(_, snip)
+                            return snip.trigger
+                        end
+                    ),
+                    i(1),
+                    i(2)
+                }
+            )
         )
     }
 end
