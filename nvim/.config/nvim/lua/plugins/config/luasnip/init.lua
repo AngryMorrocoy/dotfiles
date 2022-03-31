@@ -26,7 +26,8 @@ function M.load_snippets()
                 require("plugins.config.luasnip.js_snips").setup()
             }
         ),
-        python = require("plugins.config.luasnip.py_snips").setup()
+        python = require("plugins.config.luasnip.py_snips").setup(),
+        tex=require("plugins.config.luasnip.tex_snips").setup(),
     }
 end
 

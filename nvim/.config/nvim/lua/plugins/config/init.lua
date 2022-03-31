@@ -28,7 +28,7 @@ function M.setup_all()
     require("refactoring").setup({})
     require("Comment").setup({})
     require("zen-mode").setup({})
-    require("dressing").setup({})
+    require("dressing").setup({input = {insert_only = false}})
 end
 
 return M
