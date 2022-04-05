@@ -5,7 +5,6 @@ require "paq" {
     "numToStr/Comment.nvim",
     "tpope/vim-fugitive",
     "airblade/vim-gitgutter",
-    "machakann/vim-highlightedyank",
     "andymass/vim-matchup",
     "tpope/vim-surround",
     "sainnhe/gruvbox-material",

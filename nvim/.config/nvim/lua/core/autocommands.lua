@@ -55,6 +55,7 @@ function M.setup()
     -- Load all the syntax specific configs
     nvim_set_autocmd({"FileType", "*", callUtilAutoCommand("load_syntax_specific_opts")})
     nvim_set_autocmd({"BufEnter", "*.http,*.rest", "set filetype=http"})
+    nvim_set_autocmd({"TextYankPost", "*", "silent!", "lua vim.highlight.on_yank {higroup='PmenuSel', timeout=150}"})
 end
 
 return M
