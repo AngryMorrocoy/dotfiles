@@ -163,6 +163,11 @@ keys += [
                         "s",
                         lazy.spawn("rofi-tmux-sessions"),
                     ],
+                    [
+                        [],
+                        "k",
+                        lazy.spawn("rofi-keyboard"),
+                    ],
                 ]
             ],
         ],

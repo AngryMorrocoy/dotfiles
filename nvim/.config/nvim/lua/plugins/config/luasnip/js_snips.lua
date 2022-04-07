@@ -109,6 +109,18 @@ function M.setup()
                     i(2)
                 }
             )
+        ),
+        s(
+            "imp",
+            fmt(
+                [[
+                import {} from '{}';
+                ]],
+                {
+                    i(1),
+                    i(2)
+                }
+            )
         )
     }
 end

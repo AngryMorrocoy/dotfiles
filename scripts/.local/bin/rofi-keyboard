@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+KEYBOARD_LAYOUTS=("latam-dvorak" "latam")
+
+gen_list() {
+    for layout in ${KEYBOARD_LAYOUTS[@]};do
+        echo "${layout}"
+    done
+}
+
+main() {
+  selected_layout=$( (gen_list) | rofi -dmenu -i -no-custom -p "" )
+  if [[ -n "${selected_layout}" ]]; then
+    setxkbmap ${selected_layout}
+  fi
+}
+
+main
+exit 0

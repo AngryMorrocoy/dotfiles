@@ -48,13 +48,13 @@ function M.setup()
                     c(
                         7,
                         {
-                            t(""),
                             f(
                                 function(component_name)
                                     return {"", "", "export default " .. component_name[1][1] .. ";"}
                                 end,
                                 {2}
-                            )
+                            ),
+                            t("")
                         }
                     )
                 }

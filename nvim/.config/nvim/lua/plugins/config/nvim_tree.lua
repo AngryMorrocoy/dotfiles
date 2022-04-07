@@ -30,7 +30,7 @@ function M.setup()
             args = {}
         },
         view = {
-            width = "15%",
+            width = "18%",
             height = 30,
             side = "right",
             auto_resize = false,
