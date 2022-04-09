@@ -4,7 +4,7 @@ function M.load_snippets()
     local ls = require("luasnip")
     local concat_tables = require("core.util").concat_tables
 
-    ls.snippets = {
+    local snippets = {
         lua = require("plugins.config.luasnip.lua_snips").setup(),
         javascript = require("plugins.config.luasnip.js_snips").setup(),
         javascriptreact = concat_tables(
@@ -27,8 +27,12 @@ function M.load_snippets()
             }
         ),
         python = require("plugins.config.luasnip.py_snips").setup(),
-        tex=require("plugins.config.luasnip.tex_snips").setup(),
+        tex = require("plugins.config.luasnip.tex_snips").setup()
     }
+
+    for ft, snips in pairs(snippets) do
+        ls.add_snippets(ft, snips)
+    end
 end
 
 function M.setup()

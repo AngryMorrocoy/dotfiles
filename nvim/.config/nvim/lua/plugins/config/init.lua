@@ -29,6 +29,11 @@ function M.setup_all()
     require("Comment").setup({})
     require("zen-mode").setup({})
     require("dressing").setup({input = {insert_only = false}})
+    require("auto-session").setup(
+        {
+            auto_restore_enabled = false
+        }
+    )
 end
 
 return M

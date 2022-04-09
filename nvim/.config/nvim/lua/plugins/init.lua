@@ -61,5 +61,7 @@ require "paq" {
     "L3MON4D3/LuaSnip",
     "famiu/nvim-reload",
     "folke/zen-mode.nvim",
-    "stevearc/dressing.nvim"
+    "stevearc/dressing.nvim",
+    "rmagatti/auto-session",
+    "mfussenegger/nvim-lint"
 }

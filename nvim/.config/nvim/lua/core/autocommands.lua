@@ -56,6 +56,8 @@ function M.setup()
     nvim_set_autocmd({"FileType", "*", callUtilAutoCommand("load_syntax_specific_opts")})
     nvim_set_autocmd({"BufEnter", "*.http,*.rest", "set filetype=http"})
     nvim_set_autocmd({"TextYankPost", "*", "silent!", "lua vim.highlight.on_yank {higroup='PmenuSel', timeout=150}"})
+    -- vim.api.nvim_command("au BufWritePost * lua require('lint').try_lint()")
+    nvim_set_autocmd({"BufWritePost", "*", "lua require('lint').try_lint()"})
 end
 
 return M

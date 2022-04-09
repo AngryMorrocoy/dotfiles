@@ -13,7 +13,7 @@ function M.setup()
             enable = true,
             auto_open = true
         },
-        auto_close = true,
+        -- auto_close = true,
         open_on_tab = false,
         hijack_cursor = true,
         update_cwd = true,

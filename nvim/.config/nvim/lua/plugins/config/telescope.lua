@@ -35,6 +35,7 @@ function M.setup()
 
     require("telescope").load_extension("fzf")
     require("telescope").load_extension("refactoring")
+    require("telescope").load_extension("session-lens")
 end
 
 return M
