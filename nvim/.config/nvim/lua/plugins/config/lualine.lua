@@ -12,7 +12,7 @@ function M.setup()
             sections = {
                 lualine_a = {"mode"},
                 lualine_b = {"filetype", "branch", "diagnostics"},
-                lualine_c = {},
+                lualine_c = {"filename"},
                 lualine_x = {},
                 lualine_y = {
                     "lsp_progress",

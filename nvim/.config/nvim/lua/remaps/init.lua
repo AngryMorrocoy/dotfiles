@@ -54,11 +54,11 @@ local keyMaps = {
     ["n|<leader>fo"] = {action = "<cmd>Telescope loclist<cr>", opts = {silent = true}},
     ["n|<leader>ft"] = {action = "<cmd>Telescope lsp_document_symbols<cr>", opts = {silent = true}},
     -- Lsp
-    ["n|gd"] = {action = "<cmd>lua vim.lsp.buf.definition() <cr>", {silent = true}},
-    ["n|gvd"] = {action = "<cmd>vsplit | lua vim.lsp.buf.definition() <cr>", {silent = true}},
+    ["n|gd"] = {action = vim.lsp.buf.definition, {silent = true}},
+    ["n|gvd"] = {action = "<cmd>vsplit | lua vim.lsp.buf.definition()<cr>", {silent = true}},
     ["n|gsd"] = {action = "<cmd>split |lua vim.lsp.buf.definition() <cr>", {silent = true}},
-    ["n|<leader>d"] = {action = "<cmd>lua vim.lsp.buf.hover()<cr>", opts = {silent = true}},
-    ["n|<leader>.r"] = {action = "<cmd>lua vim.lsp.buf.rename()<cr>", opts = {silent = true}},
+    ["n|<leader>d"] = {action = vim.lsp.buf.hover, opts = {silent = true}},
+    ["n|<leader>.r"] = {action = vim.lsp.buf.rename, opts = {silent = true}},
     ["n|gr"] = {action = "<cmd>Telescope lsp_references<cr>", opts = {silent = true}},
     -- Toggle recent files
     ["n|<leader><space>"] = {action = "<C-^>", opts = {silent = true}},
@@ -71,14 +71,42 @@ local keyMaps = {
     ["n|<C-f>"] = {action = "<C-f>zz", opts = {silent = true}},
     ["n|<C-b>"] = {action = "<C-b>zz", opts = {silent = true}},
     -- Harpoon marks
-    ["n|<leader><leader>m"] = {action = "<cmd>lua require('harpoon.mark').add_file()<cr>"},
-    ["n|<leader><leader>a"] = {action = "<cmd>lua require('harpoon.ui').nav_file(1)<cr>"},
-    ["n|<leader><leader>o"] = {action = "<cmd>lua require('harpoon.ui').nav_file(2)<cr>"},
-    ["n|<leader><leader>e"] = {action = "<cmd>lua require('harpoon.ui').nav_file(3)<cr>"},
-    ["n|<leader><leader>u"] = {action = "<cmd>lua require('harpoon.ui').nav_file(4)<cr>"},
-    ["n|<leader><leader>ta"] = {action = "<cmd>lua require('harpoon.term').gotoTerminal(1)<cr>"},
+    ["n|<leader><leader>m"] = {
+        action = function()
+            require("harpoon.mark").add_file()
+        end
+    },
+    ["n|<leader><leader>a"] = {
+        action = function()
+            require("harpoon.ui").nav_file(1)
+        end
+    },
+    ["n|<leader><leader>o"] = {
+        action = function()
+            require("harpoon.ui").nav_file(2)
+        end
+    },
+    ["n|<leader><leader>e"] = {
+        action = function()
+            require("harpoon.ui").nav_file(3)
+        end
+    },
+    ["n|<leader><leader>u"] = {
+        action = function()
+            require("harpoon.ui").nav_file(4)
+        end
+    },
+    ["n|<leader><leader>ta"] = {
+        action = function()
+            require("harpoon.term").gotoTerminal(1)
+        end
+    },
     ["n|<leader><leader>to"] = {action = "<cmd>lua require('harpoon.term').gotoTerminal(2)<cr>"},
-    ["n|<leader><leader>q"] = {action = "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>"},
+    ["n|<leader><leader>q"] = {
+        action = function()
+            require("harpoon.ui").toggle_quick_menu()
+        end
+    },
     -- Quickfix/Loclist stuff
     ["n|<leader><c-d>"] = {action = "<cmd>cnext<cr>"},
     ["n|<leader><c-a>"] = {action = "<cmd>cprev<cr>"},
@@ -91,35 +119,51 @@ local keyMaps = {
     ["n|<leader>xw"] = {action = "<cmd>Trouble lsp_workspace_diagnostics<cr>"},
     ["n|<leader>xd"] = {action = "<cmd>Trouble lsp_document_diagnostics<cr>"},
     -- Refactoring
-    ["v|<leader>rr"] = {action = "<Esc><cmd>lua require('telescope').extensions.refactoring.refactors()<cr>"},
-    ["v|<leader>dpv"] = {action = "<cmd>lua require('refactoring').debug.print_var({})<cr>"},
-    ["n|<leader>dpc"] = {action = "<cmd>lua require('refactoring').debug.print_var({})<cr>"},
+    ["v|<leader>rr"] = {action = require("telescope").extensions.refactoring.refactors},
+    ["v|<leader>dpv"] = {action = require("refactoring").debug.print_var},
+    ["n|<leader>dpc"] = {action = require("refactoring").debug.print_var},
     -- Easier out from insert mode
     ["i|<C-s>"] = {action = "<esc>", opts = {silent = true}},
     -- LuaSnips
     ["i|<Tab>"] = {
-        action = "<cmd>lua require('plugins.config.luasnip.util').expand_or_jump_keymap()<cr>"
+        action = function()
+            require("plugins.config.luasnip.util").expand_or_jump_keymap()
+        end
     },
     ["i|<S-Tab>"] = {
-        action = "<cmd>lua require('plugins.config.luasnip.util').jump_backwards()<cr>"
+        action = function()
+            require("plugins.config.luasnip.util").jump_backwards()
+        end
     },
     ["i|<C-l>"] = {
-        action = "<cmd>lua require('plugins.config.luasnip.util').change_choice_node()<cr>"
+        action = function()
+            require("plugins.config.luasnip.util").change_choice_node()
+        end
     },
     ["i|<C-u>"] = {
-        action = "<cmd>lua require('luasnip.extras.select_choice')()<cr>"
+        action = function()
+            require("luasnip.extras.select_choice")()
+        end
     },
     ["s|<Tab>"] = {
-        action = "<cmd>lua require('plugins.config.luasnip.util').expand_or_jump_keymap()<cr>"
+        action = function()
+            require("plugins.config.luasnip.util").expand_or_jump_keymap()
+        end
     },
     ["s|<S-Tab>"] = {
-        action = "<cmd>lua require('plugins.config.luasnip.util').jump_backwards()<cr>"
+        action = function()
+            require("plugins.config.luasnip.util").jump_backwards()
+        end
     },
     ["s|<C-l>"] = {
-        action = "<cmd>lua require('plugins.config.luasnip.util').change_choice_node()<cr>"
+        action = function()
+            require("plugins.config.luasnip.util").change_choice_node()
+        end
     },
     ["s|<C-u>"] = {
-        action = "<cmd>lua require('luasnip.extras.select_choice')()<cr>"
+        action = function()
+            require("luasnip.extras.select_choice")()
+        end
     },
     -- Quck nvim restart
     ["n|<leader><leader>s"] = {action = "<cmd>Reload<cr>"}

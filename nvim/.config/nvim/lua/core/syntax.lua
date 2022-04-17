@@ -41,19 +41,11 @@ syntaxes["^python$"] = {
     tabstop = 4,
     smartindent = true,
     foldmethod = "indent",
-    colorcolumn = "79",
+    colorcolumn = "80",
     maps = {
         ["n|<leader>r"] = {action = '<cmd>!python3 "%"<cr>'},
         ["n|<leader>dr"] = {action = '<cmd>!python3 "%"<cr>'}
     }
-}
-
-syntaxes["^nerdtree$"] = {
-    shiftwidth = 2,
-    tabstop = 2,
-    run = function()
-        vim.cmd("IndentLinesEnable")
-    end
 }
 
 syntaxes["^lua$"] = {
@@ -63,7 +55,7 @@ syntaxes["^lua$"] = {
 
 syntaxes["^http$"] = {
     maps = {
-        ["n|<leader>r"] = {action = "<cmd>call v:lua.require('rest-nvim').run()<cr>", opts = {silent = true}}
+        ["n|<leader>r"] = {action = require("rest-nvim").run, opts = {silent = true}}
     }
 }
 

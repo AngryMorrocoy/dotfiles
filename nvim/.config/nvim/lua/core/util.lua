@@ -3,7 +3,6 @@ M.autocommands = {}
 local api = vim.api
 local fn = vim.fn
 local cmd = vim.cmd
-local g = vim.g
 
 local function copyTable(_table)
     local _table2 = {}
