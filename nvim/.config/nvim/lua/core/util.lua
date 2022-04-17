@@ -30,25 +30,6 @@ function M.nvim_load_opts(opts, localonly) -- Load all the options in opts table
     end
 end
 
-function M.nvim_set_autocmd(definition)
-    -- The definition is a table with the event, pattern, and command
-    -- Sample:
-    -- { 'BufWritePre', '*', '%s/\\s\+$//e' } This is for deleting trailing whitespaces
-    local actual_definition = table.concat(vim.tbl_flatten(definition), " ")
-    api.nvim_command("autocmd " .. actual_definition)
-end
-
-function M.nvim_create_augroup(augroup_name, autocommands)
-    -- The autocommands parameter must be a table with the format
-    -- that receivse nvim_set_autocmd (see up ^)
-    api.nvim_command("augroup " .. augroup_name)
-    api.nvim_command("autocmd!")
-    for _, def in ipairs(autocommands) do
-        M.nvim_set_autocmd(def)
-    end
-    api.nvim_command("augroup END")
-end
-
 function M.nvim_set_highlight(hlname, props, getstr)
     -- hlname: The name of the highlight
     -- props: A table with key:value for the props being set
@@ -59,11 +40,10 @@ function M.nvim_set_highlight(hlname, props, getstr)
         local str_prop = prop .. "=" .. value
         hl_command = hl_command .. str_prop .. " "
     end
-    if not getstr then
-        cmd(hl_command)
-    else
+    if getstr then
         return hl_command
     end
+    cmd(hl_command)
 end
 
 function M.close_all_float_win()
