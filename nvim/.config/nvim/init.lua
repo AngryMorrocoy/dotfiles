@@ -24,7 +24,10 @@ local function loadTheme()
     else
         theme_loader_file:close()
     end
+
     require("theme").load_theme()
 end
 
+
 loadTheme()
+vim.opt.ls = 3

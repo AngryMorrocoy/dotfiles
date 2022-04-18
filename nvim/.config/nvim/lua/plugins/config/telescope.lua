@@ -9,9 +9,16 @@ function M.setup()
                         ["<C-j>"] = "move_selection_next",
                         ["<C-k>"] = "move_selection_previous",
                         ["<c-d>"] = require("telescope.actions").delete_buffer
+                    },
+                    n = {
+                        ["<c-d>"] = require("telescope.actions").delete_buffer
                     }
                 },
-                file_ignore_patterns = {"node_modules/.*", "__pycache__/.*"}
+                file_ignore_patterns = {"node_modules/.*", "__pycache__/.*"},
+                layout_strategy = "bottom_pane",
+                layout_config = {
+                    prompt_position = "bottom"
+                }
             },
             pickers = {
                 find_files = {
@@ -35,7 +42,6 @@ function M.setup()
 
     require("telescope").load_extension("fzf")
     require("telescope").load_extension("refactoring")
-    require("telescope").load_extension("session-lens")
 end
 
 return M

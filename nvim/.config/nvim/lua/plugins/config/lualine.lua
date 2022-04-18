@@ -7,7 +7,7 @@ function M.setup()
             options = {
                 component_separators = {left = "", right = ""},
                 section_separators = {left = "", right = ""},
-                theme = lua_theme
+                -- theme = lua_theme
             },
             sections = {
                 lualine_a = {"mode"},
