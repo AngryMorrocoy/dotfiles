@@ -121,7 +121,7 @@ local keyMaps = {
     -- Refactoring
     ["v|<leader>rr"] = {action = require("telescope").extensions.refactoring.refactors},
     ["v|<leader>dpv"] = {action = require("refactoring").debug.print_var},
-    ["n|<leader>dpc"] = {action = require("refactoring").debug.print_var},
+    ["n|<leader>dpv"] = {action = require("refactoring").debug.print_var},
     -- Easier out from insert mode
     ["i|<C-s>"] = {action = "<esc>", opts = {silent = true}},
     -- LuaSnips

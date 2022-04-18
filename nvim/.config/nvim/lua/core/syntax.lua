@@ -31,8 +31,8 @@ syntaxes["^javascript|^typescript"] = {
 }
 
 syntaxes["^json$"] = {
-    shiftwidth = 4,
-    tabstop = 4,
+    shiftwidth = 2,
+    tabstop = 2,
     expandtab = true
 }
 

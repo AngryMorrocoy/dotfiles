@@ -10,7 +10,7 @@ M.filetype_formatters = {
     typescript = prettier_config,
     json = {
         function()
-            return prettier_config[1](4)
+            return prettier_config[1](2)
         end
     },
     html = {
