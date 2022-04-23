@@ -166,7 +166,9 @@ local keyMaps = {
         end
     },
     -- Quck nvim restart
-    ["n|<leader><leader>s"] = {action = "<cmd>Reload<cr>"}
+    ["n|<leader><leader>s"] = {action = "<cmd>Reload<cr>"},
+    -- Reload a session
+    ["n|<leader><leader>r"] = {action = "<cmd>RestoreSession<cr>"}
 }
 
 return {

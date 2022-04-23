@@ -2,6 +2,7 @@ local M = {}
 
 function M.setup()
     local parser_configs = require("nvim-treesitter.parsers").get_parser_configs()
+
     parser_configs.http = {
         install_info = {
             url = "https://github.com/NTBBloodbath/tree-sitter-http",
@@ -44,10 +45,7 @@ function M.setup()
             rainbow = {
                 enable = true,
                 extended_mode = true
-            }
-            -- matchup = {
-            --     enable = true
-            -- }
+            },
         }
     )
 end
