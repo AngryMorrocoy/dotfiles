@@ -21,3 +21,7 @@ alias qtilecfg="cd ${XDG_CONFIG_HOME}/qtile"
 
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
+
+# Lazygit
+
+alias lg='lazygit'
