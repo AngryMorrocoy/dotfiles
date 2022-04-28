@@ -37,8 +37,6 @@ local keyMaps = {
     ["n|<C-Left>"] = {action = "<C-w>>"},
     ["n|<C-Up>"] = {action = "<C-w>+"},
     ["n|<C-Down>"] = {action = "<C-w>-"},
-    -- Git related sutff
-    ["n|<leader>Gs"] = {action = "<cmd>Git<cr>"},
     --
     ["n|<leader>p"] = {action = "<cmd>FormatWrite<cr>"},
     -- FZF movements
@@ -165,7 +163,7 @@ local keyMaps = {
     ["n|<leader>t"] = {action = "<cmd>FloatermToggle<cr>"},
     -- Gitsigns
     ["n|<leader>hp"] = {action = "<cmd>Gitsigns preview_hunk<cr>"},
-    ["n|<leader>hu"] = {action = "<cmd>Gitsigns reset_hunk<cr>"},
+    ["n|<leader>hu"] = {action = "<cmd>Gitsigns reset_hunk<cr>"}
 }
 
 return {
