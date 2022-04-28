@@ -93,9 +93,7 @@ local keyMaps = {
         end
     },
     ["n|<leader><leader>q"] = {
-        action = function()
-            require("harpoon.ui").toggle_quick_menu()
-        end
+        action = require("harpoon.ui").toggle_quick_menu
     },
     -- Quickfix/Loclist stuff
     ["n|<leader><c-d>"] = {action = "<cmd>cnext<cr>"},
@@ -116,44 +114,28 @@ local keyMaps = {
     ["i|<C-s>"] = {action = "<esc>", opts = {silent = true}},
     -- LuaSnips
     ["i|<Tab>"] = {
-        action = function()
-            require("plugins.config.luasnip.util").expand_or_jump_keymap()
-        end
+        action = require("plugins.config.luasnip.util").expand_or_jump_keymap
     },
     ["i|<S-Tab>"] = {
-        action = function()
-            require("plugins.config.luasnip.util").jump_backwards()
-        end
+        action = require("plugins.config.luasnip.util").jump_backwards
     },
     ["i|<C-l>"] = {
-        action = function()
-            require("plugins.config.luasnip.util").change_choice_node()
-        end
+        action = require("plugins.config.luasnip.util").change_choice_node
     },
     ["i|<C-u>"] = {
-        action = function()
-            require("luasnip.extras.select_choice")()
-        end
+        action = require("luasnip.extras.select_choice")
     },
     ["s|<Tab>"] = {
-        action = function()
-            require("plugins.config.luasnip.util").expand_or_jump_keymap()
-        end
+        action = require("plugins.config.luasnip.util").expand_or_jump_keymap
     },
     ["s|<S-Tab>"] = {
-        action = function()
-            require("plugins.config.luasnip.util").jump_backwards()
-        end
+        action = require("plugins.config.luasnip.util").jump_backwards
     },
     ["s|<C-l>"] = {
-        action = function()
-            require("plugins.config.luasnip.util").change_choice_node()
-        end
+        action = require("plugins.config.luasnip.util").change_choice_node
     },
     ["s|<C-u>"] = {
-        action = function()
-            require("luasnip.extras.select_choice")()
-        end
+        action = require("luasnip.extras.select_choice")
     },
     -- Quck nvim restart
     ["n|<leader><leader>s"] = {action = "<cmd>Reload<cr>"},
@@ -163,7 +145,10 @@ local keyMaps = {
     ["n|<leader>t"] = {action = "<cmd>FloatermToggle<cr>"},
     -- Gitsigns
     ["n|<leader>hp"] = {action = "<cmd>Gitsigns preview_hunk<cr>"},
-    ["n|<leader>hu"] = {action = "<cmd>Gitsigns reset_hunk<cr>"}
+    ["n|<leader>hu"] = {action = "<cmd>Gitsigns reset_hunk<cr>"},
+    ["n|<leader>hs"] = {action = "<cmd>Gitsigns stage_hunk<cr>"},
+    ["n|<leader>ha"] = {action = "<cmd>Gitsigns prev_hunk<cr>"},
+    ["n|<leader>ho"] = {action = "<cmd>Gitsigns next_hunk<cr>"}
 }
 
 return {

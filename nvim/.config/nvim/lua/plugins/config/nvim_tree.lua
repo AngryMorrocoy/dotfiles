@@ -50,7 +50,7 @@ function M.setup()
                     {key = "<Tab>", cb = tree_cb("preview")},
                     {key = "K", cb = tree_cb("first_sibling")},
                     {key = "J", cb = tree_cb("last_sibling")},
-                    {key = "I", cb = tree_cb("toggle_ignored")},
+                    {key = "I", action = "toggle_git_ignored"},
                     {key = "H", cb = tree_cb("toggle_dotfiles")},
                     {key = "R", cb = tree_cb("refresh")},
                     {key = "a", cb = tree_cb("create")},
