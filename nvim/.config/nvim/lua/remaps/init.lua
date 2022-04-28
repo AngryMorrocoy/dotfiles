@@ -39,7 +39,6 @@ local keyMaps = {
     ["n|<C-Down>"] = {action = "<C-w>-"},
     -- Git related sutff
     ["n|<leader>Gs"] = {action = "<cmd>Git<cr>"},
-    ["n|<leader>Gb"] = {action = "<cmd>Telescope git_branches<cr>", opts = {silent = true}},
     --
     ["n|<leader>p"] = {action = "<cmd>FormatWrite<cr>"},
     -- FZF movements
@@ -48,7 +47,6 @@ local keyMaps = {
     ["n|<leader>fF"] = {action = "<cmd>Telescope git_files<cr>", opts = {silent = true}},
     ["n|<leader>fl"] = {action = "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts = {silent = true}},
     ["n|<leader>fs"] = {action = "<cmd>Telescope live_grep<cr>", opts = {silent = true}},
-    ["n|<leader>fS"] = {action = "<cmd>TelescopeProjectGrepNoIgnore<cr>", opts = {silent = true}},
     ["n|<leader>fh"] = {action = "<cmd>Telescope help_tags<cr>", opts = {silent = true}},
     ["n|<leader>fq"] = {action = "<cmd>Telescope quickfix<cr>", opts = {silent = true}},
     ["n|<leader>fo"] = {action = "<cmd>Telescope loclist<cr>", opts = {silent = true}},
@@ -96,12 +94,6 @@ local keyMaps = {
             require("harpoon.ui").nav_file(4)
         end
     },
-    ["n|<leader><leader>ta"] = {
-        action = function()
-            require("harpoon.term").gotoTerminal(1)
-        end
-    },
-    ["n|<leader><leader>to"] = {action = "<cmd>lua require('harpoon.term').gotoTerminal(2)<cr>"},
     ["n|<leader><leader>q"] = {
         action = function()
             require("harpoon.ui").toggle_quick_menu()
@@ -168,7 +160,9 @@ local keyMaps = {
     -- Quck nvim restart
     ["n|<leader><leader>s"] = {action = "<cmd>Reload<cr>"},
     -- Reload a session
-    ["n|<leader><leader>r"] = {action = "<cmd>RestoreSession<cr>"}
+    ["n|<leader><leader>r"] = {action = "<cmd>RestoreSession<cr>"},
+    -- Floaterm toggle
+    ["n|<leader>t"] = {action = "<cmd>FloatermToggle<cr>"}
 }
 
 return {

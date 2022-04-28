@@ -50,13 +50,6 @@ function M.setup()
         }
     )
 
-    -- vim.api.nvim_create_autocmd(
-    --     "BufWritePost",
-    --     {
-    --         callback = require("lint").try_lint
-    --     }
-    -- )
-
     local terminalAuGroup = vim.api.nvim_create_augroup("TermStuff", {})
 
     vim.api.nvim_create_autocmd(

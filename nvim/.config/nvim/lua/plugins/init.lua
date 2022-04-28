@@ -3,13 +3,11 @@ require "paq" {
     "mattn/emmet-vim",
     "lukas-reineke/indent-blankline.nvim",
     "numToStr/Comment.nvim",
-    "tpope/vim-fugitive",
     "airblade/vim-gitgutter",
     "andymass/vim-matchup",
     "tpope/vim-surround",
     "sainnhe/gruvbox-material",
     "neovim/nvim-lspconfig",
-    "glepnir/lspsaga.nvim",
     --
     "hrsh7th/nvim-cmp",
     "hrsh7th/cmp-nvim-lsp",
@@ -63,5 +61,5 @@ require "paq" {
     "folke/zen-mode.nvim",
     "stevearc/dressing.nvim",
     "rmagatti/auto-session",
-    "mfussenegger/nvim-lint"
+    "voldikss/vim-floaterm"
 }

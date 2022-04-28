@@ -7,7 +7,6 @@ M.plugs_config = {
     require("plugins.config.cmp"),
     require("plugins.config.emmet"),
     require("plugins.config.indent_blankline"),
-    require("plugins.config.lspsaga"),
     require("plugins.config.lspsignatures"),
     require("plugins.config.matchup"),
     require("plugins.config.nvim_tree"),
@@ -16,7 +15,8 @@ M.plugs_config = {
     require("plugins.config.harpoon"),
     require("plugins.config.lualine"),
     require("plugins.config.telescope"),
-    require("plugins.config.luasnip")
+    require("plugins.config.luasnip"),
+    require("plugins.config.floaterm")
 }
 
 function M.setup_all()
