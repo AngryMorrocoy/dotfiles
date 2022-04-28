@@ -1,0 +1,8 @@
+git:
+  paging:
+    colorArg: never
+    useConfig: false
+    pager: delta --dark --paging=never
+os:
+  editCommand: 'lazygit-editor' # Uses my custom script
+                                # for tmux and nvim remote integration
