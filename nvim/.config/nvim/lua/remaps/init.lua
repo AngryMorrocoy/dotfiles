@@ -162,7 +162,10 @@ local keyMaps = {
     -- Reload a session
     ["n|<leader><leader>r"] = {action = "<cmd>RestoreSession<cr>"},
     -- Floaterm toggle
-    ["n|<leader>t"] = {action = "<cmd>FloatermToggle<cr>"}
+    ["n|<leader>t"] = {action = "<cmd>FloatermToggle<cr>"},
+    -- Gitsigns
+    ["n|<leader>hp"] = {action = "<cmd>Gitsigns preview_hunk<cr>"},
+    ["n|<leader>hu"] = {action = "<cmd>Gitsigns reset_hunk<cr>"},
 }
 
 return {
