@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# A script that opens nvim from lazygit, if it was opened from a tmux pane, checks
+# if exists a nvim remote server for that pane
+
+if [[ !(-n ${TMUX}) ]]; then
+    nvim $1
+    exit 0
+fi
+
+NVIM_SERVER="/tmp/nvim-tmux-${LAZYGIT_OPENED_FROM}.pipe"
+
+if [ -e ${NVIM_SERVER} -a -n ${LAZYGIT_OPENED_FROM} ];then
+    FILENAME="$(pwd)/$1"
+    nvim --server "${NVIM_SERVER}" --remote "${FILENAME}"
+else
+    nvim $1
+fi
