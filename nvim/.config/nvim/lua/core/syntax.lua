@@ -60,11 +60,7 @@ syntaxes["^http$"] = {
 }
 
 syntaxes["^tex$"] = {
-    conceallevel = 0,
-    maps = {},
-    run = function()
-        vim.cmd("let maplocalleader=','")
-    end
+    conceallevel = 0
 }
 
 return syntaxes

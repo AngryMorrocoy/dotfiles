@@ -42,6 +42,14 @@ function M.setup()
     ) -- To set coloring in rest files
 
     vim.api.nvim_create_autocmd(
+        "BufReadPre",
+        {
+            pattern = {"*.tex"},
+            command = "let maplocalleader=','"
+        }
+    ) -- Fixing a bug with vimtex :c
+
+    vim.api.nvim_create_autocmd(
         "TextYankPost",
         {
             callback = function()
