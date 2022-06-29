@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+gen_list() {
+    IFS=$'\n'
+    WIFIS=($(nmcli -f IN-USE,SSID,BARS,SECURITY d wifi list))
+    for (( i=1; i < ${#WIFIS[*]} - 1; i++ )); do
+        echo ${WIFIS[$i]}
+    done
+    unset IFS
+}
+
+main() {
+    SELECTED_WIFI=$(gen_list | rofi -dmenu -i -no-custom -p " ")
+    if [[ ! -n $SELECTED_WIFI ]];then
+        exit 1
+    fi
+
+    SELECTED_WIFI=$(tr -s " " <<< $SELECTED_WIFI)
+
+    SSID=$(cut -d " " -f2 <<< $SELECTED_WIFI)
+
+    echo $SSID
+
+    nmcli device wifi connect "$SSID"
+}
+
+main

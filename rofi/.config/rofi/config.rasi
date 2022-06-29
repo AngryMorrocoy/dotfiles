@@ -144,6 +144,6 @@ configuration {
       sorting-method:    "name";
   }
 }
-@theme "glue_pro_blue"
+/* @theme "glue_pro_blue" */
 /* @theme "gruvbox-dark" */
-/* @theme "android_notification"; */
+@theme "android_notification"

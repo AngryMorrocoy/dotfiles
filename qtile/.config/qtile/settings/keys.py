@@ -144,14 +144,6 @@ keys += [
                     ],
                     # --The script for searching across the web--#
                     [[], "s", lazy.spawn("rofi-search")],
-                    # --Script for look inside my configs--#
-                    [
-                        [],
-                        "c",
-                        lazy.spawn("rofi-config-editor"),
-                    ],
-                    # --Menu for editors--
-                    [[], "v", lazy.spawn("editor_select")],
                     # -- Tmux launchers --
                     [
                         ["shift"],
@@ -167,6 +159,11 @@ keys += [
                         [],
                         "k",
                         lazy.spawn("rofi-keyboard"),
+                    ],
+                    [
+                        [],
+                        "w",
+                        lazy.spawn("rofi-wifi"),
                     ],
                 ]
             ],
