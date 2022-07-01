@@ -5,6 +5,7 @@ import json
 from bs4 import BeautifulSoup
 from .path import qtile_path
 from os import path
+from datetime import datetime
 
 
 def window_to_next_group(qtile):
@@ -42,22 +43,24 @@ def resize_floating(qtile, dw, dh):
 
 
 def get_dollar():
-    """Access the DolarToday data, and get dollar price"""
-    dolar_today_url = "https://s3.amazonaws.com/dolartoday/data.json"
+    """Access a personal api to get the last MonitorDolar's dolar update"""
+    api_url = "https://dolar-visualizer.herokuapp.com/api/dolar-history"
 
     try:
-        page = requests.get(dolar_today_url)
+        page = requests.get(api_url, {"page_size": 1})
     except Exception as e:
         return re.search("<class '(.*)'", str(e.__class__)).groups()[0]
     if not page.ok:
         return "Couldn't get the data"
 
-    json_data = page.json()
+    json_data = page.json()["results"][0]
 
-    fecha = json_data["_timestamp"]["fecha"]
-    dollar_price = json_data["USD"]["promedio"]
+    # Removing the trailing z, to format it
+    date = datetime.fromisoformat(json_data["date"][:-1])
+    pretty_date = date.strftime("%d-%m-%Y %H:%M")
+    dollar_price = json_data["price"]
 
-    return f"{dollar_price} Bs.D ({fecha})"
+    return f"{dollar_price} Bs.D ({date})"
 
 
 def get_battery_status():
