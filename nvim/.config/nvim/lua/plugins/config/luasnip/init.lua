@@ -27,7 +27,8 @@ function M.load_snippets()
             }
         ),
         python = require("plugins.config.luasnip.py_snips").setup(),
-        tex = require("plugins.config.luasnip.tex_snips").setup()
+        tex = require("plugins.config.luasnip.tex_snips").setup(),
+        go = require("plugins.config.luasnip.go_snpis").setup()
     }
 
     for ft, snips in pairs(snippets) do
