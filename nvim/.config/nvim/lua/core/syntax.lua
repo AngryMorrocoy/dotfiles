@@ -14,8 +14,8 @@ syntaxes["^css$|^scss$"] = {
 }
 
 syntaxes["html*"] = {
-    shiftwidth = 4,
-    tabstop = 4,
+    shiftwidth = 2,
+    tabstop = 2,
     expandtab = true,
     foldmethod = "indent"
 }
@@ -61,6 +61,11 @@ syntaxes["^http$"] = {
 
 syntaxes["^tex$"] = {
     conceallevel = 0
+}
+
+syntaxes["^go$"] = {
+    shiftwidth = 4,
+    tabstop = 4,
 }
 
 return syntaxes

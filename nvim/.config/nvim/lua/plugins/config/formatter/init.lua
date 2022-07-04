@@ -2,6 +2,7 @@ local M = {}
 local prettier_config = require("plugins.config.formatter.prettier")
 local luafmt_config = require("plugins.config.formatter.luafmt")
 local black_config = require("plugins.config.formatter.black")
+local gofmt_config = require("plugins.config.formatter.gofmt")
 
 M.filetype_formatters = {
     javascript = prettier_config,
@@ -15,7 +16,7 @@ M.filetype_formatters = {
     },
     html = {
         function()
-            return prettier_config[1](4)
+            return prettier_config[1](2)
         end
     },
     htmldjango = {
@@ -26,7 +27,8 @@ M.filetype_formatters = {
     css = prettier_config,
     scss = prettier_config,
     lua = luafmt_config,
-    python = black_config
+    python = black_config,
+    go = gofmt_config
 }
 
 function M.setup()

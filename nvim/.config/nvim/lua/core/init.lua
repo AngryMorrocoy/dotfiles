@@ -43,7 +43,6 @@ local opts = {
     end, -- Loads fzf
     wildignore = "**/node_modules/**,**/__pycache__/**,**/.next/**",
     list = true,
-    listchars = {eol = ""}
 }
 
 function M.setup()
