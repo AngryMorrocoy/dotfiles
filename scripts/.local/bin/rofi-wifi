@@ -19,8 +19,6 @@ main() {
 
     SSID=$(cut -d " " -f2 <<< $SELECTED_WIFI)
 
-    echo $SSID
-
     nmcli device wifi connect "$SSID"
 }
 

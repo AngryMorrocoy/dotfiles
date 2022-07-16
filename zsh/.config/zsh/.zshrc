@@ -110,7 +110,8 @@ source ${ZDOTDIR}/zaliases.zsh
 
 if [[ $(tty) == /dev/tty1 ]]; then; startx; fi
 
-colorscript random
+# colorscript random
+nitch
 
 # Plugins(?
 source ${ZDOTDIR}/zsh-autosuggestions/zsh-autosuggestions.zsh
