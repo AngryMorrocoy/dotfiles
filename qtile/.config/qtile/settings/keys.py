@@ -1,17 +1,13 @@
 from os import environ
-from libqtile.config import Key, KeyChord
-from libqtile.command import lazy
-from .extra import (
-    resize_floating,
-    move_floating,
-    window_to_next_group,
-    window_to_prev_group,
-    toggle_always_visible,
-)
 
+from libqtile.command import lazy
+from libqtile.config import Key, KeyChord
+
+from .extra import (move_floating, resize_floating, toggle_always_visible,
+                    window_to_next_group, window_to_prev_group)
 
 terminal = "alacritty"
-wallpapers = "/home/mr/Wallpapers/"
+wallpapers_path = "/home/mr/Wallpapers/"
 
 HOME = environ["HOME"]
 mod = "mod4"
@@ -20,16 +16,17 @@ alt = "mod1"
 keys = [
     Key(key[0], key[1], *key[2:])
     for key in [
-        # --Toggles visibility of the bars--#
-        [[mod, alt], "b", lazy.hide_show_bar("bottom")],
-        [[mod, alt], "h", lazy.hide_show_bar("top")],
         # --Shows a terminal--#
         [[mod], "Return", lazy.spawn(f"{terminal}")],
         #
         [[mod], "period", lazy.next_screen()],
         [[mod], "comma", lazy.prev_screen()],
         # --Switch tabs--#
-        [[alt], "Tab", lazy.spawn("rofi -matching regex -modi window -show window")],
+        [
+            [alt],
+            "Tab",
+            lazy.spawn("rofi -matching regex -modi window -show window"),
+        ],
         # Special keys
         # --Screenshot--#
         [[], "Print", lazy.spawn("flameshot launcher")],
@@ -44,7 +41,11 @@ keys = [
             "XF86AudioLowerVolume",
             lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%"),
         ],
-        [[], "XF86AudioMute", lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle")],
+        [
+            [],
+            "XF86AudioMute",
+            lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle"),
+        ],
         # --Brightness--#
         [[], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +10%")],
         [[], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")],
@@ -74,8 +75,18 @@ keys = [
         [[mod, "shift"], "k", lazy.layout.shuffle_up()],
         [[mod, "shift"], "j", lazy.layout.shuffle_down()],
         # --Change size of the windows (MonadTall)--#
-        [[mod, "shift"], "h", lazy.layout.grow(), lazy.layout.increase_nmaster()],
-        [[mod, "shift"], "l", lazy.layout.shrink(), lazy.layout.decrease_nmaster()],
+        [
+            [mod, "shift"],
+            "h",
+            lazy.layout.grow(),
+            lazy.layout.increase_nmaster(),
+        ],
+        [
+            [mod, "shift"],
+            "l",
+            lazy.layout.shrink(),
+            lazy.layout.decrease_nmaster(),
+        ],
         # --Toggle window types--#
         [[mod, "shift"], "a", lazy.function(toggle_always_visible)],
         [[mod, "shift"], "m", lazy.window.toggle_fullscreen()],
@@ -96,18 +107,34 @@ keys = [
         [[mod, "shift"], "u", lazy.function(window_to_prev_group)],
         # Music management
         # --Volup and voldown--#
-        [[mod, alt], "Prior", lazy.spawn("playerctl --player=vlc,%any volume 0.05+")],
-        [[mod, alt], "Next", lazy.spawn("playerctl --player=vlc,%any volume 0.05-")],
+        [
+            [mod, alt],
+            "Prior",
+            lazy.spawn("playerctl --player=vlc,%any volume 0.05+"),
+        ],
+        [
+            [mod, alt],
+            "Next",
+            lazy.spawn("playerctl --player=vlc,%any volume 0.05-"),
+        ],
         # --Next and previous song--#
         [[mod, alt], "End", lazy.spawn("playerctl --player=vlc,%any next")],
-        [[mod, alt], "Home", lazy.spawn("playerctl --player=vlc,%any previous")],
+        [
+            [mod, alt],
+            "Home",
+            lazy.spawn("playerctl --player=vlc,%any previous"),
+        ],
         # --Play/Pause and Stop--#
         [
             [mod, "control"],
             "Next",
             lazy.spawn("playerctl --player=vlc,%any play-pause"),
         ],
-        [[mod, "control"], "Prior", lazy.spawn("playerctl --player=vlc,%any stop")],
+        [
+            [mod, "control"],
+            "Prior",
+            lazy.spawn("playerctl --player=vlc,%any stop"),
+        ],
         # --Go -10 & +10 seconds--#
         [
             [mod, "control"],
@@ -140,7 +167,9 @@ keys += [
                     [
                         [],
                         "e",
-                        lazy.spawn("rofi -matching regex -modi run,drun -show run"),
+                        lazy.spawn(
+                            "rofi -matching regex -modi run,drun -show run"
+                        ),
                     ],
                     # --The script for searching across the web--#
                     [[], "s", lazy.spawn("rofi-search")],
@@ -184,7 +213,7 @@ keys += [
                     # --Launchs thunar--#
                     [[], "e", lazy.spawn("thunar")],
                     # --Launchs nitrogen--#
-                    [[], "w", lazy.spawn(f"nitrogen '{wallpapers}'")],
+                    [[], "w", lazy.spawn(f"nitrogen '{wallpapers_path}'")],
                     # --Launchs zeal--#
                     [[], "p", lazy.spawn("zeal")],
                     # --Launchs htop--#
@@ -201,6 +230,8 @@ keys += [
                     [[], "m", lazy.spawn("mailspring")],
                     # --Launchs spotify--
                     [[], "s", lazy.spawn("spotify")],
+                    # --Launchs zathura--
+                    [[], "z", lazy.spawn("zathura")],
                 ]
             ],
         ],

@@ -1,16 +1,10 @@
-from libqtile import bar
-from settings.keys import mod, keys
+import settings.hooks
 from settings.groups import groups
-from settings.layouts import layouts, floating_layout
-from settings.widgets import (
-    widget_defaults,
-    extension_defaults,
-)
+from settings.keys import keys, mod
+from settings.layouts import floating_layout, layouts
 from settings.mouse import mouse
 from settings.screens import screens
-import settings.hooks
-import subprocess
-
+from settings.widgets import extension_defaults, widget_defaults
 
 main = None
 dgroups_key_binder = None

@@ -1,35 +1,42 @@
-from libqtile import widget
-from settings.themes import colors
 from os import environ
 
-from settings.extra import (
-    get_battery_status,
-    get_dollar,
-    get_current_keyboard_layout,
-    toggle_keyboard_layout,
-)
+from libqtile import widget
+from settings.themes import colors
 
-base = lambda fg="text", bg="color1", font="DroidSansMono Nerd Font": {
-    "foreground": colors[fg],
-    "background": colors[bg],
-    "font": font,
-}
 
-separator = lambda color="color1", padding=5: widget.Sep(
-    **base(fg=color, bg=color), padding=padding
-)
+def base(fg="text", bg="color1", font="DroidSansMono Nerd Font"):
 
-round_powerline = lambda fg="text", bg="color1": widget.TextBox(
-    **base(fg, bg), text="", fontsize=30, padding=0
-)
+    return {
+        "foreground": colors[fg],
+        "background": colors[bg],
+        "font": font,
+    }
 
-text_icon = lambda fg="text", bg="color1", fontsize=15, text="?", font="DroidSansMono Nerd Font", mouse_callbacks={}: widget.TextBox(
-    **base(fg, bg, font),
-    fontsize=fontsize,
-    text=text,
-    padding=1,
-    mouse_callbacks=mouse_callbacks,
-)
+
+def separator(color="color1", padding=5):
+    return widget.Sep(**base(fg=color, bg=color), padding=padding)
+
+
+def round_powerline(fg="text", bg="color1"):
+    return widget.TextBox(**base(fg, bg), text="", fontsize=30, padding=0)
+
+
+def text_icon(
+    fg="text",
+    bg="color1",
+    fontsize=15,
+    text="?",
+    font="DroidSansMono Nerd Font",
+    mouse_callbacks={},
+):
+    return widget.TextBox(
+        **base(fg, bg, font),
+        fontsize=fontsize,
+        text=text,
+        padding=1,
+        mouse_callbacks=mouse_callbacks,
+    )
+
 
 groupbox = [
     widget.GroupBox(
@@ -45,13 +52,13 @@ groupbox = [
         inactive=colors["inactive"],
         urgent_border=colors["urgent"],
         highlight_method="block",
-        rounded=False,
+        rounded=True,
         disable_drag=True,
         use_mouse_wheel=False,
     ),
     widget.WindowName(
         **base(font="DroidSansMono Nerd Font"),
-        format="{name}",
+        format="",
         max_chars=50,
         padding=3,
         fontsize=12,
@@ -66,16 +73,18 @@ mainbar_widgets = [
     ),
     *groupbox,
     round_powerline("color2", "color1"),
-    widget.CurrentLayoutIcon(
-        **base(bg="color2"),
-    ),
+    widget.CurrentLayoutIcon(**base(bg="color2"), scale=0.8),
     separator("color2", padding=3),
-    widget.CurrentLayout(**base(bg="color2", font="Dyuthi Regular"), fontsize=13),
+    widget.CurrentLayout(
+        **base(bg="color2", font="Dyuthi Regular"), fontsize=13
+    ),
     separator("color2"),
     round_powerline("color1", "color2"),
     text_icon(fg="color4", bg="color1", text=" "),
     widget.Net(
-        **base(bg="color1", font="Dyuthi Regular"), interface="wlp1s0", fontsize=12
+        **base(bg="color1", font="Dyuthi Regular"),
+        interface="wlp1s0",
+        fontsize=12,
     ),
     separator("color1"),
     round_powerline("color2", "color1"),
@@ -86,53 +95,10 @@ mainbar_widgets = [
         fontsize=14,
     ),
     round_powerline("color1", "color2"),
-    widget.GenPollText(
-        **base(bg="color1", font="mononoki-Regular Nerd Font complete"),
-        fontsize=15,
-        func=get_battery_status,
-        update_interval=2,
-    ),
-    round_powerline("color2", "color1"),
-    text_icon(fg="color4", bg="color2", text="  "),
-    widget.GenPollText(
-        **base(bg="color2", font="mononoki-Regular Nerd Font complete"),
-        fontsize=15,
-        func=get_current_keyboard_layout,
-        update_interval=3,
-        mouse_callbacks={"Button1": toggle_keyboard_layout},
-    ),
-    separator("color2"),
+    widget.Systray(**base(bg="color3"), icon_size=15, padding=9),
+    separator("color3"),
 ]
 
-infobar_widgets = [
-    separator("color3"),
-    widget.Systray(**base(bg="color3"), icon_size=16, padding=9),
-    separator("color3"),
-    round_powerline("color2", "color3"),
-    text_icon(bg="color2", fg="color4", text=" "),
-    widget.Memory(
-        **base(bg="color2", font="Dyuthi Regular"),
-    ),
-    text_icon(bg="color2", fg="color4", text=" | "),
-    widget.CPU(**base(bg="color2", font="Dyuthi Regular"), update_interval=5),
-    separator("color2", padding=7),
-    round_powerline("color3", "color2"),
-    text_icon(bg="color3", fg="color4", text=" "),
-    widget.ThermalSensor(
-        **base(bg="color3", font="Dyuthi Regular"), threshold=90, padding=0
-    ),
-    separator("color3", padding=7),
-    round_powerline("color2", "color3"),
-    text_icon(fg="color4", bg="color2", text=""),
-    separator("color2", padding=7),
-    widget.GenPollText(
-        **base(bg="color2", font="Dyuthi Regular"),
-        fontsize=15,
-        func=get_dollar,
-        update_interval=(60 * 60 * 12),
-    ),
-    separator("color2", padding=7000),
-]
 
 widget_defaults = {
     "font": "UbuntuMono Nerd Font Bold",
