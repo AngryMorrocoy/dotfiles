@@ -62,5 +62,6 @@ require "paq" {
     "folke/zen-mode.nvim",
     "stevearc/dressing.nvim",
     "rmagatti/auto-session",
-    "voldikss/vim-floaterm"
+    "voldikss/vim-floaterm",
+    "mfussenegger/nvim-lint"
 }

@@ -97,6 +97,7 @@ function M.autocommands:autoformat()
 
     local current_ft = vim.bo.filetype
     local available_filetypes = require("plugins.config.formatter").filetype_formatters
+    vim.lsp.buf.formatting()
     for ft, _ in pairs(available_filetypes) do
         if current_ft:match(ft) then
             cmd("FormatWrite")
