@@ -94,7 +94,7 @@ mainbar_widgets = [
         format="%H:%M [%a %d/%m/%Y] ",
         fontsize=14,
     ),
-    round_powerline("color1", "color2"),
+    round_powerline("color3", "color2"),
     widget.Systray(**base(bg="color3"), icon_size=15, padding=9),
     separator("color3"),
 ]
