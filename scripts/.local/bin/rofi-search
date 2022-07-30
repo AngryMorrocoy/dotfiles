@@ -34,6 +34,7 @@ URLS=(
   ["askubuntu"]="http://askubuntu.com/search?q="
   ["AUR"]="https://aur.archlinux.org/packages/?O=0&K="
   ["ARCH"]="https://archlinux.org/packages/?sort=&maintainer=&flagged=&q="
+  ["youcode"]="https://you.com/search?q="
 )
 
 ICONS=(
@@ -48,6 +49,7 @@ ICONS=(
   ["wikipedia"]="磌 "
   ["AUR"]=" "
   ["ARCH"]=" "
+  ["YOUCODE"]=""
 )
 
 # List for rofi

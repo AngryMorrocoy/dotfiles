@@ -63,5 +63,6 @@ require "paq" {
     "stevearc/dressing.nvim",
     "rmagatti/auto-session",
     "voldikss/vim-floaterm",
-    "mfussenegger/nvim-lint"
+    "mfussenegger/nvim-lint",
+    "pineapplegiant/spaceduck"
 }
