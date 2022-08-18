@@ -9,7 +9,7 @@ function M.setup()
         hijack_netrw = true,
         open_on_setup = false,
         ignore_ft_on_setup = {"startify"},
-        update_to_buf_dir = {
+        hijack_directories = {
             enable = true,
             auto_open = true
         },
@@ -33,7 +33,7 @@ function M.setup()
             width = "18%",
             height = 30,
             side = "right",
-            auto_resize = false,
+            adaptive_size = false,
             mappings = {
                 custom_only = true,
                 list = {
