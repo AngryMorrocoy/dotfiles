@@ -83,6 +83,8 @@ configuration {
 	kb-delete-entry: "Shift+Delete";
 	kb-mode-next: "Shift+Right,Control+Tab";
 	kb-mode-previous: "Shift+Left,Control+ISO_Left_Tab";
+	kb-element-prev: "";
+	kb-element-next: "";
 /*	kb-mode-complete: "Control+l";*/
 	kb-row-left: "Control+Page_Up";
 	kb-row-right: "Control+Page_Down";

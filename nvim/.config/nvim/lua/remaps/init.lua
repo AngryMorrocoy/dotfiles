@@ -104,7 +104,7 @@ local keyMaps = {
     ["n|<leader>xw"] = {action = "<cmd>Trouble lsp_workspace_diagnostics<cr>"},
     ["n|<leader>xd"] = {action = "<cmd>Trouble lsp_document_diagnostics<cr>"},
     -- Refactoring
-    ["v|<leader>rr"] = {action = require("telescope").extensions.refactoring.refactors},
+    ["v|<leader>rr"] = {action = "<Esc><cmd>lua require('telescope').extensions.refactoring.refactors()<CR>"},
     ["v|<leader>dpv"] = {action = require("refactoring").debug.print_var},
     ["n|<leader>dpv"] = {action = require("refactoring").debug.print_var},
     -- Easier out from insert mode
