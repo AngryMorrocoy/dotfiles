@@ -14,7 +14,5 @@ return {
         )
 
         vim.api.nvim_create_user_command("CloseAllFloatingWin", require("core.util").close_all_float_win, {})
-
-        vim.api.nvim_create_user_command("Git", "FloatermNew lazygit", {})
     end
 }

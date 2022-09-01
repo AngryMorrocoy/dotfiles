@@ -40,15 +40,12 @@ local keyMaps = {
     --
     ["n|<leader>p"] = {action = "<cmd>FormatWrite<cr>"},
     -- FZF movements
-    ["n|<leader>fg"] = {action = "<cmd>Telescope git_status<cr>", opts = {silent = true}},
     ["n|<leader>ff"] = {action = "<cmd>Telescope find_files<cr>", opts = {silent = true}},
     ["n|<leader>fF"] = {action = "<cmd>Telescope git_files<cr>", opts = {silent = true}},
-    ["n|<leader>fl"] = {action = "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts = {silent = true}},
     ["n|<leader>fs"] = {action = "<cmd>Telescope live_grep<cr>", opts = {silent = true}},
     ["n|<leader>fh"] = {action = "<cmd>Telescope help_tags<cr>", opts = {silent = true}},
     ["n|<leader>fq"] = {action = "<cmd>Telescope quickfix<cr>", opts = {silent = true}},
     ["n|<leader>fo"] = {action = "<cmd>Telescope loclist<cr>", opts = {silent = true}},
-    ["n|<leader>ft"] = {action = "<cmd>Telescope lsp_document_symbols<cr>", opts = {silent = true}},
     -- Lsp
     ["n|gd"] = {action = vim.lsp.buf.definition, {silent = true}},
     ["n|gvd"] = {action = "<cmd>vsplit | lua vim.lsp.buf.definition()<cr>", {silent = true}},

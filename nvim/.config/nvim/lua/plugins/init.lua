@@ -4,7 +4,6 @@ require "paq" {
     "lukas-reineke/indent-blankline.nvim",
     "numToStr/Comment.nvim",
     "lewis6991/gitsigns.nvim",
-    -- "airblade/vim-gitgutter",
     "andymass/vim-matchup",
     "tpope/vim-surround",
     "sainnhe/gruvbox-material",
