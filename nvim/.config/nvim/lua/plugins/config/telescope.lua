@@ -14,8 +14,8 @@ function M.setup()
                         ["<c-d>"] = require("telescope.actions").delete_buffer
                     }
                 },
+                scroll_strategy = "limit",
                 file_ignore_patterns = {"node_modules/.*", "__pycache__/.*"},
-                layout_strategy = "bottom_pane",
                 layout_config = {
                     prompt_position = "bottom"
                 }
