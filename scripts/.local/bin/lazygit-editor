@@ -3,6 +3,20 @@
 # A script that opens nvim from lazygit, if it was opened from a tmux pane, checks
 # if exists a nvim remote server for that pane
 
+focus_nvim() {
+    IFS=$'\n'
+    PANES=($(tmux list-panes -s))
+
+    for (( i=0; i < ${#PANES[*]}; i++)); do
+        if [[ ${PANES[$i]} =~ ${LAZYGIT_OPENED_FROM} ]]; then
+            TARGET_WINDOW=$(cut -d ":" -f 1 <<< ${PANES[$i]})
+            tmux select-window -t $TARGET_WINDOW
+            tmux select-pane -t $LAZYGIT_OPENED_FROM
+        fi
+    done
+    unset IFS
+}
+
 if [[ !(-n ${TMUX}) ]]; then
     nvim $1
     exit 0
@@ -13,6 +27,7 @@ NVIM_SERVER="/tmp/nvim-tmux-${LAZYGIT_OPENED_FROM}.pipe"
 if [ -e ${NVIM_SERVER} -a -n ${LAZYGIT_OPENED_FROM} ];then
     FILENAME="$(pwd)/$1"
     nvim --server "${NVIM_SERVER}" --remote "${FILENAME}"
+    focus_nvim
 else
     nvim $1
 fi

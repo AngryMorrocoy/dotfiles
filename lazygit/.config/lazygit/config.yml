@@ -1,3 +1,6 @@
+promptToReturnFromSubprocess: false
+gui:
+  showIcons: true
 git:
   paging:
     colorArg: never
@@ -5,4 +8,4 @@ git:
     pager: delta --dark --paging=never
 os:
   editCommand: 'lazygit-editor' # Uses my custom script
-                                # for tmux and nvim remote integration
+  editCommandTemplate: '{{editor}} {{filename}}' # for tmux and nvim remote integration
