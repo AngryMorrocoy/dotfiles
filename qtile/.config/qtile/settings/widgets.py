@@ -99,6 +99,16 @@ mainbar_widgets = [
     separator("color3"),
 ]
 
+extra_bar_widgets = [
+    *groupbox,
+    round_powerline("color2", "color1"),
+    widget.CurrentLayoutIcon(**base(bg="color2"), scale=0.8),
+    separator("color2", padding=3),
+    widget.CurrentLayout(
+        **base(bg="color2", font="Dyuthi Regular"), fontsize=13
+    ),
+]
+
 
 widget_defaults = {
     "font": "UbuntuMono Nerd Font Bold",
