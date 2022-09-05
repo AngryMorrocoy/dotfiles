@@ -76,6 +76,7 @@ function M.setup()
             command = "startinsert"
         }
     )
+
     vim.api.nvim_create_autocmd(
         "BufLeave",
         {
@@ -90,6 +91,44 @@ function M.setup()
         {
             callback = function()
                 require("lint").try_lint()
+            end
+        }
+    )
+
+    local tmux_augroup = vim.api.nvim_create_augroup("TmuxwRenamer", {})
+
+    vim.api.nvim_create_autocmd(
+        {"VimEnter", "BufEnter"},
+        {
+            group = tmux_augroup,
+            callback = function()
+                if vim.env.TMUX == nil then
+                    return
+                end
+
+                local project_folder = vim.fn.split(vim.fn.getcwd(), "/")
+                local cur_file = vim.fn.expand("%:t")
+
+                local project_name = project_folder[#project_folder]
+
+                local tmuxw_name = string.format("nvim@%s [%s]", project_name, cur_file)
+
+                local command = string.format("tmux renamew '%s'", tmuxw_name)
+
+                vim.fn.jobstart(command)
+            end
+        }
+    )
+
+    vim.api.nvim_create_autocmd(
+        {"VimLeave"},
+        {
+            group = tmux_augroup,
+            callback = function()
+                if vim.env.TMUX == nil then
+                    return
+                end
+                vim.fn.jobstart("tmux renamew zsh")
             end
         }
     )
