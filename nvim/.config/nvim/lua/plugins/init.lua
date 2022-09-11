@@ -61,5 +61,6 @@ require("packer").startup(
         use "voldikss/vim-floaterm"
         use "mfussenegger/nvim-lint"
         use "pineapplegiant/spaceduck"
+        use {"catppuccin/nvim", as = "catppuccin"}
     end
 )

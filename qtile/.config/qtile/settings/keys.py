@@ -168,7 +168,7 @@ keys += [
                         [],
                         "e",
                         lazy.spawn(
-                            "rofi -matching regex -modi run,drun -show run"
+                            "rofi -matching regex -modi drun,run -show drun"
                         ),
                     ],
                     # --The script for searching across the web--#
