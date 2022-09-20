@@ -62,5 +62,7 @@ require("packer").startup(
         use "mfussenegger/nvim-lint"
         use "pineapplegiant/spaceduck"
         use {"catppuccin/nvim", as = "catppuccin"}
+        use "gen740/SmoothCursor.nvim"
+        use 'nvim-treesitter/nvim-treesitter-context'
     end
 )

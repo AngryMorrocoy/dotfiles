@@ -1,8 +1,7 @@
 configuration {
 	modi: "window,run,ssh";
 	font: "mononoki Nerd Font 12";
-	location: 2;
-	yoffset: 60;
+	location: 0;
 	xoffset: 0;
 	fixed-num-lines: true;
 	show-icons: true;
@@ -148,4 +147,10 @@ configuration {
 }
 /* @theme "glue_pro_blue" */
 /* @theme "gruvbox-dark" */
-@theme "android_notification"
+//@theme "android_notification"
+//@theme "/home/mr/.local/share/rofi/themes/squared-material-red.rasi"
+//@theme "/home/mr/.local/share/rofi/themes/rounded-red-dark.rasi"
+//@theme "/home/mr/.local/share/rofi/themes/rounded-orange-dark.rasi"
+//@theme "/home/mr/.local/share/rofi/themes/rounded-pink-dark.rasi"
+//@theme "/home/mr/.local/share/rofi/themes/nord-oneline.rasi"
+@theme "/home/mr/.local/share/rofi/themes/rounded-yellow-dark.rasi"

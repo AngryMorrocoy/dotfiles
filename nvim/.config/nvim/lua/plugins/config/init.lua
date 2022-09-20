@@ -38,6 +38,12 @@ function M.setup_all()
     require("lint").linters_by_ft = {
         python = {"pylint"}
     }
+    require("smoothcursor").setup({
+        linehl = "CursorLine",
+        fancy = {
+            enable = true
+        }
+    })
 end
 
 return M

@@ -98,7 +98,7 @@ function M.setup()
     local tmux_augroup = vim.api.nvim_create_augroup("TmuxwRenamer", {})
 
     vim.api.nvim_create_autocmd(
-        {"VimEnter", "BufEnter"},
+        {"VimEnter", "BufEnter", "BufWinEnter"},
         {
             group = tmux_augroup,
             callback = function()
