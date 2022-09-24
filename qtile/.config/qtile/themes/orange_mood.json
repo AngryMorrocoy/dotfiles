@@ -1,0 +1,22 @@
+{
+  "text": ["#ffffff", "#ffffff"],
+
+  "groupbox_bg": ["#554D4E", "#554D4E"],
+  "group_active_fg": ["#ffffff", "ffffff"],
+  "group_inactive_fg": ["#5C5C5C", "#5C5C5C"],
+  "group_urgent_bg": ["#9bd09a", "#9bd09a"],
+  "group_selected_bg": ["#dd743e", "#dd743e"],
+
+  "focused":   ["#ff806b", "#ff806b"],
+  "unfocused": ["#1A1A1A", "#1A1A1A"],
+
+  "bar_color": ["#554D4E", "#554D4E"],
+  "icons_fg": ["#ffffff", "#ffffff"],
+
+  "systray_bg": ["#671300", "#671300"],
+  "clock_bg": ["#7C2800", "#7C2800"],
+  "layout_indicator_bg": ["#913B00", "#913B00"],
+
+  "hid_widgets_bg": ["#B3571E", "#B3571E"],
+  "hid_widgets_separator": ["#dd743e", "#dd743e"]
+}

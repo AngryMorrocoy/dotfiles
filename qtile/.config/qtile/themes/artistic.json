@@ -1,12 +1,22 @@
 {
-    "text": ["#ffffff", "#ffffff"],
-    "active": ["#ffffff", "#ffffff"],
-    "inactive": ["#BD7C6C", "#BD7C6C"],
-    "urgent": ["#FD4129", "#FD4129"],
-    "focused": ["#FF0A2C", "#FF0A2C"],
-    "unfocused": ["#673C23", "#673C23"],
-    "color1": ["#072249", "#072249"],
-    "color2": ["#DC4A5E", "#DC4A5E"],
-    "color3": ["#030735", "#030735"],
-    "color4": ["#ACBCB2", "#ACBCB2"]
+  "text": ["#ffffff", "#ffffff"],
+
+  "groupbox_bg": ["#030735", "#030735"],
+  "group_active_fg": ["#ffffff", "ffffff"],
+  "group_inactive_fg": ["#BD7C6C", "#BD7C6C"],
+  "group_urgent_bg": ["#FD4129", "#FD4129"],
+  "group_selected_bg": ["#DC4A5E", "#DC4A5E"],
+
+  "focused": ["#FF0A2C", "#FF0A2C"],
+  "unfocused": ["#673C23", "#673C23"],
+
+  "bar_color": ["#030735", "#030735"],
+  "icons_fg": ["#ACBCB2", "#ACBCB2"],
+
+  "systray_bg": ["#642031", "#642031"],
+  "clock_bg": ["#206431", "#206431"],
+  "layout_indicator_bg": ["#705E29", "#705E29"],
+
+  "hid_widgets_bg": ["#642031", "#642031"],
+  "hid_widgets_separator": ["#300000", "#300000"]
 }

@@ -4,10 +4,11 @@ from libqtile import bar
 from libqtile.config import Screen
 
 from .widgets import mainbar_widgets, extra_bar_widgets
+from settings.themes import colors
 
 screens = [
     Screen(
-        top=bar.Bar(mainbar_widgets, 20)
+        top=bar.Bar(mainbar_widgets, 20, background=colors["bar_color"])
     ),
 ]
 
