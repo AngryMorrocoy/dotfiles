@@ -217,7 +217,7 @@ keys += [
                     # --Launchs zeal--#
                     [[], "p", lazy.spawn("zeal")],
                     # --Launchs htop--#
-                    [[], "h", lazy.spawn(f"{terminal} -e htop")],
+                    [[], "h", lazy.spawn(f"{terminal} -e bashtop")],
                     # --Launchs qalculate--#
                     [[], "c", lazy.spawn("qalculate-gtk")],
                     # --Launchs discord--#
