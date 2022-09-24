@@ -73,7 +73,6 @@ mainbar_widgets = [
     round_powerline("hid_widgets_bg", "bar_color"),
     widget.WidgetBox(
         widgets=[
-            separator("hid_widgets_separator"),
             separator("hid_widgets_bg"),
             text_icon(bg="hid_widgets_bg", text=" "),
             widget.Net(
@@ -88,8 +87,14 @@ mainbar_widgets = [
             widget.ThermalSensor(
                 **base(bg="hid_widgets_bg"), format="{temp:.1f} {unit}"
             ),
+            separator("hid_widgets_bg"),
+            round_powerline("hid_widgets_separator", "hid_widgets_bg"),
+            round_powerline("hid_widgets_bg", "hid_widgets_separator"),
         ],
         **base(bg="hid_widgets_bg"),
+        text_closed=" ",
+        text_open=" ",
+        close_button_location="right",
     ),
     separator("hid_widgets_bg"),
     round_powerline("layout_indicator_bg", "hid_widgets_bg"),
