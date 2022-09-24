@@ -121,6 +121,15 @@ function M.setup()
                     i(2)
                 }
             )
+        ),
+        s(
+            "clo",
+            fmt(
+                [[
+                console.log({})
+                ]],
+                i(0)
+            )
         )
     }
 end
