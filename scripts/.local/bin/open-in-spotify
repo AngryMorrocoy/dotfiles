@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+function parseUrlFromParam() {
+    # Regex to to transform open.spotify.com/ like links into
+    # spotify:<track>:<id>
+    # spotify://track/6Jwoygu5255Y1q75DJWHsB?si=603233191af7472c
+    parsedUrl=$(echo $1 | sed 's:\(spotify\)\://\([^/]\+\).\([^?]\+\).*:\1\:\2\:\3:')
+    echo $parsedUrl
+}
+
+function main() {
+    URL=$1
+    parsedUrl=$(parseUrlFromParam $URL)
+
+    playerctl -p spotify open $parsedUrl
+}
+
+main $@
