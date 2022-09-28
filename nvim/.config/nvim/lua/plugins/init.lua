@@ -59,6 +59,7 @@ require("packer").startup(
         -- Lualine
         use "hoob3rt/lualine.nvim"
         use "arkav/lualine-lsp-progress"
+        use "b0o/schemastore.nvim"
         -- Telescope
         use "nvim-telescope/telescope.nvim"
         use {
