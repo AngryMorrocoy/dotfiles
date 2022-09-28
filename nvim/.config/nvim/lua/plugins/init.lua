@@ -28,7 +28,7 @@ require("packer").startup(
         --
         use "kyazdani42/nvim-tree.lua"
         use "kyazdani42/nvim-web-devicons"
-        use "mbbill/undotree"
+        use {"mbbill/undotree", opt = true}
         -- Treesitter
         use "p00f/nvim-ts-rainbow"
         use {
@@ -36,22 +36,22 @@ require("packer").startup(
             run = ":TSUpdate"
         }
         use "nvim-treesitter/playground"
-        use 'nvim-treesitter/nvim-treesitter-context'
+        use "nvim-treesitter/nvim-treesitter-context"
         -- Themes
-        use "yonlu/omni.vim"
-        use "shaeinst/roshnivim-cs"
-        use "sainnhe/gruvbox-material"
-        use "nanotech/jellybeans.vim"
-        use "folke/tokyonight.nvim"
-        use "folke/lsp-colors.nvim"
-        use "pineapplegiant/spaceduck"
+        use {"yonlu/omni.vim", opt = true}
+        use {"shaeinst/roshnivim-cs", opt = true}
+        use {"sainnhe/gruvbox-material", opt = true}
+        use {"nanotech/jellybeans.vim", opt = true}
+        use {"folke/tokyonight.nvim", opt = true}
+        use {"folke/lsp-colors.nvim", opt = true}
+        use {"pineapplegiant/spaceduck", opt = true}
+        use {"rose-pine/neovim", opt = true}
+        use {"ray-x/aurora", opt = true}
+        use {"Shatur/neovim-ayu", opt = true}
+        use {"savq/melange", opt = true}
         use {"catppuccin/nvim", as = "catppuccin"}
-        use "rose-pine/neovim"
-        use "ray-x/aurora"
-        use "Shatur/neovim-ayu"
-        use "savq/melange"
         -- Nvim like rest client
-        use "NTBBloodbath/rest.nvim"
+        use {"NTBBloodbath/rest.nvim" }
         --
         -- Lualine
         use "hoob3rt/lualine.nvim"
@@ -63,7 +63,7 @@ require("packer").startup(
             run = "make"
         }
         -- Latex environment :D
-        use "lervag/vimtex"
+        use {"lervag/vimtex", ft = "tex"}
         -- Snippets
         use "L3MON4D3/LuaSnip"
         -- Nvim looking good af
