@@ -35,12 +35,14 @@ function M.setup_all()
             auto_restore_enabled = false
         }
     )
-    require("smoothcursor").setup({
-        linehl = "CursorLine",
-        fancy = {
-            enable = true
+    require("smoothcursor").setup(
+        {
+            linehl = "CursorLine",
+            fancy = {
+                enable = true
+            }
         }
-    })
+    )
 end
 
 return M

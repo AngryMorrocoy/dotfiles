@@ -15,6 +15,10 @@ require("packer").startup(
         use "folke/trouble.nvim"
         use "neovim/nvim-lspconfig"
         use "ThePrimeagen/refactoring.nvim"
+        use {
+            "williamboman/mason.nvim",
+            "williamboman/mason-lspconfig.nvim"
+        }
         -- CMP Section
         use "hrsh7th/nvim-cmp"
         use "hrsh7th/cmp-nvim-lsp"
