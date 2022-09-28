@@ -43,7 +43,6 @@ require("packer").startup(
         use {"sainnhe/gruvbox-material", opt = true}
         use {"nanotech/jellybeans.vim", opt = true}
         use {"folke/tokyonight.nvim", opt = true}
-        use {"folke/lsp-colors.nvim", opt = true}
         use {"pineapplegiant/spaceduck", opt = true}
         use {"rose-pine/neovim", opt = true}
         use {"ray-x/aurora", opt = true}
@@ -51,7 +50,7 @@ require("packer").startup(
         use {"savq/melange", opt = true}
         use {"catppuccin/nvim", as = "catppuccin"}
         -- Nvim like rest client
-        use {"NTBBloodbath/rest.nvim" }
+        use {"NTBBloodbath/rest.nvim"}
         --
         -- Lualine
         use "hoob3rt/lualine.nvim"
@@ -70,12 +69,11 @@ require("packer").startup(
         use "nvim-lua/popup.nvim"
         use "gen740/SmoothCursor.nvim"
         use "stevearc/dressing.nvim"
+        use "folke/lsp-colors.nvim"
         --
         use "folke/zen-mode.nvim"
         use "rmagatti/auto-session"
         use "voldikss/vim-floaterm"
         use "ThePrimeagen/harpoon"
-        -- When changing too much the configuration
-        use "famiu/nvim-reload"
     end
 )
