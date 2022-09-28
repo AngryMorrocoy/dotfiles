@@ -39,7 +39,8 @@ local keyMaps = {
     ["n|<C-Down>"] = {action = "<C-w>-"},
     --
     ["n|<leader>p"] = {action = "<cmd>FormatWrite<cr>"},
-    -- FZF movements
+    -- Telescope movements
+    ["n|<leader>F"] = {action = "<cmd>Telescope<cr>", opts = {silent = true}},
     ["n|<leader>ff"] = {action = "<cmd>Telescope find_files<cr>", opts = {silent = true}},
     ["n|<leader>fs"] = {action = "<cmd>Telescope live_grep<cr>", opts = {silent = true}},
     ["n|<leader>fh"] = {action = "<cmd>Telescope help_tags<cr>", opts = {silent = true}},

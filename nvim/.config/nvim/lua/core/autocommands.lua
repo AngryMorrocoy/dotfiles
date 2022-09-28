@@ -86,15 +86,6 @@ function M.setup()
         }
     )
 
-    vim.api.nvim_create_autocmd(
-        {"BufWritePost"},
-        {
-            callback = function()
-                require("lint").try_lint()
-            end
-        }
-    )
-
     local tmux_augroup = vim.api.nvim_create_augroup("TmuxwRenamer", {})
 
     vim.api.nvim_create_autocmd(
