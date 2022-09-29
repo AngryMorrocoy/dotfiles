@@ -90,22 +90,6 @@ function M.autocommands:load_syntax_specific_opts()
     end
 end
 
-function M.autocommands:autoformat()
-    if not vim.g["formatter#autoformat"] then
-        return
-    end
-
-    local current_ft = vim.bo.filetype
-    local available_filetypes = require("plugins.config.formatter").filetype_formatters
-    vim.lsp.buf.formatting()
-    for ft, _ in pairs(available_filetypes) do
-        if current_ft:match(ft) then
-            cmd("FormatWrite")
-            return
-        end
-    end
-end
-
 function M.concat_tables(table_of_tables)
     if #table_of_tables == 1 then
         return table_of_tables[1]

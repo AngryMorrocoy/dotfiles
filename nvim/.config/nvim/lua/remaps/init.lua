@@ -38,7 +38,7 @@ local keyMaps = {
     ["n|<C-Up>"] = {action = "<C-w>+"},
     ["n|<C-Down>"] = {action = "<C-w>-"},
     --
-    ["n|<leader>p"] = {action = "<cmd>FormatWrite<cr>"},
+    ["n|<leader>p"] = {action = "<cmd>lua vim.lsp.buf.formatting()<cr>"},
     -- Telescope movements
     ["n|<leader>F"] = {action = "<cmd>Telescope<cr>", opts = {silent = true}},
     ["n|<leader>ff"] = {action = "<cmd>Telescope find_files<cr>", opts = {silent = true}},

@@ -13,13 +13,6 @@ function M.setup()
     vim.api.nvim_create_autocmd("BufWritePost", {command = "%s:\\s\\+$::e"}) -- Fuck trailing withespaces
 
     vim.api.nvim_create_autocmd(
-        "BufWritePre",
-        {
-            callback = core_utils.autocommands.autoformat
-        }
-    )
-
-    vim.api.nvim_create_autocmd(
         "Colorscheme",
         {
             command = core_utils.nvim_set_highlight("VertSplit", {ctermbg = "NONE", guibg = "NONE", guifg = "fg"}, true)

@@ -11,7 +11,6 @@ local lsp_configs = {
 }
 
 function M.setup()
-    require("mason").setup()
     require("mason-lspconfig").setup()
 
     require("mason-lspconfig").setup_handlers {
