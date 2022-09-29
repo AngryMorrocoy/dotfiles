@@ -41,6 +41,8 @@ require("packer").startup(
         }
         use "nvim-treesitter/playground"
         use "nvim-treesitter/nvim-treesitter-context"
+        use "windwp/nvim-ts-autotag"
+        use "JoosepAlviste/nvim-ts-context-commentstring"
         -- Themes
         use {"yonlu/omni.vim", opt = true}
         use {"shaeinst/roshnivim-cs", opt = true}

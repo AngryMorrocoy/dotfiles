@@ -16,11 +16,10 @@ function M.setup()
             ensure_installed = {
                 "javascript",
                 "typescript",
+                "tsx",
                 "lua",
                 "bash",
                 "python",
-                "c",
-                "cpp",
                 "html",
                 "css",
                 "http"
@@ -34,21 +33,19 @@ function M.setup()
                 additional_vim_regex_highlighting = false
             },
             indent = {
-                enable = true,
-            },
-            incremental_selection = {
-                enable = true,
-                keymaps = {
-                    init_selection = "gnn",
-                    node_incremental = "grn",
-                    scope_incremental = "grc",
-                    node_decremental = "grm"
-                }
+                enable = true
             },
             rainbow = {
                 enable = true,
                 extended_mode = true
             },
+            autotag = {
+                enable = true
+            },
+            context_commentstring = {
+                enable = true,
+                enable_autocmd = false
+            }
         }
     )
 end

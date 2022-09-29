@@ -26,7 +26,11 @@ function M.setup_all()
 
     require("trouble").setup({})
     require("refactoring").setup({})
-    require("Comment").setup({})
+    require("Comment").setup(
+        {
+            pre_hook = require("ts_context_commentstring.integrations.comment_nvim").create_pre_hook()
+        }
+    )
     require("zen-mode").setup({})
     require("dressing").setup({input = {insert_only = false}})
     require("gitsigns").setup({})

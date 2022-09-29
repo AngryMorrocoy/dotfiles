@@ -5,12 +5,14 @@ function M.setup()
         {
             bind = true,
             handler_opts = {
-                border = "single"
+                border = "double"
             },
             fix_pos = true,
-            auto_close_after = 15,
-            extra_trigger_chars = {","},
-            toggle_key = "<A-r>"
+            auto_close_after = 3,
+            extra_trigger_chars = {"(", ","},
+            toggle_key = "<A-r>",
+            hint_prefix = " ",
+            hi_parameter = "Todo"
         }
     )
 end
