@@ -1,6 +1,4 @@
 promptToReturnFromSubprocess: false
-gui:
-  showIcons: true
 git:
   paging:
     colorArg: never
