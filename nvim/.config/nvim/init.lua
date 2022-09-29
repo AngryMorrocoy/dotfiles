@@ -6,8 +6,7 @@ local function loadTheme()
 
     if theme_loader_file == nil then
         theme_loader_file = io.open(theme_loader_filename, "w")
-        theme_loader_file:write(
-            [[
+        theme_loader_file:write([[
         local function colorscheme(colo)
             vim.cmd("colorscheme " .. colo)
         end
@@ -18,8 +17,7 @@ local function loadTheme()
                 colorscheme default
             end
         }
-        ]]
-        )
+        ]])
         theme_loader_file:close()
     else
         theme_loader_file:close()
@@ -27,7 +25,6 @@ local function loadTheme()
 
     require("theme").load_theme()
 end
-
 
 loadTheme()
 vim.opt.ls = 3

@@ -7,17 +7,16 @@ end
 
 function compe.complete_up()
     if vim.fn.pumvisible() ~= 0 then
-        return feedKeys('<C-p>')
+        return feedKeys("<C-p>")
     end
 end
 
 function compe.complete_down()
     if vim.fn.pumvisible() ~= 0 then
-        return feedKeys "<C-n>"
+        return feedKeys("<C-n>")
     end
 end
 
 return {
-    compe = compe
+    compe = compe,
 }
-

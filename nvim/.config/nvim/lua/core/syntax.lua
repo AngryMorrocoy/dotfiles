@@ -5,19 +5,19 @@ syntaxes["^c$|^cpp$"] = {
     expandtab = false,
     shiftwidth = 4,
     tabstop = 4,
-    smartindent = true
+    smartindent = true,
 }
 
 syntaxes["^css$|^scss$"] = {
     shiftwidth = 2,
-    tabstop = 2
+    tabstop = 2,
 }
 
 syntaxes["html*"] = {
     shiftwidth = 2,
     tabstop = 2,
     expandtab = true,
-    foldmethod = "indent"
+    foldmethod = "indent",
 }
 
 syntaxes["^javascript|^typescript"] = {
@@ -26,14 +26,14 @@ syntaxes["^javascript|^typescript"] = {
     expandtab = true,
     colorcolumn = "80",
     maps = {
-        ["n|<leader>r"] = {action = '<cmd>!node "%"<cr>'}
-    }
+        ["n|<leader>r"] = { action = '<cmd>!node "%"<cr>' },
+    },
 }
 
 syntaxes["^json$"] = {
     shiftwidth = 2,
     tabstop = 2,
-    expandtab = true
+    expandtab = true,
 }
 
 syntaxes["^python$"] = {
@@ -43,24 +43,24 @@ syntaxes["^python$"] = {
     foldmethod = "indent",
     colorcolumn = "80",
     maps = {
-        ["n|<leader>r"] = {action = '<cmd>!python3 "%"<cr>'},
-        ["n|<leader>dr"] = {action = '<cmd>!python3 "%"<cr>'}
-    }
+        ["n|<leader>r"] = { action = '<cmd>!python3 "%"<cr>' },
+        ["n|<leader>dr"] = { action = '<cmd>!python3 "%"<cr>' },
+    },
 }
 
 syntaxes["^lua$"] = {
     shiftwidth = 4,
-    tabstop = 4
+    tabstop = 4,
 }
 
 syntaxes["^http$"] = {
     maps = {
-        ["n|<leader>r"] = {action = require("rest-nvim").run, opts = {silent = true}}
-    }
+        ["n|<leader>r"] = { action = require("rest-nvim").run, opts = { silent = true } },
+    },
 }
 
 syntaxes["^tex$"] = {
-    conceallevel = 0
+    conceallevel = 0,
 }
 
 syntaxes["^go$"] = {

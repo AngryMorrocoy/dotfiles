@@ -13,11 +13,11 @@ local lsp_configs = {
 function M.setup()
     require("mason-lspconfig").setup()
 
-    require("mason-lspconfig").setup_handlers {
+    require("mason-lspconfig").setup_handlers({
         function(server_name)
-            require("lspconfig")[server_name].setup {}
-        end
-    }
+            require("lspconfig")[server_name].setup({})
+        end,
+    })
 
     for _, config in ipairs(lsp_configs) do
         config.setup()

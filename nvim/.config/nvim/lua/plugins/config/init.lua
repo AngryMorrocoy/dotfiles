@@ -19,7 +19,7 @@ M.plugs_config = {
     require("plugins.config.auto_sesion"),
     require("plugins.config.comment"),
     require("plugins.config.smoothcursor"),
-    require("plugins.config.null_ls")
+    require("plugins.config.null_ls"),
 }
 
 function M.setup_all()
@@ -32,9 +32,8 @@ function M.setup_all()
     require("trouble").setup({})
     require("refactoring").setup({})
     require("zen-mode").setup({})
-    require("dressing").setup({input = {insert_only = false}})
+    require("dressing").setup({ input = { insert_only = false } })
     require("gitsigns").setup({})
-
 end
 
 return M

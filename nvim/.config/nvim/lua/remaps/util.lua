@@ -1,12 +1,12 @@
 local M = {}
 
 local function nvim_map(mode, lhs, rhs, opts, bufonly)
-    local options = {noremap = true}
+    local options = { noremap = true }
     if opts then
         options = vim.tbl_extend("force", options, opts)
     end
     if bufonly then
-        options = vim.tbl_extend("force", options, {buffer = true})
+        options = vim.tbl_extend("force", options, { buffer = true })
     end
     vim.keymap.set(mode, lhs, rhs, options)
 end

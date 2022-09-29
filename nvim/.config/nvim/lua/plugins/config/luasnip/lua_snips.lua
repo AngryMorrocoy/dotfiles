@@ -19,50 +19,39 @@ function M.setup()
                     {}
                 end]],
                 {
-                    c(1, {t("local "), t("")}),
+                    c(1, { t("local "), t("") }),
                     i(2),
                     i(3),
-                    i(0)
+                    i(0),
                 }
             )
         ),
         s(
             "req",
-            fmt(
-                [[{}{}require("{}")]],
-                {
-                    c(1, {t(""), t("local ")}),
-                    d(
-                        2,
-                        function(req_type)
-                            if req_type[1][1]:match("local") then
-                                return sn(
-                                    nil,
-                                    {
-                                        i(1),
-                                        t(" = ")
-                                    }
-                                )
-                            end
-                            return sn(nil, t(""))
-                        end,
-                        {1}
-                    ),
-                    i(3)
-                }
-            )
+            fmt([[{}{}require("{}")]], {
+                c(1, { t(""), t("local ") }),
+                d(2, function(req_type)
+                    if req_type[1][1]:match("local") then
+                        return sn(nil, {
+                            i(1),
+                            t(" = "),
+                        })
+                    end
+                    return sn(nil, t(""))
+                end, {
+                    1,
+                }),
+                i(3),
+            })
         ),
         s(
             "loc",
-            fmt(
-                [[{}{} = {}]],
-                {
-                    c(1, {t("local "), t("")}),
-                    i(2),
-                    i(3)
-                }
-            )
-        )
+            fmt([[{}{} = {}]], {
+                c(1, { t("local "), t("") }),
+                i(2),
+                i(3),
+            })
+        ),
     }
 end
 

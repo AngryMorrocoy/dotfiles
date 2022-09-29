@@ -23,10 +23,10 @@ function M.setup()
                 }}
                 ]],
                 {
-                    c(1, {t(""), t("async ")}),
+                    c(1, { t(""), t("async ") }),
                     i(2),
                     i(3),
-                    i(0)
+                    i(0),
                 }
             )
         ),
@@ -41,38 +41,31 @@ function M.setup()
                 ]],
                 {
                     -- To choose if its anonymous or save it in a variable
-                    c(1, {t("const "), t(""), t("async ")}),
+                    c(1, { t("const "), t(""), t("async ") }),
                     -- Dynamic, if it is const then ask for the name
-                    d(
-                        2,
-                        function(func_type)
-                            if func_type[1][1]:match("const") then
-                                return sn(
-                                    nil,
-                                    {
-                                        i(1),
-                                        t(" = ")
-                                    }
-                                )
-                            end
-                            return sn(nil, t(""))
-                        end,
-                        {1}
-                    ),
+                    d(2, function(func_type)
+                        if func_type[1][1]:match("const") then
+                            return sn(nil, {
+                                i(1),
+                                t(" = "),
+                            })
+                        end
+                        return sn(nil, t(""))
+                    end, {
+                        1,
+                    }),
                     -- Even if const check if want it async
-                    d(
-                        3,
-                        function(func_type)
-                            if func_type[1][1]:match("const") then
-                                return sn(nil, c(1, {t(""), t("async ")}))
-                            end
-                            return sn(nil, t(""))
-                        end,
-                        {1}
-                    ),
+                    d(3, function(func_type)
+                        if func_type[1][1]:match("const") then
+                            return sn(nil, c(1, { t(""), t("async ") }))
+                        end
+                        return sn(nil, t(""))
+                    end, {
+                        1,
+                    }),
                     -- Parameters
                     i(4),
-                    i(0)
+                    i(0),
                 }
             )
         ),
@@ -86,29 +79,24 @@ function M.setup()
                 }}
                 ]],
                 {
-                    i(1, {"i"}),
-                    i(2, {"0"}),
+                    i(1, { "i" }),
+                    i(2, { "0" }),
                     rep(1),
                     i(3),
                     i(4),
-                    i(0)
+                    i(0),
                 }
             )
         ),
         s(
-            {trig = "[lc][eo][tn]s?t?", regTrig = true},
-            fmt(
-                [[{} {} = {};]],
-                {
-                    f(
-                        function(_, snip)
-                            return snip.trigger
-                        end
-                    ),
-                    i(1),
-                    i(2)
-                }
-            )
+            { trig = "[lc][eo][tn]s?t?", regTrig = true },
+            fmt([[{} {} = {};]], {
+                f(function(_, snip)
+                    return snip.trigger
+                end),
+                i(1),
+                i(2),
+            })
         ),
         s(
             "imp",
@@ -118,7 +106,7 @@ function M.setup()
                 ]],
                 {
                     i(1),
-                    i(2)
+                    i(2),
                 }
             )
         ),
@@ -130,7 +118,7 @@ function M.setup()
                 ]],
                 i(0)
             )
-        )
+        ),
     }
 end
 

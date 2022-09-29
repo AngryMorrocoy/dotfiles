@@ -21,10 +21,10 @@ function M.setup()
                 ]],
                 {
                     i(1),
-                    i(2)
+                    i(2),
                 }
             )
-        )
+        ),
     }
 end
 

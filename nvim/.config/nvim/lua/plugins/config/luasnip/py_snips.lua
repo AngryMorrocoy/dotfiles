@@ -19,11 +19,11 @@ function M.setup()
                     {}()
                 ]],
                 {
-                    i(0, {"main"})
+                    i(0, { "main" }),
                 }
             )
         ),
-        s("com", fmt([["""{}"""]], {i(0)})),
+        s("com", fmt([["""{}"""]], { i(0) })),
         s(
             "def",
             fmt(
@@ -34,36 +34,28 @@ function M.setup()
                 {
                     i(1),
                     i(2),
-                    i(0)
+                    i(0),
                 }
             )
         ),
         -- Python: Cool imports
-        s(
-            "imp",
-            {
-                c(1, {t("import "), t("from ")}),
-                d(
-                    2,
-                    function(import_type)
-                        if import_type[1][1]:match("from") then
-                            return sn(
-                                nil,
-                                fmt(
-                                    "{} import {}",
-                                    {
-                                        i(1),
-                                        i(2)
-                                    }
-                                )
-                            )
-                        end
-                        return sn(nil, i(1))
-                    end,
-                    {1}
-                )
-            }
-        ),
+        s("imp", {
+            c(1, { t("import "), t("from ") }),
+            d(2, function(import_type)
+                if import_type[1][1]:match("from") then
+                    return sn(
+                        nil,
+                        fmt("{} import {}", {
+                            i(1),
+                            i(2),
+                        })
+                    )
+                end
+                return sn(nil, i(1))
+            end, {
+                1,
+            }),
+        }),
         -- Python: Classes
         s(
             "class",
@@ -75,39 +67,27 @@ function M.setup()
                 ]],
                 {
                     i(1),
-                    c(
-                        2,
-                        {
-                            t(""),
-                            sn(
-                                nil,
-                                {
-                                    t("("),
-                                    i(1),
-                                    t(")")
-                                }
-                            )
-                        }
-                    ),
-                    c(
-                        3,
-                        {
-                            t(""),
-                            sn(
-                                nil,
-                                {
-                                    t("def __init__(self"),
-                                    i(1),
-                                    t("):"),
-                                    t({"", "\t\t"}),
-                                    i(0, "pass")
-                                }
-                            )
-                        }
-                    )
+                    c(2, {
+                        t(""),
+                        sn(nil, {
+                            t("("),
+                            i(1),
+                            t(")"),
+                        }),
+                    }),
+                    c(3, {
+                        t(""),
+                        sn(nil, {
+                            t("def __init__(self"),
+                            i(1),
+                            t("):"),
+                            t({ "", "\t\t" }),
+                            i(0, "pass"),
+                        }),
+                    }),
                 }
             )
-        )
+        ),
     }
 end
 

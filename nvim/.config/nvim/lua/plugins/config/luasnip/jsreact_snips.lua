@@ -30,21 +30,17 @@ function M.setup()
                     i(3, "div"),
                     i(4),
                     rep(3),
-                    c(
-                        5,
-                        {
-                            t(""),
-                            f(
-                                function(component_name)
-                                    return {"", "", "export default " .. component_name[1][1] .. ";"}
-                                end,
-                                {1}
-                            )
-                        }
-                    )
+                    c(5, {
+                        t(""),
+                        f(function(component_name)
+                            return { "", "", "export default " .. component_name[1][1] .. ";" }
+                        end, {
+                            1,
+                        }),
+                    }),
                 }
             )
-        )
+        ),
     }
 end
 

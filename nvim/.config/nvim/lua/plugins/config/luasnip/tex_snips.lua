@@ -13,11 +13,17 @@ function M.setup()
     local sn = ls.sn
 
     return {
-        s("beg", fmt([[
+        s(
+            "beg",
+            fmt(
+                [[
         \begin{{{}}}
           {}
         \end{{{}}}
-        ]], {i(1), i(2), rep(1)})),
+        ]],
+                { i(1), i(2), rep(1) }
+            )
+        ),
         s(
             "start",
             fmt(
@@ -36,9 +42,9 @@ function M.setup()
           {}
         \end{{document}}
         ]],
-                {i(1), i(2)}
+                { i(1), i(2) }
             )
-        )
+        ),
     }
 end
 

@@ -57,7 +57,7 @@ end
 
 function M.autocommands:jump_to_last_known_cursor_position()
     -- Go to the last known cursor position
-    local lastline = fn.line('\'"')
+    local lastline = fn.line("'\"")
     local filetype = vim.bo.filetype:match("commit")
     if lastline >= 1 and lastline <= fn.line("$") and filetype ~= "commit" then
         cmd("normal " .. lastline .. "gg")

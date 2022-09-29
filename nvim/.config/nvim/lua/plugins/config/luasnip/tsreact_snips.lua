@@ -26,40 +26,34 @@ function M.setup()
                 }}{}
                 ]],
                 {
-                    d(
-                        1,
-                        function()
-                            local lines = vim.api.nvim_buf_get_lines(0, 0, 30, false)
-                            for _, line in ipairs(lines) do
-                                if string.match(line, "^import.+FunctionComponent") then
-                                    return sn(nil, t(""))
-                                end
+                    d(1, function()
+                        local lines = vim.api.nvim_buf_get_lines(0, 0, 30, false)
+                        for _, line in ipairs(lines) do
+                            if string.match(line, "^import.+FunctionComponent") then
+                                return sn(nil, t(""))
                             end
-                            return sn(nil, t({"import { FunctionComponent } from 'react';", "", ""}))
-                        end,
-                        {2}
-                    ),
+                        end
+                        return sn(nil, t({ "import { FunctionComponent } from 'react';", "", "" }))
+                    end, {
+                        2,
+                    }),
                     i(2),
                     i(3, "any"),
                     i(4, "props"),
                     i(5, "div"),
                     i(6),
                     rep(5),
-                    c(
-                        7,
-                        {
-                            f(
-                                function(component_name)
-                                    return {"", "", "export default " .. component_name[1][1] .. ";"}
-                                end,
-                                {2}
-                            ),
-                            t("")
-                        }
-                    )
+                    c(7, {
+                        f(function(component_name)
+                            return { "", "", "export default " .. component_name[1][1] .. ";" }
+                        end, {
+                            2,
+                        }),
+                        t(""),
+                    }),
                 }
             )
-        )
+        ),
     }
 end
 

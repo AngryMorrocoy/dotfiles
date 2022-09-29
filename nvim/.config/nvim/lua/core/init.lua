@@ -12,7 +12,7 @@ local opts = {
     backup = false, -- Fuck backups
     undofile = true, -- Enable undofiles
     undodir = vim.env["HOME"] .. "/.local/share/vim/undodir/", -- Directory for undo files
-    backspace = {"indent", "eol", "start"}, -- What can delete a backspace
+    backspace = { "indent", "eol", "start" }, -- What can delete a backspace
     history = 50, -- Only 50 lines of cmd history
     ruler = false, -- Disable the ruler, already using airline lol
     splitright = true, -- Disable the sick default splits of vim
@@ -33,14 +33,14 @@ local opts = {
     laststatus = 3, -- For airline compatibility
     showmode = false, -- Doesn't show the mode airline stuff
     showcmd = false, -- Doesn't show the command that was send by a keymap
-    completeopt = {"menuone", "noselect"},
+    completeopt = { "menuone", "noselect" },
     foldmethod = "expr", -- Using treesitter
     foldexpr = "nvim_treesitter#foldexpr()", -- ^
     foldenable = true, -- Disable folding by default
     filetype = "on", -- Detect filetypes
     syntax = "on", -- Enable syntax detection
     runtimepath = function()
-        vim.opt.rtp:append {"/usr/bin/fzf"}
+        vim.opt.rtp:append({ "/usr/bin/fzf" })
     end, -- Loads fzf
     wildignore = "**/node_modules/**,**/__pycache__/**,**/.next/**",
     list = true,
