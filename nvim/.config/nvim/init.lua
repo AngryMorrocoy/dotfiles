@@ -18,10 +18,8 @@ local function loadTheme()
             end
         }
         ]])
-        theme_loader_file:close()
-    else
-        theme_loader_file:close()
     end
+    theme_loader_file:close()
 
     require("theme").load_theme()
 end

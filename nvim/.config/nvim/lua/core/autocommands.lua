@@ -68,12 +68,10 @@ function M.setup()
                 return
             end
 
-            local project_folder = vim.fn.split(vim.fn.getcwd(), "/")
-            local cur_file = vim.fn.expand("%:t")
+            local cur_file = vim.fn.expand("%:p")
+            local path_splitted = vim.fn.split(cur_file, vim.fn.getcwd())
 
-            local project_name = project_folder[#project_folder]
-
-            local tmuxw_name = string.format("nvim@%s [%s]", project_name, cur_file)
+            local tmuxw_name = string.format("[%s]", path_splitted[#path_splitted] or "Empty")
 
             local command = string.format("tmux renamew '%s'", tmuxw_name)
 
@@ -84,11 +82,16 @@ function M.setup()
     vim.api.nvim_create_autocmd({ "VimLeave" }, {
         group = tmux_augroup,
         callback = function()
-            if vim.env.TMUX == nil then
-                return
-            end
             vim.fn.jobstart("tmux renamew zsh")
         end,
+    })
+
+    local folds_group = vim.api.nvim_create_augroup("OpenFolds", {})
+
+    vim.api.nvim_create_autocmd({ "BufReadPost", "FileReadPost" }, {
+        pattern = "*",
+        group = folds_group,
+        command = "normal zR",
     })
 end
 
