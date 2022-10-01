@@ -16,11 +16,7 @@ function M.setup()
         end,
     })
 
-    null_ls.setup({
-        sources = {
-            null_ls.builtins.formatting.prettier,
-        },
-    })
+    null_ls.setup({})
 end
 
 return M

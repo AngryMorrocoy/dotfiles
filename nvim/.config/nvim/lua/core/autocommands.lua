@@ -71,7 +71,13 @@ function M.setup()
             local cur_file = vim.fn.expand("%:p")
             local path_splitted = vim.fn.split(cur_file, vim.fn.getcwd())
 
-            local tmuxw_name = string.format("[%s]", path_splitted[#path_splitted] or "Empty")
+            cur_file = path_splitted[#path_splitted]
+
+            if cur_file and vim.fn.matchstr(cur_file, '^/') then
+                cur_file = string.sub(cur_file, 2)
+            end
+
+            local tmuxw_name = string.format("@%s", cur_file or "Empty")
 
             local command = string.format("tmux renamew '%s'", tmuxw_name)
 
