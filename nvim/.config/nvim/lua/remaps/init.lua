@@ -47,12 +47,13 @@ local keyMaps = {
     ["n|<leader>fq"] = { action = "<cmd>Telescope quickfix<cr>", opts = { silent = true } },
     ["n|<leader>fo"] = { action = "<cmd>Telescope loclist<cr>", opts = { silent = true } },
     -- Lsp
-    ["n|gd"] = { action = vim.lsp.buf.definition, { silent = true } },
-    ["n|gvd"] = { action = "<cmd>vsplit | lua vim.lsp.buf.definition()<cr>", { silent = true } },
+    ["n|gd"] = { action = "<C-]>", { silent = true } },
+    ["n|gvd"] = { action = "<C-w>v<C-]>", { silent = true } },
     ["n|gsd"] = { action = "<cmd>split |lua vim.lsp.buf.definition() <cr>", { silent = true } },
+    ["n|gr"] = { action = "<cmd>Telescope lsp_references<cr>", opts = { silent = true } },
+    ["n|<leader>ac"] = { action = vim.lsp.buf.code_action, opts = { silent = true } },
     ["n|<leader>d"] = { action = vim.lsp.buf.hover, opts = { silent = true } },
     ["n|<leader>.r"] = { action = vim.lsp.buf.rename, opts = { silent = true } },
-    ["n|gr"] = { action = "<cmd>Telescope lsp_references<cr>", opts = { silent = true } },
     -- Toggle recent files
     ["n|<leader><space>"] = { action = "<C-^>", opts = { silent = true } },
     -- Better movement, holy shit i need that

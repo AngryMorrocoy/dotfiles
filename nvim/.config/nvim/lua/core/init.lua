@@ -45,6 +45,8 @@ local opts = {
     end, -- Loads fzf
     wildignore = "**/node_modules/**,**/__pycache__/**,**/.next/**",
     list = true,
+    ch = 0, -- Set to zero the height of the cmd
+    winbar = "%!expand('%r')",
 }
 
 function M.setup()
