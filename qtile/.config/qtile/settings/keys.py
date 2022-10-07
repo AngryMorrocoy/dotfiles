@@ -209,7 +209,7 @@ keys += [
                     # --Launchs audacious--#
                     [[], "2", lazy.spawn("audacious")],
                     # --Launchs vifm--#
-                    [[], "3", lazy.spawn(f"{terminal} -e vifm")],
+                    [[], "3", lazy.spawn(f"{terminal} -e ranger")],
                     # --Launchs thunar--#
                     [[], "e", lazy.spawn("thunar")],
                     # --Launchs nitrogen--#

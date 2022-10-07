@@ -117,11 +117,7 @@ set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
 
 " :mark mark /full/directory/path [filename]
 
-mark b ~/bin/
 mark h ~/
-mark d ~/Docs
-mark m /run/media/Shared/Shared/Music
-mark v /run/media/Shared/Shared/Videos
 
 " ------------------------------------------------------------------------------
 
