@@ -83,4 +83,12 @@ require("packer").startup(function(use)
     use("rmagatti/auto-session")
     use("voldikss/vim-floaterm")
     use("ThePrimeagen/harpoon")
+
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = function()
+            vim.fn["mkdp#util#install"]()
+        end,
+        ft = { "markdown" },
+    })
 end)
