@@ -3,8 +3,13 @@ from os import environ
 from libqtile.command import lazy
 from libqtile.config import Key, KeyChord
 
-from .extra import (move_floating, resize_floating, toggle_always_visible,
-                    window_to_next_group, window_to_prev_group)
+from .extra import (
+    move_floating,
+    resize_floating,
+    toggle_always_visible,
+    window_to_next_group,
+    window_to_prev_group,
+)
 
 terminal = "alacritty"
 wallpapers_path = "/home/mr/Wallpapers/"
@@ -80,20 +85,24 @@ keys = [
             "h",
             lazy.layout.grow(),
             lazy.layout.increase_nmaster(),
+            lazy.layout.grow_left(),
         ],
         [
             [mod, "shift"],
             "l",
             lazy.layout.shrink(),
             lazy.layout.decrease_nmaster(),
+            lazy.layout.grow_right(),
         ],
+        # -- Columns layout things --#
+        [[mod, "control"], "h", lazy.layout.swap_column_left()],
+        [[mod, "control"], "l", lazy.layout.swap_column_right()],
         # --Toggle window types--#
         [[mod, "shift"], "a", lazy.function(toggle_always_visible)],
-        [[mod, "shift"], "m", lazy.window.toggle_fullscreen()],
+        [[mod, "shift"], "o", lazy.window.toggle_fullscreen()],
         [[mod, "shift"], "f", lazy.window.toggle_floating()],
         # --Normalize and maximize the size of the windows (Mondad/tall/wide)
         [[mod, "shift"], "n", lazy.layout.normalize()],
-        [[mod, "shift"], "o", lazy.layout.maximize()],
         # Layout managements and control
         # --Switch sides of the layout--#
         [[mod, "shift"], "space", lazy.layout.rotate(), lazy.layout.flip()],
@@ -167,9 +176,7 @@ keys += [
                     [
                         [],
                         "e",
-                        lazy.spawn(
-                            "rofi -matching regex -modi drun,run -show drun"
-                        ),
+                        lazy.spawn("rofi -matching regex -modi drun,run -show drun"),
                     ],
                     # --The script for searching across the web--#
                     [[], "s", lazy.spawn("rofi-search")],

@@ -11,12 +11,14 @@ layout_theme = {
 
 layouts = [
     layout.Max(**layout_theme),
-    layout.MonadTall(**layout_theme),
-    layout.MonadWide(**layout_theme),
-    layout.Stack(**layout_theme, num_stacks=2),
-    layout.Matrix(
-        **{key: value for key, value in layout_theme.items() if key != "margin"},
-        margin=0
+    layout.MonadTall(**layout_theme, single_margin=0, single_border_width=1),
+    layout.Columns(
+        **{
+            k: v for k, v in layout_theme.items() if k not in ["margin", "border_width"]
+        },
+        margin=0,
+        border_width=1,
+        columns=2,
     ),
 ]
 
@@ -26,5 +28,5 @@ floating_layout = layout.Floating(
         Match(title="Qalculate!"),
         Match(wm_class="gpick"),
     ],
-    **{key: value for key, value in layout_theme.items() if key != "margin"}
+    **{key: value for key, value in layout_theme.items() if key != "margin"},
 )
