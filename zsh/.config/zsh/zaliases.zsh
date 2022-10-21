@@ -4,9 +4,6 @@
 alias v="nvim"
 # Custom command for running nvim servers inside tmux
 alias vt="nvim-tmux-server"
-# Tmux faster strokes uwu
-alias t="tmux"
-alias ta="tmux a"
 # Vim loads the right config
 alias vim="vim -u '~/.config/vim/vimrc'"
 

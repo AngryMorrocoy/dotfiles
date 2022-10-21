@@ -128,3 +128,6 @@ export PATH="${PATH}:$HOME/.local/bin/:$HOME/.cargo/bin:/opt/miniconda3/bin:$HOM
 bindkey -s '^s' 'tmux-sessions^M'
 bindkey -s '^[s' 'tmux-sessionizer^M'
 
+function t() {
+    tmux-sessionizer "$(pwd)"
+}
