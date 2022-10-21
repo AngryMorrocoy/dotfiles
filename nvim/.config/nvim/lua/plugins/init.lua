@@ -70,7 +70,10 @@ require("packer").startup(function(use)
         run = "make",
     })
     -- Latex environment :D
-    use({ "lervag/vimtex", ft = "tex" })
+    use({
+        "lervag/vimtex",
+        ft = "tex",
+    })
     -- Snippets
     use("L3MON4D3/LuaSnip")
     -- Nvim looking good af

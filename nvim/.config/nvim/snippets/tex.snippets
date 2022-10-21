@@ -1,0 +1,26 @@
+snippet beg Start an environment
+	\begin{${1}}
+		${0}
+	\end{${1}}
+
+snippet start Writes all the template
+	% arara: pdflatex
+	\documentclass{article}
+	% TODO: Imports
+	\usepackage[utf8]{inputenc}
+	${1}
+	% ---
+
+	% TODO: Commands
+	% ---
+	\begin{document}
+	  ${0}
+	\end{document}
+
+snippet m Display math
+	\[
+	${0}
+	.\]
+
+snippet fr Fractions
+	\frac{${1}}{${2}}

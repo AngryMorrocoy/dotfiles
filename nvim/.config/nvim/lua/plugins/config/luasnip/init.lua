@@ -5,24 +5,15 @@ function M.load_snippets()
     local concat_tables = require("core.util").concat_tables
 
     local snippets = {
-        lua = require("plugins.config.luasnip.lua_snips").setup(),
-        javascript = require("plugins.config.luasnip.js_snips").setup(),
-        javascriptreact = concat_tables({
-            require("plugins.config.luasnip.js_snips").setup(),
-            require("plugins.config.luasnip.jsreact_snips").setup(),
-        }),
-        typescriptreact = concat_tables({
-            require("plugins.config.luasnip.js_snips").setup(),
-            require("plugins.config.luasnip.tsreact_snips").setup(),
-            require("plugins.config.luasnip.ts_snips").setup(),
-        }),
-        typescript = concat_tables({
-            require("plugins.config.luasnip.ts_snips").setup(),
-            require("plugins.config.luasnip.js_snips").setup(),
-        }),
-        python = require("plugins.config.luasnip.py_snips").setup(),
-        tex = require("plugins.config.luasnip.tex_snips").setup(),
-        go = require("plugins.config.luasnip.go_snpis").setup(),
+        -- typescript = concat_tables({
+        --     require("plugins.config.luasnip.ts_snips").setup(),
+        --     require("plugins.config.luasnip.js_snips").setup(),
+        -- }),
+        -- typescriptreact = concat_tables({
+        --     require("plugins.config.luasnip.js_snips").setup(),
+        --     require("plugins.config.luasnip.tsreact_snips").setup(),
+        --     require("plugins.config.luasnip.ts_snips").setup(),
+        -- }),
     }
 
     for ft, snips in pairs(snippets) do
@@ -35,6 +26,7 @@ function M.setup()
     local types = require("luasnip.util.types")
 
     ls.config.setup({
+        enable_autosnippets = true,
         historsetup = true,
         updateevents = "TextChanged,TextChangedI",
         ext_opts = {
@@ -45,8 +37,9 @@ function M.setup()
             },
         },
     })
-end
 
-M.load_snippets()
+    require("luasnip.loaders.from_snipmate").lazy_load()
+    require("luasnip.loaders.from_lua").lazy_load()
+end
 
 return M
