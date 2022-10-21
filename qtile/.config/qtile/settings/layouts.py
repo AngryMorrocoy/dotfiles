@@ -11,7 +11,7 @@ layout_theme = {
 
 layouts = [
     layout.Max(**layout_theme),
-    layout.MonadTall(**layout_theme, single_margin=0, single_border_width=1),
+    layout.MonadTall(**layout_theme),
     layout.Columns(
         **{
             k: v for k, v in layout_theme.items() if k not in ["margin", "border_width"]

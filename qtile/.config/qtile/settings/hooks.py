@@ -1,9 +1,10 @@
-from libqtile import hook
-from os import path
-from .path import qtile_path
-from libqtile import qtile
-import subprocess
 import json
+import subprocess
+from os import path
+
+from libqtile import hook, qtile
+
+from .path import qtile_path
 
 
 @hook.subscribe.startup_once
@@ -31,7 +32,6 @@ def on_focus_change(window):
 
 @hook.subscribe.setgroup
 def bring_always_visible_windows():
-
     windows_id_filepath = path.join(qtile_path, "windows_id.json")
     ids = []
     with open(windows_id_filepath, "r", encoding="utf-8") as windows_file:
