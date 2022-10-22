@@ -7,10 +7,6 @@ local manual_snips = {
                 sn(nil, { t("{"), r(1, "user_text"), t("}") }),
             }),
             i(1),
-        }, {
-            stored = {
-                ["user_text"] = i(2, "texto defecto"),
-            },
         })
     ),
     s(

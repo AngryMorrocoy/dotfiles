@@ -1,20 +1,13 @@
 local manual_snips = {
     s("imp", {
-        c(1, { t("import "), t("from ") }),
-        d(2, function(import_type)
-            if import_type[1][1]:match("from") then
-                return sn(
-                    nil,
-                    fmt("{} import {}", {
-                        i(1),
-                        i(2),
-                    })
-                )
-            end
-            return sn(nil, i(1))
-        end, {
-            1,
+        c(1, {
+            sn(nil, fmt("import {}", { r(1, "import") })),
+            sn(nil, fmt("from {} import {}", { r(1, "import"), i(2, "*") })),
         }),
+    }, {
+        stored = {
+            ["import"] = i(1),
+        },
     }),
     s(
         "class",

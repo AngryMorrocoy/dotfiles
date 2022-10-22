@@ -40,9 +40,6 @@ local opts = {
     foldcolumn = "2",
     filetype = "on", -- Detect filetypes
     syntax = "on", -- Enable syntax detection
-    runtimepath = function()
-        vim.opt.rtp:append({ "/usr/bin/fzf" })
-    end, -- Loads fzf
     wildignore = "**/node_modules/**,**/__pycache__/**,**/.next/**",
     list = true,
     ch = 0, -- Set to zero the height of the cmd
