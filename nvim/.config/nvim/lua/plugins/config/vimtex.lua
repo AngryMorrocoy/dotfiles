@@ -2,7 +2,7 @@ local M = {}
 
 local function get_build_path()
     local cur_file = vim.fn.expand("%:t:r")
-    return string.format("build-%s", cur_file)
+    return string.format("tex-build_%s", cur_file)
 end
 
 function M.setup()
