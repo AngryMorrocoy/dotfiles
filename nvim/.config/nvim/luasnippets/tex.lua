@@ -20,6 +20,15 @@ local manual_snips = {
             i(0),
         }, { delimiters = "<>" })
     ),
+    s({ trig = "[%d%a]*[%d%a]+%^[%w]*", regTrig = true }, {
+        d(1, function(_, parent)
+            local separator_index = parent.trigger:find("%^")
+            local base = string.sub(parent.trigger, 1, separator_index - 1)
+            local exp = string.sub(parent.trigger, separator_index + 1)
+
+            return sn(nil, fmt("<>^{<>}<>", { t(base), i(1, exp), i(0) }, { delimiters = "<>" }))
+        end),
+    }),
 }
 local auto_snips = {
     s({ trig = "$", wordTrig = false }, {

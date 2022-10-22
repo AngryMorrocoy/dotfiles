@@ -20,6 +20,7 @@ M.plugs_config = {
     require("plugins.config.comment"),
     require("plugins.config.smoothcursor"),
     require("plugins.config.null_ls"),
+    require("plugins.config.vimtex"),
 }
 
 function M.setup_all()

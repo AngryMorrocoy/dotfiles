@@ -61,9 +61,7 @@ syntaxes["^http$"] = {
 
 syntaxes["^tex$"] = {
     conceallevel = 1,
-    run = function ()
-        vim.g.tex_conceal = "abdmg"
-    end
+    textwidth = 80,
 }
 
 syntaxes["^go$"] = {
