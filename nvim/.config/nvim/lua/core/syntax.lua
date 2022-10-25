@@ -69,4 +69,13 @@ syntaxes["^go$"] = {
     tabstop = 4,
 }
 
+syntaxes["^norg$"] = {
+    shiftwidth = 2,
+    tabstop = 2,
+    textwidth = 80,
+    maps = {
+        ["n|<leader>ct"] = { action = "<cmd>Neorg toggle-concealer<cr>" },
+    },
+}
+
 return syntaxes

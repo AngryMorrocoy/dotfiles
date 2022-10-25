@@ -7,8 +7,6 @@ local keyMaps = {
     ["n|<leader>W"] = { action = "<cmd>wa<cr>" }, -- Saves faster
     ["n|<leader><cr>"] = { action = "<cmd>q<cr>" }, -- Quit faster
     ["n|<leader>q<cr>"] = { action = "<cmd>q!<cr>" }, -- Forces quit
-    ["n|>"] = { action = ">>" }, -- Fast indentation on normal mode
-    ["n|<"] = { action = "<<" }, -- ^
     -- Opens undotree
     ["n|<leader>u"] = { action = "<cmd>UndotreeToggle<cr>" },
     -- NvimTree

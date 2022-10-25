@@ -1,6 +1,7 @@
 local M = {}
 
 M.plugs_config = {
+    require("plugins.config.neorg"),
     require("plugins.config.lspconfig"),
     require("plugins.config.autopairs"),
     require("plugins.config.cmp"),

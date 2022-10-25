@@ -35,6 +35,8 @@ function M.setup()
             { name = "buffer" },
         }, {
             { name = "calc" },
+        }, {
+            { name = "neorg" },
         }),
     })
 end

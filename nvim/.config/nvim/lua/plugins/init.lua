@@ -89,9 +89,14 @@ require("packer").startup(function(use)
 
     use({
         "iamcco/markdown-preview.nvim",
-        run = function()
-            vim.fn["mkdp#util#install"]()
+        run = "cd app && npm install",
+        setup = function()
+            vim.g.mkdp_filetypes = { "markdown" }
         end,
         ft = { "markdown" },
+    })
+
+    use({
+        "nvim-neorg/neorg",
     })
 end)
