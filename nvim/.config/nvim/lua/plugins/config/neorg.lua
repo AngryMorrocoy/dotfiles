@@ -14,6 +14,17 @@ function M.setup()
                 },
             },
             ["core.integrations.telescope"] = {},
+            ["core.export"] = {
+                config = { -- Note that this table is optional and doesn't need to be provided
+                    -- Configuration here
+                },
+            },
+            ["external.context"] = {},
+            ["core.export.markdown"] = {
+                config = {
+                    extensions = "all",
+                },
+            },
         },
     })
 end

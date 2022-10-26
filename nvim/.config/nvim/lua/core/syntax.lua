@@ -82,6 +82,7 @@ syntaxes["^norg$"] = {
         ["n|<leader>ct"] = { action = "<cmd>Neorg toggle-concealer<cr>", opts = {} },
         ["n|<leader>ff"] = { action = "<cmd>Telescope neorg find_linkable<cr>" },
         ["n|<leader>f<space>"] = { action = ":Telescope neorg " },
+        ["n|<leader>lt"] = { action = "<cmd>Neorg toc split<cr>" },
         ["n|<leader>r"] = { action = ":Neorg " },
         ["i|<C-i>"] = { action = "<cmd>Telescope neorg insert_link<cr>" },
     },

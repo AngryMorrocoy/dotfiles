@@ -186,6 +186,6 @@ require("packer").startup(function(use)
         "nvim-neorg/neorg",
         config = require("plugins.config.neorg").setup,
         ft = { "norg" },
-        requires = { "nvim-neorg/neorg-telescope" },
+        requires = { "nvim-neorg/neorg-telescope", "max397574/neorg-contexts" },
     })
 end)

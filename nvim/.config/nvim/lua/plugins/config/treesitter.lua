@@ -25,10 +25,6 @@ function M.setup()
         },
         highlight = {
             enable = true,
-            custom_captures = {
-                ["dictionary.key"] = "TSField",
-                ["template_string.substitution"] = "TSVariable",
-            },
             additional_vim_regex_highlighting = false,
             disable = { "latex" },
         },
@@ -47,6 +43,8 @@ function M.setup()
             enable_autocmd = false,
         },
     })
+
+    vim.api.nvim_set_hl(0, "@dictionary.key", { link = "TSField" })
 end
 
 return M
