@@ -27,6 +27,19 @@ function M.setup()
             },
         },
     })
+
+    local neorg_callbacks = require("neorg.callbacks")
+
+    neorg_callbacks.on_event("core.keybinds.events.enable_keybinds", function(_, keybinds)
+        -- This keymaps, just bc telescope integration remaps my luasnip trigger function :c
+        keybinds.map_to_mode("norg", {
+            i = {
+                { "<tab>", require("plugins.config.luasnip.util").expand_or_jump_keymap },
+                { "<s-tab>", require("plugins.config.luasnip.util").jump_backwards },
+                { "<C-l>", require("plugins.config.luasnip.util").change_choice_node },
+            },
+        }, { silent = true, noremap = true })
+    end)
 end
 
 return M

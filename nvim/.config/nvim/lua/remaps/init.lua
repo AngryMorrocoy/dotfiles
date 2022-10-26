@@ -111,6 +111,7 @@ local keyMaps = {
     -- LuaSnips
     ["i|<Tab>"] = {
         action = require("plugins.config.luasnip.util").expand_or_jump_keymap,
+        opts = { noremap = true },
     },
     ["i|<S-Tab>"] = {
         action = require("plugins.config.luasnip.util").jump_backwards,
