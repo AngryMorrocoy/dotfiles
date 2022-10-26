@@ -13,6 +13,7 @@ function M.setup()
                     conceal = false,
                 },
             },
+            ["core.integrations.telescope"] = {},
         },
     })
 end

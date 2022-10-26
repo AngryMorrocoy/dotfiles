@@ -55,7 +55,12 @@ syntaxes["^lua$"] = {
 
 syntaxes["^http$"] = {
     maps = {
-        ["n|<leader>r"] = { action = require("rest-nvim").run, opts = { silent = true } },
+        ["n|<leader>r"] = {
+            action = function()
+                require("rest-nvim").run()
+            end,
+            opts = { silent = true },
+        },
     },
 }
 

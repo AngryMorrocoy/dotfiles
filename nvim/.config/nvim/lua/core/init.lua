@@ -48,7 +48,6 @@ local opts = {
 
 function M.setup()
     require("plugins") -- Load the plugins
-    require("plugins.config").setup_all()
 
     require("core.autocommands").setup() -- Load the autocommands
     require("core.commands").setup() -- Load the commands

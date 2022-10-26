@@ -14,9 +14,9 @@ function M.setup()
             local setup_stylua = require("plugins.config.null_ls.stylua_formatter")
             setup_stylua()
         end,
-        prettier = function(source_name)
+        prettier = function()
             null_ls.register(null_ls.builtins.formatting.prettier.with({
-                extra_args = {"--prose-wrap", "always"}
+                extra_args = { "--prose-wrap", "always" },
             }))
         end,
     })
