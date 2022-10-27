@@ -84,7 +84,8 @@ syntaxes["^norg$"] = {
         ["n|<leader>f<space>"] = { action = ":Telescope neorg " },
         ["n|<leader>lt"] = { action = "<cmd>Neorg toc split<cr>" },
         ["n|<leader>r"] = { action = ":Neorg " },
-        ["i|<C-i>"] = { action = "<cmd>Telescope neorg insert_link<cr>" },
+        ["i|<C-r>"] = { action = "<cmd>Telescope neorg insert_link<cr>" },
+        ["i|<C-t>"] = { action = "<cmd>Telescope neorg insert_file_link<cr>" },
     },
 }
 
