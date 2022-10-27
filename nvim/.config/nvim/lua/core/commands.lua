@@ -39,5 +39,10 @@ return {
                 return { "minify" }
             end,
         })
+
+        vim.api.nvim_create_user_command("ReloadSnippets", function()
+            require("luasnip.loaders.from_snipmate").load()
+            require("luasnip.loaders.from_lua").load()
+        end, { force = true })
     end,
 }
