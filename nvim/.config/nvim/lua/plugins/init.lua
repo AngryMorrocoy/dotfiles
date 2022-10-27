@@ -74,13 +74,14 @@ require("packer").startup(function(use)
         "windwp/nvim-autopairs",
         config = require("plugins.config.autopairs").setup,
     })
-    --
+    -- Neotree
     use({
-        "kyazdani42/nvim-tree.lua",
-        config = require("plugins.config.nvim_tree").setup,
+        "nvim-neo-tree/neo-tree.nvim",
+        config = require("plugins.config.neotree").setup,
+        requires = { "MunifTanjim/nui.nvim" },
     })
     use("kyazdani42/nvim-web-devicons")
-    use({ "mbbill/undotree", opt = true })
+    use({ "mbbill/undotree", opt = true, cmd = { "UndotreeToggle" } })
     -- Treesitter
     use({
         "nvim-treesitter/nvim-treesitter",
