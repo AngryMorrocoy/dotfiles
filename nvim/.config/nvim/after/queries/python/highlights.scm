@@ -1,4 +1,4 @@
-; inherits: python
+;; extends
 (dictionary
     (pair
         key: (_) @dictionary.key
