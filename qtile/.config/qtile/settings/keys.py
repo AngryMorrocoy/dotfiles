@@ -233,8 +233,8 @@ keys += [
                     [[], "v", lazy.spawn(f"{terminal} -e nvim")],
                     # --Launchs obsidian--
                     [[], "o", lazy.spawn("obsidian")],
-                    # --Launchs mailspring--
-                    [[], "m", lazy.spawn("mailspring")],
+                    # --Launchs mail-client--
+                    [[], "m", lazy.spawn("evolution")],
                     # --Launchs spotify--
                     [[], "s", lazy.spawn("spotify")],
                     # --Launchs zathura--
