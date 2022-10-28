@@ -139,6 +139,7 @@ require("packer").startup(function(use)
         ft = "tex",
         config = require("plugins.config.vimtex").setup,
     })
+    use({ "jbyuki/nabla.nvim", ft = "tex" })
     -- Snippets
     use({
         "L3MON4D3/LuaSnip",

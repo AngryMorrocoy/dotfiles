@@ -29,7 +29,7 @@ local manual_snips = {
             return sn(nil, fmt("<>^{<>}<>", { t(base), i(1, exp), i(0) }, { delimiters = "<>" }))
         end),
     }),
-    s("sym", fmt("sympy {} sympy{}", { i(1), i(0) })),
+    s({ trig = "sym", desc = "Creates a sympy block" }, fmt("sympy {} sympy{}", { i(1), i(0) })),
     s(
         { trig = "sympy.*sympy", regTrig = true, desc = "Sympy block evaluator" },
         d(1, function(_, parent)
@@ -42,6 +42,7 @@ local manual_snips = {
 
             local sympy_script = string.format(
                 [[
+# python
 from sympy import *
 from sympy.parsing.sympy_parser import parse_expr
 from sympy.printing.latex import print_latex
