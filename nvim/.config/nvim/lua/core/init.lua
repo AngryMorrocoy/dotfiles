@@ -42,6 +42,9 @@ local opts = {
     syntax = "on", -- Enable syntax detection
     wildignore = "**/node_modules/**,**/__pycache__/**,**/.next/**",
     list = true,
+    listchars = function()
+        vim.opt.listchars:append("eol:↴")
+    end,
     ch = 0, -- Set to zero the height of the cmd
     winbar = "%!expand('%r')",
 }
