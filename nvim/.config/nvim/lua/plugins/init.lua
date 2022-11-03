@@ -190,4 +190,11 @@ require("packer").startup(function(use)
         ft = { "norg" },
         requires = { "nvim-neorg/neorg-telescope", "max397574/neorg-contexts" },
     })
+
+    use({
+        "nvim-zh/colorful-winsep.nvim",
+        config = function()
+            require("colorful-winsep").setup({})
+        end,
+    })
 end)

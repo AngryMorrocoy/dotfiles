@@ -16,7 +16,7 @@ layouts = [
         **{
             k: v for k, v in layout_theme.items() if k not in ["margin", "border_width"]
         },
-        margin=0,
+        margin=2,
         border_width=1,
         columns=2,
     ),
