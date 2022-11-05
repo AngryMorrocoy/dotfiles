@@ -102,11 +102,16 @@ require("packer").startup(function(use)
     use({ "nanotech/jellybeans.vim", opt = true })
     use({ "folke/tokyonight.nvim", opt = true })
     use({ "pineapplegiant/spaceduck", opt = true })
-    use({ "rose-pine/neovim", opt = true })
+    use({ "rose-pine/neovim", opt = true, as = "rose-pine" })
     use({ "ray-x/aurora", opt = true })
     use({ "Shatur/neovim-ayu", opt = true })
     use({ "savq/melange", opt = true })
     use({ "catppuccin/nvim", as = "catppuccin" })
+    use({
+        "https://gitlab.com/__tpb/monokai-pro.nvim",
+        as = "monokai-pro.nvim",
+        opt = true
+    })
     -- Nvim like rest client
     use({
         "NTBBloodbath/rest.nvim",

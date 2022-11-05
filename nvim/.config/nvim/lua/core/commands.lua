@@ -7,10 +7,6 @@ return {
 
         vim.api.nvim_create_user_command("CloseAllFloatingWin", require("core.util").close_all_float_win, {})
 
-        vim.api.nvim_create_user_command("FormatJSON", function(args)
-            vim.pretty_print(args)
-        end, {})
-
         vim.api.nvim_create_user_command("FJson", function(args)
             local cur_ft = vim.bo.filetype
             if args.range == 0 and cur_ft ~= "json" then
