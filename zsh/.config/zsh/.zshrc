@@ -9,11 +9,11 @@ export ZSH="/home/mr/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="philips"
 # ZSH_THEME="gallois"
-# ZSH_THEME="nanotech"
+ZSH_THEME="nanotech"
 # ZSH_THEME="dieter"
-ZSH_THEME="clean"
 # ZSH_THEME="agnoster"
 # ZSH_THEME="awesomepanda"
+# ZSH_THEME="duellj"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
