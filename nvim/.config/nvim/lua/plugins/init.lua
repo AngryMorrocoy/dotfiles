@@ -202,4 +202,6 @@ require("packer").startup(function(use)
             require("colorful-winsep").setup({})
         end,
     })
+
+    use({ "j-morano/buffer_manager.nvim" })
 end)

@@ -25,4 +25,5 @@ local function loadTheme()
 end
 
 loadTheme()
+
 vim.opt.ls = 3

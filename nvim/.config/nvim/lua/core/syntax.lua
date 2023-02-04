@@ -79,6 +79,9 @@ syntaxes["^tex$"] = {
                 vim.g.nabla_virt_enabled = false
             end,
         },
+        ["n|<leader>p"] = {
+            action = "<cmd>%!latexindent %<cr>"
+        },
         ["n|<leader>s"] = {
             action = function()
                 require("nabla").popup()

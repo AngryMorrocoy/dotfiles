@@ -22,7 +22,7 @@ local keyMaps = {
     -- Buffs movement
     ["n|<leader>ba"] = { action = "<cmd>bnext<cr>", opts = { silent = true } },
     ["n|<leader>bo"] = { action = "<cmd>bprevious<cr>", opts = { silent = true } },
-    ["n|<leader>gm"] = { action = "<cmd>Telescope buffers<cr>", opts = { silent = true } },
+    ["n|<leader>gm"] = { action = "<cmd>lua require('buffer_manager.ui').toggle_quick_menu()<cr>", opts = { silent = true } },
     -- Easy movement on terminal buffer
     ["t|<Esc>"] = { action = "<C-\\><C-n>" },
     ["t|<Esc><Esc>"] = { action = "<C-\\><C-n><C-W><C-W>" },
@@ -105,8 +105,8 @@ local keyMaps = {
     ["n|<leader>xw"] = { action = "<cmd>Trouble lsp_workspace_diagnostics<cr>" },
     ["n|<leader>xd"] = { action = "<cmd>Trouble lsp_document_diagnostics<cr>" },
     -- Refactoring
-    ["v|<leader>R"] = { action = "<Esc><cmd>lua require('telescope').extensions.refactoring.refactors()<CR>" },
-    ["n|<leader>R"] = { action = "<Esc><cmd>lua require('telescope').extensions.refactoring.refactors()<CR>" },
+    ["v|<leader>R"] = { action = "<cmd>lua require('refactoring').select_refactor()<cr>" },
+    ["n|<leader>R"] = { action = "<cmd>lua require('refactoring').select_refactor()<cr>" },
     ["v|<leader>dpv"] = { action = require("refactoring").debug.print_var },
     ["n|<leader>dpv"] = { action = require("refactoring").debug.print_var },
     -- Easier out from insert mode

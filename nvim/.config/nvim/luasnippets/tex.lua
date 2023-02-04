@@ -1,4 +1,5 @@
 local manual_snips = {
+    s({ trig = "$", wordTrig = false, desc = "Inline math" }, fmta("$<>$", i(0))),
     s({ trig = "[%d%a]*[%d%a]+/[%d%a]+[%d%a]*", regTrig = true, desc = "Fractions ;)" }, {
         f(function(_, parent)
             local fraction = parent.trigger
@@ -69,28 +70,42 @@ print_latex(parsed)
             return sn(nil, t(result))
         end)
     ),
+    s(
+        { trig = "int", desc = "Integrals" },
+        fmta("\\int{<>}", {
+            c(
+                1,
+                {
+                    r(nil, "integral", i(1, "dx")),
+                    sn(nil, {
+                        r(1, "integral"),
+                        t("\\cdot "),
+                        i(0, "dx")
+                    })
+                }
+            )
+        })
+    ),
+    s(
+        {trig="v", desc = "Vector"},
+        c(1, {
+            fmta("\\vec{<>}", { r(1, "vector", i(1, "A")) }),
+            fmta("\\hat{<>}", { r(1, "vector", i(1, "A")) }),
+        })
+    ),
+    s(
+        {trig="*", desc="Multiplication"},
+        c(
+            1,
+            {
+                t("\\cdot"),
+                t("\\times"),
+                t("*")
+            }
+        )
+    )
 }
 local auto_snips = {
-    s({ trig = "$", wordTrig = false }, {
-        t("$"),
-        i(1),
-        t("$"),
-        f(function(args)
-            local first_char = string.sub(args[1][1], 1, 1)
-            for _, char in ipairs({ ",", ".", "?", "-", " " }) do
-                if first_char == char then
-                    return ""
-                end
-            end
-            return " "
-        end, { 2 }),
-        i(2),
-    }, {
-        condition = function(line_to_cursor)
-            local last_char = string.sub(line_to_cursor, #line_to_cursor - 1, #line_to_cursor - 1)
-            return last_char ~= "$"
-        end,
-    }),
     s({ trig = "[%d%a]_", regTrig = true, wordTrig = false }, {
         d(1, function(_, parent)
             local trigger = parent.trigger
