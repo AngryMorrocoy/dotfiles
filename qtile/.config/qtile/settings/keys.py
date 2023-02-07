@@ -155,8 +155,12 @@ keys = [
             "Home",
             lazy.spawn("playerctl --player=vlc,%any position 10-"),
         ],
+        # Open systray
+        [[mod, "shift"], "s", lazy.spawn("stalonetray")],
+        # Toggle bar
+        [[mod, "shift"], "b", lazy.spawn("eww-toggle_vertical_bar")],
         # Qtile management
-        [[mod], "r", lazy.spawncmd()],
+        [[mod], "r", lazy.spawn("rofi -modi run -show run")],
         [[mod, "control"], "r", lazy.restart()],
         [[mod, "control"], "q", lazy.shutdown()],
     ]

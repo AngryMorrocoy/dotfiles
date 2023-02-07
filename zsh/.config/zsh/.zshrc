@@ -131,3 +131,4 @@ bindkey -s '^[s' 'tmux-sessionizer^M'
 function t() {
     tmux-sessionizer "$(pwd)"
 }
+export PATH=$PATH:/home/mr/.spicetify

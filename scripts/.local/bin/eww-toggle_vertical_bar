@@ -1,0 +1,11 @@
+#!/bin/sh
+
+BAR_NAME="vertical-bar"
+
+WINDOW=$(eww windows | grep $BAR_NAME)
+
+if [[ $WINDOW =~ ^\* ]];then
+    eww close $BAR_NAME
+else
+    eww open $BAR_NAME
+fi

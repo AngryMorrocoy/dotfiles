@@ -109,9 +109,9 @@ mainbar_widgets = [
         format="%H:%M [%a %d/%m/%Y] ",
         fontsize=14,
     ),
-    round_powerline("systray_bg", "clock_bg"),
-    widget.Systray(**base(bg="systray_bg"), icon_size=15, padding=9),
-    separator("systray_bg"),
+    # round_powerline("systray_bg", "clock_bg"),
+    # widget.Systray(**base(bg="systray_bg"), icon_size=15, padding=9),
+    # separator("systray_bg"),
 ]
 
 extra_bar_widgets = [

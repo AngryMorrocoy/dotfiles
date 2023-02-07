@@ -147,10 +147,10 @@ configuration {
 }
 /* @theme "glue_pro_blue" */
 /* @theme "gruvbox-dark" */
-//@theme "android_notification"
-//@theme "/home/mr/.local/share/rofi/themes/squared-material-red.rasi"
-//@theme "/home/mr/.local/share/rofi/themes/rounded-red-dark.rasi"
-//@theme "/home/mr/.local/share/rofi/themes/rounded-orange-dark.rasi"
-//@theme "/home/mr/.local/share/rofi/themes/rounded-pink-dark.rasi"
-//@theme "/home/mr/.local/share/rofi/themes/nord-oneline.rasi"
-@theme "/home/mr/.local/share/rofi/themes/rounded-yellow-dark.rasi"
+/* @theme "android_notification" */
+@theme "/home/mr/.local/share/rofi/themes/squared-material-red.rasi"
+/* @theme "/home/mr/.local/share/rofi/themes/rounded-red-dark.rasi" */
+/* @theme "/home/mr/.local/share/rofi/themes/rounded-orange-dark.rasi" */
+/* @theme "/home/mr/.local/share/rofi/themes/rounded-pink-dark.rasi" */
+/* @theme "/home/mr/.local/share/rofi/themes/nord-oneline.rasi" */
+/* @theme "/home/mr/.local/share/rofi/themes/rounded-yellow-dark.rasi" */

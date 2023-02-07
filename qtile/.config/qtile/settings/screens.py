@@ -8,7 +8,7 @@ from settings.themes import colors
 
 screens = [
     Screen(
-        top=bar.Bar(mainbar_widgets, 20, background=colors["bar_color"])
+        # top=bar.Bar(mainbar_widgets, 20, background=colors["bar_color"])
     ),
 ]
 
