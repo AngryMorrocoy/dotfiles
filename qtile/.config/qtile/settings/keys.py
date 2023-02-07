@@ -9,6 +9,7 @@ from .extra import (
     toggle_always_visible,
     window_to_next_group,
     window_to_prev_group,
+    toggle_stalonetray,
 )
 
 terminal = "alacritty"
@@ -156,7 +157,7 @@ keys = [
             lazy.spawn("playerctl --player=vlc,%any position 10-"),
         ],
         # Open systray
-        [[mod, "shift"], "s", lazy.spawn("stalonetray")],
+        [[mod, "shift"], "s", lazy.function(toggle_stalonetray)],
         # Toggle bar
         [[mod, "shift"], "b", lazy.spawn("eww-toggle_vertical_bar")],
         # Qtile management
@@ -180,7 +181,8 @@ keys += [
                     [
                         [],
                         "e",
-                        lazy.spawn("rofi -matching regex -modi drun,run -show drun"),
+                        lazy.spawn(
+                            "rofi -matching regex -modi drun,run -show drun"),
                     ],
                     # --The script for searching across the web--#
                     [[], "s", lazy.spawn("rofi-search")],

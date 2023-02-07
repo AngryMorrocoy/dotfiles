@@ -1,5 +1,7 @@
 import json
+from libqtile.log_utils import logger
 from os import path
+import subprocess
 
 
 from .path import qtile_path
@@ -9,9 +11,8 @@ def window_to_next_group(qtile):
     """Swithcs the actual window to the next group"""
     group_names = [x.name for x in qtile.groups]
     current_group = qtile.current_group.name
-    next_group = qtile.groups[
-        (group_names.index(current_group) + 1) % len(group_names)
-    ]
+    next_group = qtile.groups[(group_names.index(
+        current_group) + 1) % len(group_names)]
     qtile.current_window.cmd_togroup(next_group.name)
 
     qtile.current_screen.toggle_group(next_group)
@@ -21,9 +22,8 @@ def window_to_prev_group(qtile):
     """Swithcs the actual window to the previous group"""
     group_names = [x.name for x in qtile.groups]
     current_group = qtile.current_group.name
-    next_group = qtile.groups[
-        (group_names.index(current_group) - 1) % len(group_names)
-    ]
+    next_group = qtile.groups[(group_names.index(
+        current_group) - 1) % len(group_names)]
     qtile.current_window.cmd_togroup(next_group.name)
 
     qtile.current_screen.toggle_group(next_group)
@@ -56,3 +56,14 @@ def toggle_always_visible(qtile):
         ids.append(curr_window_id)
     with open(windows_id_filepath, "w", encoding="utf-8") as windows_file:
         json.dump(ids, windows_file)
+
+
+def toggle_stalonetray(qtile):
+    running_stalones = subprocess.run(
+        ["pgrep", "-c", "-x", "stalonetray"], capture_output=True
+    ).stdout
+
+    if int(running_stalones) > 0:
+        subprocess.Popen(["killall", "stalonetray"])
+    else:
+        subprocess.Popen(["stalonetray"])
