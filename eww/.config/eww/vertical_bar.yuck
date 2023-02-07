@@ -1,0 +1,125 @@
+(defwindow vertical-bar
+           :geometry (geometry :x "2"
+                               :y "0"
+                               ; :width "34px"
+                               :height "98%"
+                               :anchor "left center")
+           :stacking "fg"
+           :reserve (struts :distance "40px" :side "left")
+           :windowtype "dock"
+           :wm-ignore false
+  (_vertical-bar
+    (workspaces :orientation "v"
+                :halign "center"
+                :valign "start")
+    (box :orientation "v" :valign "end" :space-evenly false
+         :spacing 0
+      (vertical-clock :valign "end")
+      (info-hover)
+       )) )
+
+(defwidget _vertical-bar []
+  (box :class ".vertical-bar__layout"
+       :vexpand true
+       :orientation "v"
+       :valign "fill"
+       :halign "center"
+      (box :orientation "v"
+        (children) ) ) )
+
+(defwidget battery-icon [halign valign
+                     battery status one two three
+                     four five six seven charge]
+  (box :class "bat-box" :space-evenly false
+       :hexpand true :orientation "h" :halign halign
+       :valign valign :vexpand false :tooltip "${status} (${battery}%)"
+    (label :text {status == 'Charging' ? charge :
+      battery < 15 ? seven :
+        battery < 30 ? six :
+          battery < 45 ? five :
+            battery < 60 ? four :
+              battery < 75 ? three :
+                battery < 95 ? two : one})))
+
+(defwidget vertical-clock [valign]
+  ( eventbox :class "clock-box"
+             :orientation "v"
+             :hexpand false :vexpand false
+             :halign "fill"
+             :valign valign
+             :onclick "eww open calendar"
+             :onmiddleclick "eww close calendar"
+   (box :spacing 2 :space-evenly true
+        :valign "start"
+        :orientation "v" :height 60
+      (label :class "hour" :text " ${time.hour}")
+      (label :class "minutes" :text "${time.minutes}")
+) ))
+
+(defwindow test
+  :monitor 0
+  :hexpand false
+  :vexpand false
+  :geometry (geometry :anchor "top left" :x 350 :y 30 :width "300px" :height "30px")
+  :anchor "top left"
+  (box :space-evenly false
+       :halign "end"
+    (hover-module)))
+
+(defvar reveal false)
+
+; NOTE: GTK revealer transitions are kinda stupid
+(defwidget hovered-sign [var]
+  (box :space-evenly false
+      (revealer :reveal {!var}
+                :duration "100ms"
+                :transition "slideleft"
+        (children :nth 0))
+      (revealer :reveal {var}
+                :duration "100ms"
+                :transition "slideleft"
+        (children :nth 1))))
+
+; Revealer on hover, using children
+(defwidget revealer-on-hover [var varname ?class ?duration ?transition]
+  (box :class "${class} revealer-on-hover"
+       :orientation "v"
+       :space-evenly false
+    (eventbox :class "eventbox"
+              :onhover "eww update ${varname}=true"
+              :onhoverlost "eww update ${varname}=false"
+      (box :space-evenly false  :orientation "v"
+        (children :nth 0)
+        (revealer :reveal var
+                  :transition {transition ?: "slideup"}
+                  :duration {duration ?: "500ms"}
+          (children :nth 1))
+        (children :nth 2)))))
+
+
+(defwidget info-hover []
+  (box :space-evenly false
+       :class "hover-module" :orientation "v"
+    (revealer-on-hover :class "hl-on-hover"
+                       :var reveal
+                       :varname "reveal"
+                       :transition "slideup"
+
+      (hovered-sign :var reveal
+        ""
+        "")
+      (ram_usage)
+      (battery-icon :status {EWW_BATTERY.BAT1.status}
+                    :battery {EWW_BATTERY.BAT1.capacity}
+                    :halign "center" :valign "end"
+                    :charge "󰂄" :one "󰁹" :two "󰂂" :three "󰂀"
+                    :four "󰁿" :five "󰁽" :six "󰁼" :seven "󰁺")
+ )))
+
+(defwidget test-box [?color]
+  (box :class "${color} test-box"
+    :orientation "h"
+    :halign "start"
+    :hexpand false
+    :space-evenly false
+    :width 50))

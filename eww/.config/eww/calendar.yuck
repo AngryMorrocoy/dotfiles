@@ -1,0 +1,11 @@
+(defwindow calendar
+           :geometry (geometry :x "-25px"
+                               :y "4%"
+                               :width "25%"
+                               :anchor "top right")
+           :stacking "fg"
+           :windowtype "dialog"
+           :wm-ignore true
+  ( eventbox :onmiddleclick "eww close calendar"
+   (calendar)
+   ))

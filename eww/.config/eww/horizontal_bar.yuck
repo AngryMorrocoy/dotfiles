@@ -1,0 +1,91 @@
+(defwindow horizontal-bar
+           :geometry (geometry :x "0"
+                               :y "2px"
+                               :width "99%"
+                               :height "2%"
+                               :anchor "top center")
+           :stacking "fg"
+           :reserve (struts :distance "5%" :side "top")
+           :windowtype "dock"
+           :wm-ignore false
+  (_bar
+    (workspaces :orientation "h"
+                :halign "start"
+                :valign "center")
+    (song-display :max-artist-w 15 :max-song-w 10)
+    (clock)
+    )
+  )
+
+(defwidget _bar []
+  (box :class "bar-layout"
+       :hexpand true
+       :orientation "h"
+       :halign "fill"
+       :valign "center"
+    ( box :orientation "h" ; :space-evenly false
+      (children) )) )
+
+(defwidget workspaces [orientation halign valign]
+  (box :orientation orientation
+       :halign halign :valign valign
+       :hexpand true
+       :class "workspaces-container"
+    (for ws in workspaces
+      (button :class `workspace-btn ${
+        matches(current_workspace, ws[0]) ? "current" : ""} ${
+        active_workspaces[ws[0]] ? "": "inactive"}`
+              :onclick `wmctrl -s ${ws[0]}`
+              :halign "center" :space-evenly true
+              :valign "center" `${active_workspaces[ws[0]] ? ws[1] : "󱀝"}`) )
+    ))
+
+(deflisten cur_song
+  `playerctl --follow metadata --format '{ "artist": "{{artist}}", "song": "{{title}}" }' || true`)
+
+(defwidget song-display [?max-artist-w ?max-song-w]
+  (box :orientation "h"
+       :halign "center"
+       :hexpand true
+       :valign "center"
+       :class "song-container"
+       :spacing 10
+       :tooltip ` ${ cur_song.artist } - ${cur_song.song}`
+    (label :class "artist" :limit-width max-artist-w :halign "start" :text ` ${ cur_song.artist }` )
+    (label :class "song"   :limit-width max-song-w :halign "start" :text { cur_song.song } ) ))
+
+(defwidget ram_usage []
+  (box :orientation "v"
+       :valign "center"
+       :halign "center"
+       :height 20
+       :class "ram-usage"
+       :tooltip "RAM USAGE ${round((EWW_RAM.used_mem / EWW_RAM.total_mem)*100, 1)}%"
+    (circular-progress :class "indicator" :valign "center"  :height 15
+                       :thickness 3 :halign "center" :width 15
+                       :value {(EWW_RAM.used_mem / EWW_RAM.total_mem)*100} )
+    ))
+
+(defpoll time :interval "1s"
+  `date +'{"hour":"%H","minutes":"%M","seconds":"%S","month":"%m","day":"%d","year":"%y" }'`)
+
+(defwidget clock []
+  ( eventbox :class "clock"
+             :orientation "h"
+             :hexpand false
+             :halign "end"
+             :onclick "eww open calendar"
+             :onmiddleclick "eww close calendar"
+   (box :spacing 0 :space-evenly false :valign true
+      (label :class "hour" :text " ${time.hour}")
+      ":"
+      (label :class "minutes" :text "${time.minutes}")
+      ":"
+      (label :class "seconds" :text "${time.seconds}")
+      "["
+      (label :class "day" :text "${time.day}")
+      "/"
+      (label :class "month" :text "${time.month}")
+      "/"
+      (label :class "year" :text "${time.year}")
+      "]") ))

@@ -29,6 +29,12 @@ function M.setup()
         command = "set filetype=http",
     }) -- To set coloring in rest files
 
+
+    vim.api.nvim_create_autocmd("BufEnter", {
+        pattern = { "*.yuck" },
+        command = "set filetype=yuck",
+    }) -- To set yuck filetype
+
     vim.api.nvim_create_autocmd("BufReadPre", {
         pattern = { "*.tex" },
         command = "let maplocalleader=','",

@@ -204,4 +204,6 @@ require("packer").startup(function(use)
     })
 
     use({ "j-morano/buffer_manager.nvim" })
+
+    use({"elkowar/yuck.vim"})
 end)

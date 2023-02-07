@@ -1,0 +1,102 @@
+// Color variables
+$current-ws-bg: #414868;
+$current-ws-color: #9ece6a;
+$inactive-ws-color: #bb9af7;
+$bar-bg: #24283b;
+$artist-fg: #f7768e;
+$song-fg: #ff9e64;
+$ram-bar-color: #ff9e64;
+// Size variables
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.background.horizontal-bar {
+  border-radius: 15px;
+  background-color: $bar-bg;
+}
+
+.bar-layout {
+  padding: 0 10px;
+
+  .song-container {
+    .artist {
+      font-weight: bold;
+      color: $artist-fg;
+    }
+
+    .song {
+      color: $song-fg;
+    }
+  }
+
+  .hid-info-bar {
+    background: #24283b;
+  }
+}
+
+$border-radius: 10px;
+
+.background.vertical-bar {
+  border-radius: $border-radius;
+  background-color: $bar-bg;
+}
+
+.workspaces-container {
+  border-radius: $border-radius;
+
+  & > :nth-child(1) {
+    &.current {
+      border-radius: $border-radius $border-radius 0 0;
+    }
+  }
+
+  .workspace-btn {
+    background: none;
+    font-size: 1rem;
+    border-radius: 0;
+    padding: 0.25rem 0.8rem;
+
+    &.inactive {
+      color: $inactive-ws-color;
+    }
+
+    &.current {
+      color: $current-ws-color;
+      background-color: $current-ws-bg;
+    }
+  }
+}
+
+.bat-box {
+  label {
+    font-size: 3em;
+  }
+}
+
+.clock-box {
+  font-weight: bold;
+  background-color: #1a1b26;
+  border-radius: $border-radius;
+
+  .hour,
+  .year {
+    color: #f7768e;
+  }
+  .minutes,
+  .month {
+    color: #ff9e64;
+  }
+  .seconds,
+  .day {
+    color: #e0af68;
+  }
+}
+
+.ram-usage {
+  .indicator {
+    color: $ram-bar-color;
+  }
+}

@@ -3,7 +3,13 @@
 ---
 
 Now I use [stow](https://www.gnu.org/software/stow/) to manage my config files
-uwu, now is much easier
+
+There are some requirements, those being (as far as I can remember):
+
+- stalonetray
+- lazygit
+- rofi
+- ...Many others
 
 ---
 
