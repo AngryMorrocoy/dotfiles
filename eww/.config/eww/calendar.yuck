@@ -1,8 +1,8 @@
 (defwindow calendar
-           :geometry (geometry :x "-25px"
-                               :y "4%"
+           :geometry (geometry :x "40px"
+                               :y "-1%"
                                :width "25%"
-                               :anchor "top right")
+                               :anchor "bottom left")
            :stacking "fg"
            :windowtype "dialog"
            :wm-ignore true

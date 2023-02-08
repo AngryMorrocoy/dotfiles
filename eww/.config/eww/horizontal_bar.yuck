@@ -60,10 +60,10 @@
        :halign "center"
        :height 20
        :class "ram-usage"
-       :tooltip "RAM USAGE ${round((EWW_RAM.used_mem / EWW_RAM.total_mem)*100, 1)}%"
+       :tooltip "RAM USAGE ${round(EWW_RAM.used_mem_perc, 1)}%"
     (circular-progress :class "indicator" :valign "center"  :height 15
                        :thickness 3 :halign "center" :width 15
-                       :value {(EWW_RAM.used_mem / EWW_RAM.total_mem)*100} )
+                       :value {EWW_RAM.used_mem_perc} )
     ))
 
 (defpoll time :interval "1s"

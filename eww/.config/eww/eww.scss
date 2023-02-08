@@ -70,12 +70,6 @@ $border-radius: 10px;
   }
 }
 
-.bat-box {
-  label {
-    font-size: 3em;
-  }
-}
-
 .clock-box {
   font-weight: bold;
   background-color: #1a1b26;
@@ -98,5 +92,36 @@ $border-radius: 10px;
 .ram-usage {
   .indicator {
     color: $ram-bar-color;
+    background-color: #a9b1d6;
   }
+}
+
+.hovered-sign {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: #f7768e;
+}
+
+.wifi-box {
+  color: #9ece6a;
+  // margin-right: .45em;
+}
+
+.wifi-box,
+.bat-box {
+  font-weight: bold;
+  label {
+    font-size: 1.25em;
+  }
+}
+
+.hid-box {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #1a1b26;
+  border-radius: $border-radius;
+}
+
+.tray-impostor {
+  padding-bottom: 1rem;
 }

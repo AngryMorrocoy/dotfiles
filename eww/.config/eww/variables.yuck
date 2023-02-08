@@ -7,3 +7,8 @@
 
 (deflisten current_workspace :initial "?"
   `xprop -spy -root _NET_CURRENT_DESKTOP`)
+
+(defvar net_card "wlp1s0") ; Apparently you can't use variables inside other ones
+
+(defpoll net_connection :interval "2s"
+  `nmcli | grep ^wlp1s0 | sed s/^wlp1s0:.//`)
