@@ -8,7 +8,7 @@ from .path import qtile_path
 
 
 def window_to_next_group(qtile):
-    """Swithcs the actual window to the next group"""
+    """Switches the actual window to the next group"""
     group_names = [x.name for x in qtile.groups]
     current_group = qtile.current_group.name
     next_group = qtile.groups[(group_names.index(
