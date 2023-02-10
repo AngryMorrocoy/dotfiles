@@ -125,7 +125,7 @@ require("packer").startup(function(use)
         config = require("plugins.config.lualine").setup,
         requires = { "arkav/lualine-lsp-progress" },
     })
-
+    -- This is for json lsp to work
     use("b0o/schemastore.nvim")
     -- Telescope
     use({
@@ -144,7 +144,6 @@ require("packer").startup(function(use)
         ft = "tex",
         config = require("plugins.config.vimtex").setup,
     })
-    use({ "jbyuki/nabla.nvim", ft = "tex" })
     -- Snippets
     use({
         "L3MON4D3/LuaSnip",
@@ -152,10 +151,6 @@ require("packer").startup(function(use)
     })
     -- Nvim looking good af
     use("nvim-lua/popup.nvim")
-    use({
-        "gen740/SmoothCursor.nvim",
-        config = require("plugins.config.smoothcursor").setup,
-    })
     use({
         "stevearc/dressing.nvim",
         config = function()
@@ -194,13 +189,6 @@ require("packer").startup(function(use)
         config = require("plugins.config.neorg").setup,
         ft = { "norg" },
         requires = { "nvim-neorg/neorg-telescope", "max397574/neorg-contexts" },
-    })
-
-    use({
-        "nvim-zh/colorful-winsep.nvim",
-        config = function()
-            require("colorful-winsep").setup({})
-        end,
     })
 
     use({ "j-morano/buffer_manager.nvim" })

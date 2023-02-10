@@ -68,24 +68,8 @@ syntaxes["^tex$"] = {
     conceallevel = 1,
     textwidth = 80,
     maps = {
-        ["n|<leader>ct"] = {
-            action = function()
-                if vim.g.nabla_virt_enabled == nil or not vim.g.nabla_virt_enabled then
-                    require("nabla").enable_virt()
-                    vim.g.nabla_virt_enabled = true
-                    return
-                end
-                require("nabla").disable_virt()
-                vim.g.nabla_virt_enabled = false
-            end,
-        },
         ["n|<leader>p"] = {
-            action = "<cmd>%!latexindent %<cr>"
-        },
-        ["n|<leader>s"] = {
-            action = function()
-                require("nabla").popup()
-            end,
+            action = "<cmd>%!latexindent %<cr>",
         },
     },
 }
