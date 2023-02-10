@@ -93,6 +93,7 @@
             :hexpand true :orientation "v"
             :vexpand false :tooltip {net_connection}
             :onclick "rofi-wifi"
+            :onrightclick "nm-connection-editor&"
     (label :orientation "v" :halign "fill" :text {
       matches(net_connection, "disconnected") ? "󰖪 " :
       matches(net_connection, "connecting") ? "󱚾 " : "󰖩 " })
