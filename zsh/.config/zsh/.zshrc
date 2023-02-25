@@ -116,7 +116,6 @@ nitch
 # Plugins(?
 source ${ZDOTDIR}/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ${ZDOTDIR}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /home/mr/.config/broot/launcher/bash/br
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 

@@ -153,5 +153,6 @@ configuration {
 /* @theme "/home/mr/.local/share/rofi/themes/rounded-red-dark.rasi" */
 /* @theme "/home/mr/.local/share/rofi/themes/rounded-orange-dark.rasi" */
 /* @theme "/home/mr/.local/share/rofi/themes/rounded-pink-dark.rasi" */
-@theme "/home/mr/.local/share/rofi/themes/rounded-nord-dark.rasi"
+/* @theme "/home/mr/.local/share/rofi/themes/rounded-nord-dark.rasi" */
 /* @theme "/home/mr/.local/share/rofi/themes/rounded-yellow-dark.rasi" */
+@theme "/home/mr/.local/share/rofi/themes/rounded-purple-dark.rasi"
