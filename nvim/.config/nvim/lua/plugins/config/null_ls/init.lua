@@ -10,6 +10,8 @@ function M.setup()
         function(source_name)
             null_ls.register(null_ls.builtins.formatting[source_name])
         end,
+        lua_language_server = function()
+        end,
         stylua = function()
             local setup_stylua = require("plugins.config.null_ls.stylua_formatter")
             setup_stylua()

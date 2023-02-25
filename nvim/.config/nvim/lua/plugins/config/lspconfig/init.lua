@@ -2,7 +2,7 @@ local M = {}
 
 function M.setup()
     local lsp_configs = {
-        require("plugins.config.lspconfig.sumneko_lua"),
+        -- require("plugins.config.lspconfig.sumneko_lua"),
         require("plugins.config.lspconfig.cssls"),
         require("plugins.config.lspconfig.html"),
         require("plugins.config.lspconfig.jsonls"),
