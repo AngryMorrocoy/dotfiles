@@ -7,10 +7,8 @@ function M.setup()
     })
 
     require("mason-null-ls").setup_handlers({
-        function(source_name)
-            null_ls.register(null_ls.builtins.formatting[source_name])
-        end,
-        lua_language_server = function()
+        function(source_name, methods)
+            require("mason-null-ls.automatic_setup")(source_name, methods)
         end,
         stylua = function()
             local setup_stylua = require("plugins.config.null_ls.stylua_formatter")
