@@ -1,5 +1,5 @@
 # Add .local/bin to path
-export PATH="${PATH}:$HOME/.local/bin/:$HOME/.cargo/bin"
+export PATH="${PATH}:$HOME/.local/bin/:$HOME/.cargo/bin:$HOME/.local/scripts"
 
 # Default editor
 export EDITOR="vim"
