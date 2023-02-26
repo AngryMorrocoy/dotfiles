@@ -186,17 +186,6 @@ keys += [
                     ],
                     # --The script for searching across the web--#
                     [[], "s", lazy.spawn("rofi-search")],
-                    # -- Tmux launchers --
-                    [
-                        ["shift"],
-                        "t",
-                        lazy.spawn("rofi-tmux-sessionizer"),
-                    ],
-                    [
-                        ["shift"],
-                        "s",
-                        lazy.spawn("rofi-tmux-sessions"),
-                    ],
                     [
                         [],
                         "k",
