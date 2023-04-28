@@ -46,6 +46,7 @@ local keyMaps = {
     ["n|<leader>fh"] = { action = "<cmd>Telescope help_tags<cr>", opts = { silent = true } },
     ["n|<leader>fq"] = { action = "<cmd>Telescope quickfix<cr>", opts = { silent = true } },
     ["n|<leader>fo"] = { action = "<cmd>Telescope loclist<cr>", opts = { silent = true } },
+    ["n|<leader>fd"] = { action = "<cmd>Telescope diagnostics<cr>", opts = { silent = true } },
     -- Lsp
     ["n|gd"] = { action = "<C-]>", { silent = true } },
     ["n|gvd"] = { action = "<C-w>v<C-]>", { silent = true } },
