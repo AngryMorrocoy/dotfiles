@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-KEYBOARD_LAYOUTS=("latam-dvorak" "latam")
+declare -a KEYBOARD_LAYOUTS=("latam dvorak" "latam")
 
 gen_list() {
-    for layout in ${KEYBOARD_LAYOUTS[@]};do
+    for layout in "${KEYBOARD_LAYOUTS[@]}";do
         echo "${layout}"
     done
 }

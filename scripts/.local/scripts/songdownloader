@@ -2,7 +2,7 @@
 import argparse
 import sys
 import re
-import youtube_dl
+from yt_dlp import YoutubeDL
 from os import path
 from os import get_terminal_size
 from os import chdir
@@ -104,7 +104,7 @@ def download_song(song, log_hook, max_retries, tries=0):
     if not re.search("watch\?v=.{11}", song):
         ydl_opts["default_search"] = "ytsearch"
     try:
-        with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+        with YoutubeDL(ydl_opts) as ydl:
             print(f"Attemping to download: \033[96m{song}\033[0m")
             ydl.download([song])
     except Exception as e:
