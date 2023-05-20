@@ -64,11 +64,6 @@ groupbox = [
 ]
 
 mainbar_widgets = [
-    widget.Prompt(
-        **base(bg="bar_color"),
-        prompt=f" {environ['USER']}> ",
-        padding=5,
-    ),
     *groupbox,
     round_powerline("hid_widgets_bg", "bar_color"),
     widget.WidgetBox(
@@ -110,8 +105,8 @@ mainbar_widgets = [
         fontsize=14,
     ),
     # round_powerline("systray_bg", "clock_bg"),
-    # widget.Systray(**base(bg="systray_bg"), icon_size=15, padding=9),
-    # separator("systray_bg"),
+    widget.Systray(**base(bg="systray_bg"), icon_size=15, padding=9),
+    separator("systray_bg"),
 ]
 
 extra_bar_widgets = [

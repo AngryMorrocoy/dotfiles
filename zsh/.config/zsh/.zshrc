@@ -131,3 +131,11 @@ function t() {
     tmux-sessionizer "$(pwd)"
 }
 export PATH=$PATH:/home/mr/.spicetify
+
+# pnpm
+export PNPM_HOME="/home/mr/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
