@@ -110,7 +110,7 @@ require("packer").startup(function(use)
     use({
         "https://gitlab.com/__tpb/monokai-pro.nvim",
         as = "monokai-pro.nvim",
-        opt = true
+        opt = true,
     })
     -- Nvim like rest client
     use({
@@ -193,5 +193,5 @@ require("packer").startup(function(use)
 
     use({ "j-morano/buffer_manager.nvim" })
 
-    use({"elkowar/yuck.vim"})
+    use({ "elkowar/yuck.vim" })
 end)

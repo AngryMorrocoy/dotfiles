@@ -17,7 +17,7 @@ def separator(color="bar_color", padding=5):
 
 
 def round_powerline(fg="text", bg="bar_color"):
-    return widget.TextBox(**base(fg, bg), text="", fontsize=30, padding=0)
+    return widget.TextBox(**base(fg, bg), text="", fontsize=30, padding=0)
 
 
 def text_icon(
@@ -104,7 +104,7 @@ mainbar_widgets = [
         format="%H:%M [%a %d/%m/%Y] ",
         fontsize=14,
     ),
-    # round_powerline("systray_bg", "clock_bg"),
+    round_powerline("systray_bg", "clock_bg"),
     widget.Systray(**base(bg="systray_bg"), icon_size=15, padding=9),
     separator("systray_bg"),
 ]
