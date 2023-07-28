@@ -5,5 +5,4 @@ git:
     useConfig: false
     pager: delta --dark --paging=never
 os:
-  editCommand: 'lazygit-editor' # Uses my custom script
-  editCommandTemplate: '{{editor}} {{filename}}' # for tmux and nvim remote integration
+  editCommand: 'nvim'
