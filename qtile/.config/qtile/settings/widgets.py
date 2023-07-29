@@ -88,7 +88,7 @@ mainbar_widgets = [
         ],
         **base(bg="hid_widgets_bg"),
         text_closed=" ",
-        text_open=" ",
+        text_open="󰅙 ",
         close_button_location="right",
     ),
     separator("hid_widgets_bg"),

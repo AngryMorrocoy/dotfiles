@@ -3,9 +3,9 @@ from libqtile.config import Group, Key, Match
 from settings.keys import keys, mod
 
 group_settings = [
-    ["", {"layout": "max", "matches": Match(wm_class="firefox")}],
+    ["", {"layout": "max", "matches": [Match(wm_class="firefox")] }],
     ["", {"layout": "monadtall"}],
-    ["嗢", {"layout": "monadtall"}],
+    ["󰎈", {"layout": "monadtall", "matches": [Match(wm_class="spotify")] }],
     ["", {"layout": "monadtall"}],
     ["", {"layout": "monadtall"}],
     ["", {"layout": "monadtall"}],
