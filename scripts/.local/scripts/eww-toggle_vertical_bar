@@ -2,9 +2,10 @@
 
 BAR_NAME="vertical-bar"
 
-WINDOW=$(eww windows | grep $BAR_NAME)
+WINDOW=$(eww active-windows | grep $BAR_NAME)
+echo $WINDOW
 
-if [[ $WINDOW =~ ^\* ]];then
+if [[ $WINDOW =~ $WINDOW ]];then
     eww close $BAR_NAME
 else
     eww open $BAR_NAME
