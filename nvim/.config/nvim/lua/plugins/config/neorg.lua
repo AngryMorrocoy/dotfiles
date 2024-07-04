@@ -4,10 +4,10 @@ function M.setup()
     require("neorg").setup({
         load = {
             ["core.defaults"] = {},
-            ["core.norg.completion"] = {
+            ["core.completion"] = {
                 config = { engine = "nvim-cmp" },
             },
-            ["core.norg.concealer"] = {
+            ["core.concealer"] = {
                 config = {
                     icon_preset = "diamond",
                     conceal = false,
