@@ -1,4 +1,4 @@
-from libqtile.command import lazy
+from libqtile.lazy import lazy
 from libqtile.config import Group, Key, Match
 from settings.keys import keys, mod
 

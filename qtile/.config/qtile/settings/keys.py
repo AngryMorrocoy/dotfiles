@@ -1,6 +1,6 @@
 from os import environ
 
-from libqtile.command import lazy
+from libqtile.lazy import lazy
 from libqtile.config import Key, KeyChord
 
 from .extra import (
