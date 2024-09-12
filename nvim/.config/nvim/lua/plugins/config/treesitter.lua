@@ -1,6 +1,7 @@
 local M = {}
 
 function M.setup()
+    vim.g.skip_ts_context_commentstring_module = true
     local parser_configs = require("nvim-treesitter.parsers").get_parser_configs()
 
     parser_configs.http = {
@@ -38,11 +39,12 @@ function M.setup()
         autotag = {
             enable = true,
         },
-        context_commentstring = {
-            enable = true,
-            enable_autocmd = false,
-        },
+        -- context_commentstring = {
+        --     enable = true,
+        --     enable_autocmd = false,
+        -- },
     })
+    require("ts_context_commentstring").setup({})
 
     vim.api.nvim_set_hl(0, "@dictionary.key", { link = "TSField" })
 end
