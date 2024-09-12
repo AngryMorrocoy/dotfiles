@@ -20,6 +20,12 @@ layouts = [
         border_width=1,
         columns=2,
     ),
+    layout.Stack(
+        **{
+            k: v for k, v in layout_theme.items() if k not in ["margin"]
+        },
+        margin=1
+)
 ]
 
 floating_layout = layout.Floating(

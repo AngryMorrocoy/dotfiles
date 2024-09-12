@@ -177,13 +177,6 @@ require("packer").startup(function(use)
         ft = { "markdown" },
     })
 
-    use({
-        "nvim-neorg/neorg",
-        config = require("plugins.config.neorg").setup,
-        ft = { "norg" },
-        requires = { "nvim-neorg/neorg-telescope", "max397574/neorg-contexts" },
-    })
-
     use({ "j-morano/buffer_manager.nvim" })
 
     use({ "elkowar/yuck.vim" })

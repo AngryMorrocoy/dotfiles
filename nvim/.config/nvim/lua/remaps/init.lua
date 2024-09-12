@@ -141,7 +141,7 @@ local keyMaps = {
     -- Quck nvim restart
     ["n|<leader><leader>s"] = { action = "<cmd>Reload<cr>" },
     -- Reload a session
-    ["n|<leader><leader>r"] = { action = "<cmd>RestoreSession<cr>" },
+    ["n|<leader><leader>r"] = { action = "<cmd>SessionRestore<cr>" },
     -- Floaterm toggle
     ["n|<leader>t"] = { action = "<cmd>FloatermToggle<cr>" },
     -- Gitsigns
