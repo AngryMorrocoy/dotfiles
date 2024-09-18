@@ -5,6 +5,6 @@ redshift-gtk -l 0:0 -t 4700:4700 &
 xfce4-power-manager &
 volumeicon &
 nm-applet &
-picom --experimental-backend &
+picom &
 nitrogen --restore &
 eww open vertical-bar
