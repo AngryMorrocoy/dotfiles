@@ -22,10 +22,11 @@ export NCDU_SHELL='zsh'
 # Commented because it's an event that also affects nvim, I want separated config files
 # export VIMINIT="source $HOME/.config/vim/vimrc"
 
+export MANROFFOPT="-c"
 # Vim as manpager
 export MANPAGER='/bin/bash -c "nvim -MRn -c \"set colorcolumn=0 buftype=nofile showtabline=0 ft=man ts=8 nomod nolist norelativenumber nonu noma\" -c \"normal L\" -c \"nmap q :qa<CR>\"</dev/tty <(col -b)"'
 # Bat as manpager
-# export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+# export MANPAGER="sh -c 'col -bx | bat -l man -p -S'"
 
 # Go stuff
 
