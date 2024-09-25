@@ -40,7 +40,6 @@ function M.setup()
     })
 
     require("telescope").load_extension("fzf")
-    require("telescope").load_extension("refactoring")
 end
 
 return M

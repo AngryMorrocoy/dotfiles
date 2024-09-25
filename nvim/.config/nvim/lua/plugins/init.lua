@@ -35,26 +35,15 @@ require("packer").startup(function(use)
         end,
     })
     use({
-        "neovim/nvim-lspconfig",
-        config = require("plugins.config.lspconfig").setup,
-        requires = { "williamboman/mason-lspconfig.nvim" },
-    })
-    use({
-        "ThePrimeagen/refactoring.nvim",
-        config = function()
-            require("refactoring").setup({})
-        end,
-    })
-    use({
         "williamboman/mason.nvim",
         config = function()
             require("mason").setup()
         end,
     })
     use({
-        "jose-elias-alvarez/null-ls.nvim",
-        config = require("plugins.config.null_ls").setup,
-        requires = { "jayp0521/mason-null-ls.nvim" },
+        "neovim/nvim-lspconfig",
+        config = require("plugins.config.lspconfig").setup,
+        requires = { "williamboman/mason-lspconfig.nvim" },
     })
     -- CMP Section
     use({
@@ -68,18 +57,11 @@ require("packer").startup(function(use)
         },
     })
     --
-    use("mhartington/formatter.nvim")
-    --
     use({
         "windwp/nvim-autopairs",
         config = require("plugins.config.autopairs").setup,
     })
     -- Neotree
-    use({
-        "nvim-neo-tree/neo-tree.nvim",
-        config = require("plugins.config.neotree").setup,
-        requires = { "MunifTanjim/nui.nvim" },
-    })
     use("kyazdani42/nvim-web-devicons")
     use({ "mbbill/undotree", opt = true, cmd = { "UndotreeToggle" } })
     -- Treesitter

@@ -10,10 +10,7 @@ local keyMaps = {
     -- Opens undotree
     ["n|<leader>u"] = { action = "<cmd>UndotreeToggle<cr>" },
     -- NvimTree
-    ["n|<C-u>"] = { action = "<cmd>Neotree toggle<cr>" },
-    ["n|<leader><C-u>"] = {
-        action = "<cmd>Neotree toggle reveal=true reveal_force_cwd<cr>"
-    },
+    ["n|<C-u>"] = { action = "<cmd>Ex<cr>" },
     -- Maximizer
     ["n|<leader>o"] = { action = "<cmd>ZenMode<cr>", opts = { silent = true } },
     -- Tab management
@@ -105,11 +102,6 @@ local keyMaps = {
     ["n|<leader>xx"] = { action = "<cmd>Trouble<cr>" },
     ["n|<leader>xw"] = { action = "<cmd>Trouble lsp_workspace_diagnostics<cr>" },
     ["n|<leader>xd"] = { action = "<cmd>Trouble lsp_document_diagnostics<cr>" },
-    -- Refactoring
-    ["v|<leader>R"] = { action = "<cmd>lua require('refactoring').select_refactor()<cr>" },
-    ["n|<leader>R"] = { action = "<cmd>lua require('refactoring').select_refactor()<cr>" },
-    ["v|<leader>dpv"] = { action = require("refactoring").debug.print_var },
-    ["n|<leader>dpv"] = { action = require("refactoring").debug.print_var },
     -- Easier out from insert mode
     ["i|<C-s>"] = { action = "<esc>", opts = { silent = true } },
     -- LuaSnips
