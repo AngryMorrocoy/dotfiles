@@ -156,8 +156,6 @@ keys = [
             "Home",
             lazy.spawn("playerctl --player=vlc,%any position 10-"),
         ],
-        # Open systray
-        [[mod, "shift"], "s", lazy.function(toggle_stalonetray)],
         # Toggle bar
         [[mod, "shift"], "b", lazy.spawn("eww-toggle_vertical_bar")],
         # Qtile management
