@@ -62,6 +62,12 @@ require("packer").startup(function(use)
         config = require("plugins.config.autopairs").setup,
     })
     -- Neotree
+    use({
+        "stevearc/oil.nvim",
+        config = function()
+            require("oil").setup()
+        end
+    })
     use("kyazdani42/nvim-web-devicons")
     use({ "mbbill/undotree", opt = true, cmd = { "UndotreeToggle" } })
     -- Treesitter

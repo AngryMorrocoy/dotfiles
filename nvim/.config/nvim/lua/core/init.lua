@@ -44,6 +44,7 @@ local opts = {
     list = true,
     listchars = function()
         vim.opt.listchars:append("eol:↴")
+        vim.opt.listchars:append("tab:  ")
     end,
     ch = 1, -- Set to zero the height of the cmd
     winbar = "%!expand('%r')",

@@ -10,7 +10,7 @@ local keyMaps = {
     -- Opens undotree
     ["n|<leader>u"] = { action = "<cmd>UndotreeToggle<cr>" },
     -- NvimTree
-    ["n|<C-u>"] = { action = "<cmd>Ex<cr>" },
+    ["n|<C-u>"] = { action = "<cmd>Oil --float<cr>" },
     -- Maximizer
     ["n|<leader>o"] = { action = "<cmd>ZenMode<cr>", opts = { silent = true } },
     -- Tab management
@@ -99,9 +99,7 @@ local keyMaps = {
     -- Whys it isn't a default?
     ["n|Y"] = { action = "y$" },
     -- Trouble
-    ["n|<leader>xx"] = { action = "<cmd>Trouble<cr>" },
-    ["n|<leader>xw"] = { action = "<cmd>Trouble lsp_workspace_diagnostics<cr>" },
-    ["n|<leader>xd"] = { action = "<cmd>Trouble lsp_document_diagnostics<cr>" },
+    ["n|<leader>xx"] = { action = "<cmd>Trouble diagnostics<cr>" },
     -- Easier out from insert mode
     ["i|<C-s>"] = { action = "<esc>", opts = { silent = true } },
     -- LuaSnips
