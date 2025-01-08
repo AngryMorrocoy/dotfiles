@@ -47,6 +47,7 @@ groupbox = [
         highlight_color=colors["group_selected_bg"],
         active=colors["group_active_fg"],
         this_current_screen_border=colors["group_selected_bg"],
+        other_current_screen_border=colors["focused"],
         inactive=colors["group_inactive_fg"],
         urgent_border=colors["group_urgent_bg"],
         highlight_method="block",
