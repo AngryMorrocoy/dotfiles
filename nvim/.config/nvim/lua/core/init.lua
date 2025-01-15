@@ -51,15 +51,16 @@ local opts = {
 }
 
 function M.setup()
-    require("plugins") -- Load the plugins
-
     require("core.autocommands").setup() -- Load the autocommands
     require("core.commands").setup() -- Load the commands
 
     local util = require("core.util")
+    local remaps = require("remaps")
 
     util.nvim_load_opts(opts) -- Load all the settings uwu
-    require("remaps").setup() -- Load the mappings
+
+    require("plugins") -- Load the plugins
+    remaps.setup() -- Load the mappings
 end
 
 return M

@@ -1,171 +1,113 @@
-require("packer").startup(function(use)
-    use("wbthomason/packer.nvim")
-    -- Plenary, a dependency for almost anything xd
-    use("nvim-lua/plenary.nvim")
-    --
-    use({ "mattn/emmet-vim", config = require("plugins.config.emmet").setup })
-    use({
-        "lukas-reineke/indent-blankline.nvim",
-        config = require("plugins.config.indent_blankline").setup,
-    })
-    use({
-        "numToStr/Comment.nvim",
-        config = require("plugins.config.comment").setup,
-    })
-    use({
-        "lewis6991/gitsigns.nvim",
-        config = function()
-            require("gitsigns").setup({})
-        end,
-    })
-    use({
-        "andymass/vim-matchup",
-        config = require("plugins.config.matchup").setup,
-    })
-    use("tpope/vim-surround")
-    -- Lsp
-    use({
-        "ray-x/lsp_signature.nvim",
-        config = require("plugins.config.lspsignatures").setup,
-    })
-    use({
-        "folke/trouble.nvim",
-        config = function()
-            require("trouble").setup({})
-        end,
-    })
-    use({
-        "williamboman/mason.nvim",
-        config = function()
-            require("mason").setup()
-        end,
-    })
-    use({
-        "neovim/nvim-lspconfig",
-        config = require("plugins.config.lspconfig").setup,
-        requires = { "williamboman/mason-lspconfig.nvim" },
-    })
-    -- CMP Section
-    use({
-        "hrsh7th/nvim-cmp",
-        config = require("plugins.config.cmp").setup,
-        requires = {
-            "hrsh7th/cmp-calc",
-            "hrsh7th/cmp-cmdline",
-            "saadparwaiz1/cmp_luasnip",
-            "hrsh7th/cmp-nvim-lsp",
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
+    local lazyrepo = "https://github.com/folke/lazy.nvim.git"
+    local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
+    if vim.v.shell_error ~= 0 then
+        vim.api.nvim_echo({
+            { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
+            { out,                            "WarningMsg" },
+            { "\nPress any key to exit..." },
+        }, true, {})
+        vim.fn.getchar()
+        os.exit(1)
+    end
+end
+vim.opt.rtp:prepend(lazypath)
+
+-- Setup lazy.nvim
+require("lazy").setup({
+    spec = {
+        { "nvim-lua/plenary.nvim" },
+        { "mattn/emmet-vim",                     config = require("plugins.config.emmet").setup },
+        { "lukas-reineke/indent-blankline.nvim", config = require("plugins.config.indent_blankline").setup },
+        {
+            "numToStr/Comment.nvim",
+            config = require("plugins.config.comment").setup,
         },
-    })
-    --
-    use({
-        "windwp/nvim-autopairs",
-        config = require("plugins.config.autopairs").setup,
-    })
-    -- Neotree
-    use({
-        "stevearc/oil.nvim",
-        config = function()
-            require("oil").setup()
-        end
-    })
-    use("kyazdani42/nvim-web-devicons")
-    use({ "mbbill/undotree", opt = true, cmd = { "UndotreeToggle" } })
-    -- Treesitter
-    use({
-        "nvim-treesitter/nvim-treesitter",
-        run = ":TSUpdate",
-        config = require("plugins.config.treesitter").setup,
-        requires = {
-            "p00f/nvim-ts-rainbow",
-            "nvim-treesitter/nvim-treesitter-context",
-            "windwp/nvim-ts-autotag",
-            "JoosepAlviste/nvim-ts-context-commentstring",
+        {
+            "numToStr/Comment.nvim",
+            config = require("plugins.config.comment").setup,
         },
-    })
-    use("nvim-treesitter/playground")
-    -- Themes
-    use({ "sainnhe/gruvbox-material", opt = true })
-    use({ "folke/tokyonight.nvim", opt = true })
-    use({ "Shatur/neovim-ayu", opt = true })
-    use({ "catppuccin/nvim", as = "catppuccin" })
-    use({
-        "https://gitlab.com/__tpb/monokai-pro.nvim",
-        as = "monokai-pro.nvim",
-        opt = true,
-    })
-    -- Nvim like rest client
-    use({
-        "NTBBloodbath/rest.nvim",
-        ft = { "http" },
-        config = require("plugins.config.nvim_rest").setup,
-    })
-    --
-    -- Lualine
-    use({
-        "hoob3rt/lualine.nvim",
-        config = require("plugins.config.lualine").setup,
-        requires = { "arkav/lualine-lsp-progress" },
-    })
-    -- This is for json lsp to work
-    use("b0o/schemastore.nvim")
-    -- Telescope
-    use({
-        "nvim-telescope/telescope.nvim",
-        config = require("plugins.config.telescope").setup,
-        requires = {
-            {
-                "nvim-telescope/telescope-fzf-native.nvim",
-                run = "make",
+        -- new
+        { "lewis6991/gitsigns.nvim",     config = function() require("gitsigns").setup({}) end, },
+
+        { "tpope/vim-surround" },
+
+        { "ray-x/lsp_signature.nvim",    config = require("plugins.config.lspsignatures").setup, },
+
+        { "folke/trouble.nvim",          config = function() require("trouble").setup({}) end, },
+
+        { "williamboman/mason.nvim",     config = function() require("mason").setup() end, },
+
+        { "neovim/nvim-lspconfig",       config = require("plugins.config.lspconfig").setup,     dependencies = { "williamboman/mason-lspconfig.nvim" }, },
+
+        { "hrsh7th/nvim-cmp",            config = require("plugins.config.cmp").setup,           dependencies = { "hrsh7th/cmp-calc", "hrsh7th/cmp-cmdline", "saadparwaiz1/cmp_luasnip", "hrsh7th/cmp-nvim-lsp", }, },
+
+        { "windwp/nvim-autopairs",       config = require("plugins.config.autopairs").setup, },
+
+        { "stevearc/oil.nvim",           config = function() require("oil").setup() end },
+
+        { "kyazdani42/nvim-web-devicons" },
+
+        { "mbbill/undotree",             lazy = true,                                            cmd = { "UndotreeToggle" } },
+
+        { "nvim-treesitter/nvim-treesitter",
+            run = ":TSUpdate",
+            config = require("plugins.config.treesitter").setup,
+            dependencies = { "p00f/nvim-ts-rainbow",
+                "nvim-treesitter/nvim-treesitter-context",
+                "windwp/nvim-ts-autotag",
+                "JoosepAlviste/nvim-ts-context-commentstring",
             },
         },
-    })
-    -- Latex environment :D
-    use({
-        "lervag/vimtex",
-        ft = "tex",
-        config = require("plugins.config.vimtex").setup,
-    })
-    -- Snippets
-    use({
-        "L3MON4D3/LuaSnip",
-        config = require("plugins.config.luasnip").setup,
-    })
-    -- Nvim looking good af
-    use("nvim-lua/popup.nvim")
-    use({
-        "stevearc/dressing.nvim",
-        config = function()
-            require("dressing").setup({ input = { insert_only = false } })
-        end,
-    })
-    use("folke/lsp-colors.nvim")
-    --
-    use({
-        "folke/zen-mode.nvim",
-        config = function()
-            require("zen-mode").setup({})
-        end,
-    })
-    use({
-        "rmagatti/auto-session",
-        config = require("plugins.config.auto_sesion").setup,
-    })
-    use({
-        "voldikss/vim-floaterm",
-        config = require("plugins.config.floaterm").setup,
-    })
-    use({ "ThePrimeagen/harpoon", config = require("plugins.config.harpoon").setup })
 
-    use({
-        "iamcco/markdown-preview.nvim",
-        run = "cd app && npm install",
-        setup = function()
-            vim.g.mkdp_filetypes = { "markdown" }
-        end,
-        ft = { "markdown" },
-    })
 
-    use({ "j-morano/buffer_manager.nvim" })
+        { "nvim-treesitter/playground" },
+        { "sainnhe/gruvbox-material",      lazy = true },
+        { "folke/tokyonight.nvim",         lazy = true },
+        { "Shatur/neovim-ayu",             lazy = true },
+        { "catppuccin/nvim",               name = "catppuccin" },
 
-    use({ "elkowar/yuck.vim" })
-end)
+        { "NTBBloodbath/rest.nvim",        ft = { "http" },                                    config = require("plugins.config.nvim_rest").setup, },
+
+        { "hoob3rt/lualine.nvim",          config = require("plugins.config.lualine").setup,   dependencies = { "arkav/lualine-lsp-progress" }, },
+
+        { "b0o/schemastore.nvim" },
+
+        { "nvim-telescope/telescope.nvim", config = require("plugins.config.telescope").setup, dependencies = { { "nvim-telescope/telescope-fzf-native.nvim", build = "make", }, }, },
+
+        { "lervag/vimtex",                 ft = "tex",                                         config = require("plugins.config.vimtex").setup, },
+
+        { "L3MON4D3/LuaSnip",              config = require("plugins.config.luasnip").setup, },
+
+        { "nvim-lua/popup.nvim" },
+
+        { "stevearc/dressing.nvim", config = function()
+            require("dressing").setup({
+                input = { insert_only = false } })
+        end, },
+
+        { "folke/lsp-colors.nvim" },
+
+        { "folke/zen-mode.nvim",   config = function() require("zen-mode").setup({}) end, },
+
+        { "rmagatti/auto-session", config = require("plugins.config.auto_sesion").setup, },
+
+        { "voldikss/vim-floaterm", config = require("plugins.config.floaterm").setup, },
+
+        { "ThePrimeagen/harpoon",  config = require("plugins.config.harpoon").setup },
+
+        { "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function()
+            vim.g.mkdp_filetypes = {
+                "markdown" }
+        end, ft = { "markdown" }, },
+
+        { "j-morano/buffer_manager.nvim" },
+        --
+    },
+    -- Configure any other settings here. See the documentation for more details.
+    -- colorscheme that will be used when installing plugins.
+    install = { colorscheme = { "habamax" } },
+    -- automatically check for plugin updates
+    checker = { enabled = false },
+})
