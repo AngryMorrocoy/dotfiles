@@ -8,8 +8,6 @@ local function buildKeyMaps()
 		["n|<leader>W"] = { action = "<cmd>wa!<cr>" }, -- Saves faster
 		["n|<leader><cr>"] = { action = "<cmd>q<cr>" }, -- Quit faster
 		["n|<leader>q<cr>"] = { action = "<cmd>q!<cr>" }, -- Forces quit
-		-- Opens undotree
-		["n|<leader>u"] = { action = "<cmd>UndotreeToggle<cr>" },
 		-- NvimTree
 		["n|<C-u>"] = { action = "<cmd>Oil --float<cr>" },
 		-- Maximizer

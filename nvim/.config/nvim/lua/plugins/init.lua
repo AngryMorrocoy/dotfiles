@@ -117,12 +117,6 @@ require("lazy").setup({
 		{ "kyazdani42/nvim-web-devicons" },
 
 		{
-			"mbbill/undotree",
-			lazy = true,
-			cmd = { "UndotreeToggle" },
-		},
-
-		{
 			"nvim-treesitter/nvim-treesitter",
 			run = ":TSUpdate",
 			config = require("plugins.config.treesitter").setup,
@@ -138,7 +132,11 @@ require("lazy").setup({
 		{ "sainnhe/gruvbox-material", lazy = true },
 		{ "folke/tokyonight.nvim", lazy = true },
 		{ "Shatur/neovim-ayu", lazy = true },
-		{ "catppuccin/nvim", name = "catppuccin" },
+		{
+			"catppuccin/nvim",
+			lazy = true,
+			name = "catppuccin",
+		},
 
 		{
 			"NTBBloodbath/rest.nvim",
