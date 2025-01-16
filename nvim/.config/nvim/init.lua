@@ -13,7 +13,7 @@ local function loadTheme()
         end
 
         return {
-            lua_theme = "everforest",
+            lualine_theme = "everforest",
             load_theme = function ()
                 colorscheme default
             end

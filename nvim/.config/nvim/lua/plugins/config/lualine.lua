@@ -1,7 +1,7 @@
 local M = {}
 
 function M.setup()
-	local lua_theme = require("theme").lua_theme
+	local lua_theme = require("theme").lualine_theme
 	require("lualine").setup({
 		options = {
 			component_separators = { left = "", right = "" },
