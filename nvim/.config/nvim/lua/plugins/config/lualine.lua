@@ -7,10 +7,11 @@ function M.setup()
 			component_separators = { left = "", right = "" },
 			section_separators = { left = "", right = "" },
 			theme = lua_theme,
+			always_show_tabline = false,
 		},
 		sections = {
 			lualine_a = { "mode" },
-			lualine_b = { "filetype", "branch", "diagnostics" },
+			lualine_b = { "branch", "diagnostics" },
 			lualine_c = { "filename" },
 			lualine_x = {},
 			lualine_y = {
@@ -49,22 +50,16 @@ function M.setup()
 			},
 			lualine_z = {
 				"location",
+				"filetype",
 			},
 		},
 		tabline = {
 			lualine_a = {
-				"tabpagenr",
+				{
+					"tabs",
+					mode = 2,
+				},
 			},
-			lualine_b = {
-				{ "tabs", mode = 1 },
-			},
-			lualine_c = {},
-			lualine_x = {},
-			lualine_y = {},
-			lualine_z = { { "buffers", mode = 2 } },
-		},
-		extensions = {
-			"nvim-tree",
 		},
 	})
 end
