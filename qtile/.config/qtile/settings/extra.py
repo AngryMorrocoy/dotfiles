@@ -56,14 +56,3 @@ def toggle_always_visible(qtile):
         ids.append(curr_window_id)
     with open(windows_id_filepath, "w", encoding="utf-8") as windows_file:
         json.dump(ids, windows_file)
-
-
-def toggle_stalonetray(qtile):
-    running_stalones = subprocess.run(
-        ["pgrep", "-c", "-x", "stalonetray"], capture_output=True
-    ).stdout
-
-    if int(running_stalones) > 0:
-        subprocess.Popen(["killall", "stalonetray"])
-    else:
-        subprocess.Popen(["stalonetray"])

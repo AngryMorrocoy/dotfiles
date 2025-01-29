@@ -9,7 +9,6 @@ from .extra import (
     toggle_always_visible,
     window_to_next_group,
     window_to_prev_group,
-    toggle_stalonetray,
 )
 
 terminal = "alacritty"
@@ -156,8 +155,6 @@ keys = [
             "Home",
             lazy.spawn("playerctl --player=vlc,%any position 10-"),
         ],
-        # Toggle bar
-        [[mod, "shift"], "b", lazy.spawn("eww-toggle_vertical_bar")],
         # Qtile management
         [[mod], "r", lazy.spawn("rofi -modi run -show run")],
         [[mod, "control"], "r", lazy.restart()],
@@ -220,14 +217,10 @@ keys += [
                     [[], "h", lazy.spawn(f"{terminal} -e bashtop")],
                     # --Launchs qalculate--#
                     [[], "c", lazy.spawn("qalculate-gtk")],
-                    # --Launchs discord--#
-                    [[], "d", lazy.spawn("discord")],
                     # --Launchs vim--
                     [[], "v", lazy.spawn(f"{terminal} -e nvim")],
                     # --Launchs obsidian--
                     [[], "o", lazy.spawn("obsidian")],
-                    # --Launchs mail-client--
-                    [[], "m", lazy.spawn("evolution")],
                     # --Launchs spotify--
                     [[], "s", lazy.spawn("spotify")],
                     # --Launchs zathura--

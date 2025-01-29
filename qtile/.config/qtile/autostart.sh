@@ -7,4 +7,3 @@ volumeicon &
 nm-applet &
 picom &
 nitrogen --restore &
-eww open vertical-bar
