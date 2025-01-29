@@ -207,6 +207,8 @@ keys += [
                     [[], "2", lazy.spawn("audacious")],
                     # --Launchs vifm--#
                     [[], "3", lazy.spawn(f"{terminal} -e ranger")],
+                    # -- Launchs bluetooth manager--#
+                    [[], "b", lazy.spawn("blueman-manager")],
                     # --Launchs thunar--#
                     [[], "e", lazy.spawn("thunar")],
                     # --Launchs nitrogen--#
