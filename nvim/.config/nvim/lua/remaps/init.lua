@@ -9,7 +9,7 @@ local function buildKeyMaps()
 		["n|<leader><cr>"] = { action = "<cmd>q<cr>" }, -- Quit faster
 		["n|<leader>q<cr>"] = { action = "<cmd>q!<cr>" }, -- Forces quit
 		-- NvimTree
-		["n|<C-u>"] = { action = "<cmd>Oil --float<cr>" },
+		["n|<C-u>"] = { action = "<cmd>Neotree toggle<cr>" },
 		-- Maximizer
 		["n|<leader>o"] = {
 			action = "<cmd>ZenMode<cr>",
