@@ -10,7 +10,9 @@ layout_theme = {
 }
 
 layouts = [
-    layout.Max(**{ k:v for k,v in layout_theme.items() if k not in ["margin", "border_width"] }),
+    layout.Max(**{k: v for k, v in layout_theme.items()
+               if k not in ["margin", "border_width"]}),
+    layout.MonadWide(**layout_theme),
     layout.MonadTall(**layout_theme),
     layout.Columns(
         **{
@@ -25,7 +27,7 @@ layouts = [
             k: v for k, v in layout_theme.items() if k not in ["margin"]
         },
         margin=1
-)
+    )
 ]
 
 floating_layout = layout.Floating(
