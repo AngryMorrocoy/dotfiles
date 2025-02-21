@@ -2,7 +2,7 @@
 export PATH="${PATH}:$HOME/.local/bin/:$HOME/.cargo/bin:$HOME/.local/scripts"
 
 # Default editor
-export EDITOR="vim"
+export EDITOR="nvim"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
