@@ -3,10 +3,15 @@ snippet f Functions
 		${0}
 	}
 
+snippet fs Function for a struct
+    func (this ${1}) ${2}(${3}) ${4} {
+        ${0}
+    }
+
 snippet imp Import
 	import "${0}"
 
-snippet main 
+snippet main  Main structure
     package main
 
     func main() {

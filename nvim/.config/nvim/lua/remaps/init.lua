@@ -8,8 +8,9 @@ local function buildKeyMaps()
 		["n|<leader>W"] = { action = "<cmd>wa!<cr>" }, -- Saves faster
 		["n|<leader><cr>"] = { action = "<cmd>q<cr>" }, -- Quit faster
 		["n|<leader>q<cr>"] = { action = "<cmd>q!<cr>" }, -- Forces quit
-		-- NvimTree
+		-- Neotree
 		["n|<C-u>"] = { action = "<cmd>Neotree toggle<cr>" },
+		["n|<leader><C-u>"] = { action = "<cmd>Neotree toggle reveal<cr>" },
 		-- Maximizer
 		["n|<leader>o"] = {
 			action = "<cmd>ZenMode<cr>",
@@ -157,7 +158,8 @@ local function buildKeyMaps()
 		-- Whys it isn't a default?
 		["n|Y"] = { action = "y$" },
 		-- Trouble
-		["n|<leader>xx"] = { action = "<cmd>Trouble diagnostics<cr>" },
+		["n|<leader>xx"] = { action = "<cmd>Trouble diagnostics toggle filter.buf=0 focus=true<cr>" },
+		["n|<leader>xX"] = { action = "<cmd>Trouble diagnostics toggle focus=true<cr>" },
 		-- Easier out from insert mode
 		["i|<C-s>"] = { action = "<esc>", opts = { silent = true } },
 		-- LuaSnips
