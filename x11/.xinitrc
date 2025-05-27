@@ -37,7 +37,7 @@ wired &
 
 if [[ $(tty) = /dev/tty1 ]]; then exec qtile start; fi
 if [[ $(tty) = /dev/tty2 ]]; then
-    exec mate-session
-    # exec openbox-session
+    # exec mate-session
+    exec openbox-session
 fi
 

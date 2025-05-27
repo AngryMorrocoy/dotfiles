@@ -34,7 +34,7 @@ function M.setup()
 			enable = true,
 		},
 		rainbow = {
-			enable = true,
+			enable = false,
 			extended_mode = false,
 		},
 		autotag = {

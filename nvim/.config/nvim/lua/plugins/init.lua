@@ -63,12 +63,12 @@ require("lazy").setup({
             -- Null ls is archived, but still works
             "jose-elias-alvarez/null-ls.nvim",
             config = function()
-                local null_ls = require("null-ls")
-                null_ls.setup()
-                require("mason-null-ls").setup({
-                    ensure_installed = {},
-                    handlers = {},
-                })
+                -- local null_ls = require("null-ls")
+                -- null_ls.setup()
+                -- require("mason-null-ls").setup({
+                --     ensure_installed = {},
+                --     handlers = {},
+                -- })
             end,
             dependencies = { "jay-babu/mason-null-ls.nvim" },
         },
@@ -151,6 +151,7 @@ require("lazy").setup({
             lazy = true,
             name = "catppuccin",
         },
+        { "tanvirtin/monokai.nvim", lazy = true },
 
         {
             "NTBBloodbath/rest.nvim",
