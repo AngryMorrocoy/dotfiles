@@ -9,8 +9,7 @@ local function buildKeyMaps()
 		["n|<leader><cr>"] = { action = "<cmd>q<cr>" }, -- Quit faster
 		["n|<leader>q<cr>"] = { action = "<cmd>q!<cr>" }, -- Forces quit
 		-- Neotree
-		["n|<C-u>"] = { action = "<cmd>Neotree toggle<cr>" },
-		["n|<leader><C-u>"] = { action = "<cmd>Neotree toggle reveal<cr>" },
+		["n|<C-u>"] = { action = "<cmd>lua require('ranger-nvim').open(true)<cr>" },
 		-- Maximizer
 		["n|<leader>o"] = {
 			action = "<cmd>ZenMode<cr>",

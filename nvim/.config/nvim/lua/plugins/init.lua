@@ -37,10 +37,6 @@ require("lazy").setup({
             "numToStr/Comment.nvim",
             config = require("plugins.config.comment").setup,
         },
-        {
-            "numToStr/Comment.nvim",
-            config = require("plugins.config.comment").setup,
-        },
         -- new
         {
             "lewis6991/gitsigns.nvim",
@@ -107,28 +103,13 @@ require("lazy").setup({
             config = require("plugins.config.autopairs").setup,
         },
 
-        {
-            {
-                "nvim-neo-tree/neo-tree.nvim",
-                branch = "v3.x",
-                dependencies = {
-                    "nvim-lua/plenary.nvim",
-                    "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-                    "MunifTanjim/nui.nvim",
-                },
-                config = function ()
-                    require("neo-tree").setup({
-                        window = {
-                            mappings = {
-                                ["l"] = "open"
-                            }
-                        }
-                    })
-                end
-            },
-        },
-
         { "kyazdani42/nvim-web-devicons" },
+        {
+            "kelly-lin/ranger.nvim",
+            config = function()
+                require("ranger-nvim").setup({ replace_netrw = true })
+            end,
+        },
 
         {
             "nvim-treesitter/nvim-treesitter",
